@@ -2,7 +2,6 @@
 
 Contributions are **welcome** and will be fully **credited**.
 
-<<<<<<< HEAD
 We accept contributions via Pull Requests on [Github](https://github.com/spatie/emoji).
 
 ## Pull Requests
