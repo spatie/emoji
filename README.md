@@ -53,9 +53,9 @@ $ composer test
 
 ## Contributing
 
-I'm accepting PR's that add characters to the class. 
+We are accepting PR's that add characters to the class. 
 Please use [this list](http://unicode.org/emoji/charts/full-emoji-list.html) to look up the unicode value and
-the name of the character
+the name of the character.
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
