@@ -1,0 +1,64 @@
+{
+<<<<<<< HEAD
+    "name": "spatie/emoji",
+    "description": "Display emoji characters",
+    "keywords": [
+        "spatie",
+        "emoji"
+    ],
+    "homepage": "https://github.com/spatie/emoji",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+=======
+    "name": "spatie/:package_name",
+    "description": ":package_description",
+    "keywords": [
+        "spatie",
+        ":package_name"
+    ],
+    "homepage": "https://github.com/spatie/:package_name",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email",
+>>>>>>> 861c1823dc15e663fc9bfe1e5ac3295119bede69
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.0"
+    },
+    "require-dev": {
+<<<<<<< HEAD
+        "phpunit/phpunit": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\Emoji\\": "src"
+=======
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\Skeleton\\": "src"
+>>>>>>> 861c1823dc15e663fc9bfe1e5ac3295119bede69
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+<<<<<<< HEAD
+            "Spatie\\Emoji\\Test\\": "tests"
+=======
+            "Spatie\\Skeleton\\Test\\": "tests"
+>>>>>>> 861c1823dc15e663fc9bfe1e5ac3295119bede69
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
