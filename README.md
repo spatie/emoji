@@ -1,4 +1,4 @@
-# Display Emoji characters
+# Easily display Emoji characters in PHP 7
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/emoji.svg?style=flat-square)](https://packagist.org/packages/spatie/emoji)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
