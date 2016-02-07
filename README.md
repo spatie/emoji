@@ -30,13 +30,13 @@ $ composer require spatie/emoji
 
 ## Usage
 
-The `Spatie\Emoji\Emoji`-class contains character constants that may be used directly.
+The `Spatie\Emoji\Emoji`-class contains character constants that may be used directly:
 
 ```php
 Emoji::CHARACTER_GRINNING_FACE;
 ```
 
-Or your can use the shorter method:
+Or your can use the shorter method by leaving of "character" and using camelCase:
 ```php
 Emoji::grinningFace();
 ```
@@ -56,9 +56,9 @@ $ composer test
 
 ## Contributing
 
-I'm accepting PR's that add characters to the class. 
+We are accepting PR's that add characters to the class. 
 Please use [this list](http://unicode.org/emoji/charts/full-emoji-list.html) to look up the unicode value and
-the name of the character
+the name of the character.
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
