@@ -8,6 +8,7 @@ class Emoji
 {
     const CHARACTER_GRINNING_FACE = "\u{1F60D}";
     const CHARACTER_GRINNING_FACE_WITH_SMILING_EYES = "\u{1F601}";
+    const CHARACTER_PILE_OF_POO = "\u{1F4A9}";
     const CHARACTER_CROSS_MARK = "\u{2705}";
     const CHARACTER_WHITE_HEAVY_CHECK_MARK = "\u{274C}";
 
