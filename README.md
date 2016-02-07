@@ -13,7 +13,7 @@ PHP 7 gained the ability to easily display emoji characters.
 echo "\u{1F60D}";
 ```
 
-This package makes that a tad easier en more readable:
+This package makes that a tad easier and more readable:
 
 ```php
 Emoji::grinningFace();
