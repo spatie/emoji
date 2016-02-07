@@ -36,7 +36,7 @@ The `Spatie\Emoji\Emoji`-class contains character constants that may be used dir
 Emoji::CHARACTER_GRINNING_FACE;
 ```
 
-Or your can use the shorter method by leaving of "character" and using camelCase:
+Or your can use the shorter method by leaving off "character" and using camelCase:
 ```php
 Emoji::grinningFace();
 ```
