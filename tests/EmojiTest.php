@@ -22,7 +22,7 @@ class EmojiTest extends \PHPUnit_Framework_TestCase
     /** @test */
     public function it_will_throw_an_exception_when_getting_unknown_characters()
     {
-        $this->expectException(UnknownCharacter::class);
+        $this->setExpectedException(UnknownCharacter::class);
 
         Emoji::thisCharacterDoesNotExist();
     }
