@@ -10,7 +10,7 @@
 PHP 7 gained the ability to easily display emoji characters. 
 
 ```php
-echo "\u{1F60D}";
+echo "\u{1F600}";
 ```
 
 This package makes that a tad easier and more readable:
@@ -40,6 +40,9 @@ Or your can use the shorter method:
 ```php
 Emoji::grinningFace();
 ```
+
+This package contains all characters listed on http://unicode.org/emoji/charts/full-emoji-list.html
+(retrieval date: 2016-02-07)
 
 ## Changelog
 
