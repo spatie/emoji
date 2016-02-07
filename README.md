@@ -30,7 +30,7 @@ $ composer require spatie/emoji
 
 ## Usage
 
-The `Spatie\Emoji\Emoji`-class contains character constants that may be used directly.
+The `Spatie\Emoji\Emoji`-class contains character constants that may be used directly:
 
 ```php
 Emoji::CHARACTER_GRINNING_FACE;
