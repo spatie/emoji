@@ -10,13 +10,13 @@
 PHP 7 gained the ability to easily display emoji characters. 
 
 ```php
-echo "\u{1F60D}"
+echo "\u{1F60D}";
 ```
 
 This package makes that a tad easier en more readable:
 
 ```php
-Emoji::grinningFace()
+Emoji::grinningFace();
 ```
 
 Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
@@ -32,12 +32,12 @@ $ composer require spatie/emoji
 
 The `Spatie\Emoji\Emoji`-class contains character constants that may be used directly.
 
-``` php
+```php
 Emoji::CHARACTER_GRINNING_FACE;
 ```
 
 Or your can use the shorter method:
-``` php
+```php
 Emoji::grinningFace();
 ```
 
