@@ -1,4 +1,4 @@
-# Easily display emoji characters in PHP 7
+# Programatically work with emoji characters in PHP 7
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/emoji.svg?style=flat-square)](https://packagist.org/packages/spatie/emoji)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
@@ -7,13 +7,13 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/spatie/emoji.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/emoji)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/emoji.svg?style=flat-square)](https://packagist.org/packages/spatie/emoji)
 
-PHP 7 gained the ability to easily display emoji characters. 
+In PHP you can display emoji characters just by typing them
 
 ```php
-echo "\u{1F600}";
+echo "😃";
 ```
 
-This package makes that a tad easier and more readable:
+This package provides some functionality to work with emoji's if your IDE or used font can't render them correctly
 
 ```php
 Emoji::grinningFace();
