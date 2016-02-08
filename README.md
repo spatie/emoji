@@ -3,7 +3,6 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/emoji.svg?style=flat-square)](https://packagist.org/packages/spatie/emoji)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/spatie/emoji/master.svg?style=flat-square)](https://travis-ci.org/spatie/emoji)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/61199a95-b5ac-4557-a05d-4a8893fc0913/.svg?style=flat-square)](https://insight.sensiolabs.com/projects/61199a95-b5ac-4557-a05d-4a8893fc0913)
 [![Quality Score](https://img.shields.io/scrutinizer/g/spatie/emoji.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/emoji)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/emoji.svg?style=flat-square)](https://packagist.org/packages/spatie/emoji)
 
