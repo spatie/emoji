@@ -6,13 +6,13 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/spatie/emoji.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/emoji)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/emoji.svg?style=flat-square)](https://packagist.org/packages/spatie/emoji)
 
-In PHP you can display emoji characters just by typing them
+In PHP you can display emoji characters just by typing them:
 
 ```php
 echo "😃";
 ```
 
-This package provides some functionality to work with emoji's if your IDE or used font can't render them correctly
+This package provides some functionality to work with emoji's if your IDE or used font can't render them correctly:
 
 ```php
 Emoji::grinningFace();
