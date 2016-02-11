@@ -82,7 +82,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flagForCentralAfricanRepublic()
  * @method static string flagForCongoBrazzaville()
  * @method static string flagForSwitzerland()
- * @method static string flagForCÃ´teDâÄôivoire()
+ * @method static string flagForCoteDIvoire()
  * @method static string flagForCookIslands()
  * @method static string flagForChile()
  * @method static string flagForCameroon()
@@ -252,7 +252,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flagForSomalia()
  * @method static string flagForSuriname()
  * @method static string flagForSouthSudan()
- * @method static string flagForSãoToméAndPríncipe()
+ * @method static string flagForSaoTomeAndPrincipe()
  * @method static string flagForElSalvador()
  * @method static string flagForSintMaarten()
  * @method static string flagForSyria()
@@ -1371,7 +1371,7 @@ class Emoji
     const CHARACTER_FLAG_FOR_CENTRAL_AFRICAN_REPUBLIC = "\u{1F1E8}";
     const CHARACTER_FLAG_FOR_CONGO_BRAZZAVILLE = "\u{1F1E8}";
     const CHARACTER_FLAG_FOR_SWITZERLAND = "\u{1F1E8}";
-    const CHARACTER_FLAG_FOR_CÃ´TE_DâÄôIVOIRE = "\u{1F1E8}";
+    const CHARACTER_FLAG_FOR_COTE_D_IVOIRE = "\u{1F1E8}";
     const CHARACTER_FLAG_FOR_COOK_ISLANDS = "\u{1F1E8}";
     const CHARACTER_FLAG_FOR_CHILE = "\u{1F1E8}";
     const CHARACTER_FLAG_FOR_CAMEROON = "\u{1F1E8}";
@@ -1541,7 +1541,7 @@ class Emoji
     const CHARACTER_FLAG_FOR_SOMALIA = "\u{1F1F8}";
     const CHARACTER_FLAG_FOR_SURINAME = "\u{1F1F8}";
     const CHARACTER_FLAG_FOR_SOUTH_SUDAN = "\u{1F1F8}";
-    const CHARACTER_FLAG_FOR_SÃO_TOMÉ_AND_PRÍNCIPE = "\u{1F1F8}";
+    const CHARACTER_FLAG_FOR_SAO_TOME_AND_PRINCIPE = "\u{1F1F8}";
     const CHARACTER_FLAG_FOR_EL_SALVADOR = "\u{1F1F8}";
     const CHARACTER_FLAG_FOR_SINT_MAARTEN = "\u{1F1F8}";
     const CHARACTER_FLAG_FOR_SYRIA = "\u{1F1F8}";
