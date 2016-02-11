@@ -252,7 +252,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flagForSomalia()
  * @method static string flagForSuriname()
  * @method static string flagForSouthSudan()
- * @method static string flagForSÃ£oTomÃ©AndPrÃNcipe()
+ * @method static string flagForSãoToméAndPríncipe()
  * @method static string flagForElSalvador()
  * @method static string flagForSintMaarten()
  * @method static string flagForSyria()
@@ -1541,7 +1541,7 @@ class Emoji
     const CHARACTER_FLAG_FOR_SOMALIA = "\u{1F1F8}";
     const CHARACTER_FLAG_FOR_SURINAME = "\u{1F1F8}";
     const CHARACTER_FLAG_FOR_SOUTH_SUDAN = "\u{1F1F8}";
-    const CHARACTER_FLAG_FOR_SÃ£O_TOMÃ©_AND_PRÃ_NCIPE = "\u{1F1F8}";
+    const CHARACTER_FLAG_FOR_SÃO_TOMÉ_AND_PRÍNCIPE = "\u{1F1F8}";
     const CHARACTER_FLAG_FOR_EL_SALVADOR = "\u{1F1F8}";
     const CHARACTER_FLAG_FOR_SINT_MAARTEN = "\u{1F1F8}";
     const CHARACTER_FLAG_FOR_SYRIA = "\u{1F1F8}";
