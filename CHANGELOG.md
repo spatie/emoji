@@ -2,6 +2,10 @@
 
 All Notable changes to `emoji` will be documented in this file
 
+## 1.0.3 - 2016-02-11
+
+- add docblocks for autocompleting magic methods
+
 ## 1.0.2 - 2016-02-11
 
 - fix character flag for st barthelemy
