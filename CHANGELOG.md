@@ -2,6 +2,10 @@
 
 All Notable changes to `emoji` will be documented in this file
 
+## 1.0.5 - 2016-09-27
+
+- fixed flag emojis
+
 ## 1.0.4 - 2016-02-11
 
 - fixed (yeah fixed so no breaking changes 😎) some weird characters in the flag names
