@@ -5,7 +5,7 @@ namespace Spatie\Emoji;
 use Spatie\Emoji\Exceptions\UnknownCharacter;
 
 /**
- * Emoji class
+ * Emoji class.
  *
  * @method static string keycapNumberSign()
  * @method static string keycapAsterisk()
@@ -2587,7 +2587,7 @@ class Emoji
     {
         $constantName = static::convertCharacterNameToConstantName($characterName);
 
-        if (!defined("static::{$constantName}")) {
+        if (! defined("static::{$constantName}")) {
             throw UnknownCharacter::create($characterName);
         }
 
@@ -2610,7 +2610,7 @@ class Emoji
 
     protected static function convertToSnakeCase(string $value) : string
     {
-        if (!ctype_lower($value)) {
+        if (! ctype_lower($value)) {
             $value = preg_replace('/\s+/', '', $value);
 
             $value = strtolower(preg_replace('/(.)(?=[A-Z])/', '$1'.'_', $value));
