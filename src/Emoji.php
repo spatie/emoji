@@ -1292,7 +1292,8 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string wavyDash()
  * @method static string partAlternationMark()
  * @method static string circledIdeographCongratulation()
- * @method static string circledIdeographSecret()
+ * @method static string circledIdeographSecret() 
+ * @method static string giraffe()
  */
 class Emoji
 {
@@ -2582,6 +2583,7 @@ class Emoji
     const CHARACTER_PART_ALTERNATION_MARK = "\u{303D}";
     const CHARACTER_CIRCLED_IDEOGRAPH_CONGRATULATION = "\u{3297}";
     const CHARACTER_CIRCLED_IDEOGRAPH_SECRET = "\u{3299}";
+    const CHARACTER_GIRAFFE = "\u{1F992}";
 
     public static function getCharacter(string $characterName) : string
     {
