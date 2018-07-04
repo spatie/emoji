@@ -1,6 +1,10 @@
 # Changelog
 
-All Notable changes to `emoji` will be documented in this file
+All notable changes to `emoji` will be documented in this file
+
+## 1.0.6 - 2018-07-04
+
+- added 🦒
 
 ## 1.0.5 - 2016-09-27
 
