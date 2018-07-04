@@ -1292,7 +1292,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string wavyDash()
  * @method static string partAlternationMark()
  * @method static string circledIdeographCongratulation()
- * @method static string circledIdeographSecret() 
+ * @method static string circledIdeographSecret()
  * @method static string giraffe()
  */
 class Emoji
