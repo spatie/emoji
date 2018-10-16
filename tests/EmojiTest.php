@@ -21,9 +21,9 @@ class EmojiTest extends TestCase
     }
 
     /** @test */
-    public function it_can_return_the_fitz_patrick_emoji()
+    public function it_can_return_the_skin_tone_component_emoji()
     {
-        $this->assertSame('🏻', Emoji::emojiModifierFitzpatrickType12());
+        $this->assertSame('🏻', Emoji::lightSkinTone());
     }
 
     /** @test */
