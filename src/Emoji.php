@@ -2886,7 +2886,6 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flagsForScotland()
  * @method static string flagsForWales()
  */
-
 class Emoji
 {
     // ########## Unicode Emoji v11.0 ##########
