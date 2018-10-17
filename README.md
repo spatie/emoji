@@ -49,8 +49,10 @@ Or your can use the shorter method by leaving off "character" and using camelCas
 Emoji::grinningFace();
 ```
 
-This package contains all characters listed on http://unicode.org/emoji/charts/full-emoji-list.html
-(retrieval date: 2016-02-07)
+This package contains Full Emoji List v11.0 (emoji without skin-tones) based on
+https://www.unicode.org/emoji/charts/full-emoji-list.html (retrieval date: 2018-10-16)
+which include Full Emoji Modifier Sequences v11.0 (emoji with skin-tones) based on
+https://www.unicode.org/emoji/charts/full-emoji-modifiers.html (retrieval date: 2018-10-16)
 
 ## Changelog
 
@@ -64,7 +66,7 @@ $ composer test
 
 ## Contributing
 
-We are accepting PR's that add characters to the class. 
+We are accepting PR's that add characters to the class.
 Please use [this list](http://unicode.org/emoji/charts/full-emoji-list.html) to look up the unicode value and
 the name of the character.
 
@@ -77,6 +79,7 @@ If you discover any security related issues, please email freek@spatie.be instea
 ## Credits
 
 - [Freek Van der Herten](https://github.com/freekmurze)
+- [BoGnY](https://github.com/bogny)
 - [All Contributors](../../contributors)
 
 ## About Spatie
