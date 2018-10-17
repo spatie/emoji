@@ -2,6 +2,10 @@
 
 All notable changes to `emoji` will be documented in this file
 
+## 2.0.0 - 2018-10-17
+
+- updated to use Full Emoji List v11.0
+
 ## 1.0.6 - 2018-07-04
 
 - added 🦒
