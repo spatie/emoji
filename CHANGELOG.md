@@ -2,7 +2,7 @@
 
 All notable changes to `emoji` will be documented in this file
 
-## 2.0.1 - 2018-02-20
+## 2.1.0 - 2018-02-20
 
 - add `countryFlag` method
 - drop support for PHP 7.0 and 7.1
