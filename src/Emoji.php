@@ -2,8 +2,8 @@
 
 namespace Spatie\Emoji;
 
-use Spatie\Emoji\Exceptions\CouldNotDetermineFlag;
 use Spatie\Emoji\Exceptions\UnknownCharacter;
+use Spatie\Emoji\Exceptions\CouldNotDetermineFlag;
 
 /**
  * Emoji class.

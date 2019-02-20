@@ -4,8 +4,8 @@ namespace Spatie\Emoji\Test;
 
 use Spatie\Emoji\Emoji;
 use PHPUnit\Framework\TestCase;
-use Spatie\Emoji\Exceptions\CouldNotDetermineFlag;
 use Spatie\Emoji\Exceptions\UnknownCharacter;
+use Spatie\Emoji\Exceptions\CouldNotDetermineFlag;
 
 class EmojiTest extends TestCase
 {
