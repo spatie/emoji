@@ -5787,7 +5787,7 @@ class Emoji
 
     public static function encodeCountryCodeLetter(string $letter) : string
     {
-        return mb_convert_encoding('&#' . (127397 + ord($letter)) . ';', 'UTF-8', 'HTML-ENTITIES');
+        return mb_convert_encoding('&#'.(127397 + ord($letter)).';', 'UTF-8', 'HTML-ENTITIES');
     }
 
     public static function __callStatic(string $methodName, array $parameters) : string
