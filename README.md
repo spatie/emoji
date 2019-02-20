@@ -51,8 +51,9 @@ Emoji::grinningFace();
 
 You can also use an [ISO 3166 Alpha2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code and get the appropriate flag for the country:
 ```php
-Emoji::getCountryFlag('BE'); // 🇧🇪
+Emoji::countryFlag('be'); // 🇧🇪
 ```
+
 This package contains Full Emoji List v11.0 (emoji without skin-tones) based on
 https://www.unicode.org/emoji/charts/full-emoji-list.html (retrieval date: 2018-10-16)
 which include Full Emoji Modifier Sequences v11.0 (emoji with skin-tones) based on
