@@ -4,6 +4,7 @@ namespace Spatie\Emoji\Test;
 
 use Spatie\Emoji\Emoji;
 use PHPUnit\Framework\TestCase;
+use Spatie\Emoji\Exceptions\CouldNotDetermineFlag;
 use Spatie\Emoji\Exceptions\UnknownCharacter;
 
 class EmojiTest extends TestCase
@@ -37,18 +38,29 @@ class EmojiTest extends TestCase
     /** @test */
     public function it_will_return_an_emoji_character_when_given_a_language_code()
     {
-        $this->assertSame('🇧🇪', Emoji::getCountryFlag('BE'));
+        $this->assertSame('🇧🇪', Emoji::countryFlag('BE'));
+        $this->assertSame('🇧🇪', Emoji::countryFlag('be'));
+        $this->assertSame('🇦🇦', Emoji::countryFlag('AA'));
     }
 
-    /** @test */
-    public function it_will_return_an_emoji_character_when_given_a_language_code_in_lower_case()
+    /**
+     * @test
+     *
+     * @dataProvider invalidCountryCodeProvider
+     */
+    public function it_will_throw_an_exception_when_try_to_get_a_flag_for_a_string_that_doesnt_have_two_characters(string $invalidCountryCode)
     {
-        $this->assertSame('🇧🇪', Emoji::getCountryFlag('be'));
+        $this->expectException(CouldNotDetermineFlag::class);
+
+        Emoji::countryFlag($invalidCountryCode);
     }
 
-    /** @test */
-    public function it_will_not_crash_when_a_country_code_does_not_exist()
+    public function invalidCountryCodeProvider()
     {
-        $this->assertSame('🇦🇦', Emoji::getCountryFlag('AA'));
+        return [
+            [''],
+            ['a'],
+            ['aaa'],
+        ];
     }
 }
