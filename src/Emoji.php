@@ -5778,6 +5778,18 @@ class Emoji
         return constant('static::'.$constantName);
     }
 
+    public static function getCountryFlag(string $countryCode) : string
+    {
+        $countryCode = strtoupper($countryCode);
+
+        return static::encodeCountryCodeLetter($countryCode[0]).static::encodeCountryCodeLetter($countryCode[1]);
+    }
+
+    public static function encodeCountryCodeLetter(string $letter) : string
+    {
+        return mb_convert_encoding('&#' . (127397 + ord($letter)) . ';', 'UTF-8', 'HTML-ENTITIES');
+    }
+
     public static function __callStatic(string $methodName, array $parameters) : string
     {
         return static::getCharacter($methodName);

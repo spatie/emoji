@@ -33,4 +33,19 @@ class EmojiTest extends TestCase
 
         Emoji::thisCharacterDoesNotExist();
     }
+
+    /** @test */
+    public function it_will_return_an_emoji_character_when_given_a_language_code(){
+        $this->assertSame('🇧🇪', Emoji::getCountryFlag('BE'));
+    }
+
+    /** @test */
+    public function it_will_return_an_emoji_character_when_given_a_language_code_in_lower_case(){
+        $this->assertSame('🇧🇪', Emoji::getCountryFlag('be'));
+    }
+
+    /** @test */
+    public function it_will_not_crash_when_a_country_code_does_not_exist(){
+        $this->assertSame('🇦🇦', Emoji::getCountryFlag('AA'));
+    }
 }
