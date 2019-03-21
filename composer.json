@@ -21,7 +21,11 @@
         "ext-mbstring": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.0"
+        "ext-json": "*",
+        "phpunit/phpunit": "^8.0",
+        "symfony/console": "^4.2",
+        "twig/twig": "^2.7",
+        "guzzlehttp/guzzle": "^6.3"
     },
     "autoload": {
         "psr-4": {
@@ -30,10 +34,12 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "Spatie\\Emoji\\Generator\\": "generator",
             "Spatie\\Emoji\\Test\\": "tests"
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/phpunit",
+        "generate": "php ./generate generate"
     }
 }
