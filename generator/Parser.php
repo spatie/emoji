@@ -80,7 +80,7 @@ final class Parser
             'asterisk',
             'hash',
         ], $name);
-        $cleanName = preg_replace("/\s+/", " ", preg_replace("/[^\w]+/", " ", $name));
+        $cleanName = strtolower(preg_replace("/\s+/", " ", preg_replace("/[^\w]+/", " ", $name)));
         $const = 'CHARACTER_'.strtoupper(preg_replace("/\s+/", "", preg_replace('/(.)(?= [a-z])/', '$1_', $cleanName)));
         $method = lcfirst(preg_replace("/\s+/", "", ucwords($cleanName)));
 
