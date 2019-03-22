@@ -23,6 +23,9 @@ class EmojiTest extends TestCase
         $this->assertSame('😀', Emoji::grinningFace());
         $this->assertSame('🥰', Emoji::smilingFaceWith3Hearts());
         $this->assertSame('🔟', Emoji::keycap10());
+        $this->assertSame('🥇', Emoji::firstPlaceMedal());
+        $this->assertSame('🥈', Emoji::secondPlaceMedal());
+        $this->assertSame('🥉', Emoji::thirdPlaceMedal());
     }
 
     /** @test */

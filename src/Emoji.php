@@ -2143,9 +2143,9 @@ use Spatie\Emoji\Exceptions\CouldNotDetermineFlag;
  * @method static string militaryMedal()
  * @method static string trophy()
  * @method static string sportsMedal()
- * @method static string 1stPlaceMedal()
- * @method static string 2ndPlaceMedal()
- * @method static string 3rdPlaceMedal()
+ * @method static string firstPlaceMedal()
+ * @method static string secondPlaceMedal()
+ * @method static string thirdPlaceMedal()
  * ##### Emoji subgroup: Sport #####
  * @method static string soccerBall()
  * @method static string baseball()
@@ -5024,9 +5024,9 @@ class Emoji
     const CHARACTER_MILITARY_MEDAL = "\u{1F396}\u{FE0F}";
     const CHARACTER_TROPHY = "\u{1F3C6}";
     const CHARACTER_SPORTS_MEDAL = "\u{1F3C5}";
-    const CHARACTER_1ST_PLACE_MEDAL = "\u{1F947}";
-    const CHARACTER_2ND_PLACE_MEDAL = "\u{1F948}";
-    const CHARACTER_3RD_PLACE_MEDAL = "\u{1F949}";
+    const CHARACTER_FIRST_PLACE_MEDAL = "\u{1F947}";
+    const CHARACTER_SECOND_PLACE_MEDAL = "\u{1F948}";
+    const CHARACTER_THIRD_PLACE_MEDAL = "\u{1F949}";
     // ##### Emoji subgroup: Sport #####
     const CHARACTER_SOCCER_BALL = "\u{26BD}";
     const CHARACTER_BASEBALL = "\u{26BE}";
