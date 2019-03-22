@@ -5811,7 +5811,7 @@ class Emoji
         if (! ctype_lower($value)) {
             $value = preg_replace('/\s+/', '', $value);
 
-            $value = strtolower(preg_replace('/(.)(?=[A-Z])/', '$1'.'_', $value));
+            $value = strtolower(preg_replace('/([^0-9])(?=[0-9])/', '$1'.'_', preg_replace('/(.)(?=[A-Z])/', '$1'.'_', $value)));
         }
 
         return $value;
