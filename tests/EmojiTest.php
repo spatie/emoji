@@ -19,6 +19,10 @@ class EmojiTest extends TestCase
     public function it_provides_a_convenience_method_to_return_emoji_characters()
     {
         $this->assertSame('😀', Emoji::grinningFace());
+
+        $this->assertSame('🥇', Emoji::firstPlaceMedal());
+        $this->assertSame('🥈', Emoji::secondPlaceMedal());
+        $this->assertSame('🥉', Emoji::thirdPlaceMedal());
     }
 
     /** @test */
