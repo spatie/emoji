@@ -16,6 +16,9 @@ final class Parser
     /** @var array */
     private $emojis = [];
 
+    /** @var array */
+    private $groups = [];
+
     public function __construct(string $body)
     {
         $this->body = $body;
@@ -33,6 +36,11 @@ final class Parser
     public function getEmojis(): array
     {
         return $this->emojis;
+    }
+
+    public function getGroups(): array
+    {
+        return $this->groups;
     }
 
     private function parseLine(string $line)
@@ -55,9 +63,16 @@ final class Parser
             return;
         }
 
-        preg_match('/^([A-Z\d ]+)\s+;\s+(fully-qualified|component)\s+# [^a-z ]* ([\w\d:\-\*\# ]+)$/', $line, $matches);
+        preg_match('/^([A-Z\d ]+)\s+;\s+(fully-qualified|component)\s+# [^a-z ]* (.+)$/', $line, $matches);
         if(count($matches) === 4) {
             list(, $code, , $name) = $matches;
+
+            if(
+                $this->subgroup === 'country-flag'
+                || $this->subgroup === 'subdivision-flag'
+            ) {
+                $name = 'flags for: '.$name;
+            }
 
             $this->addEmoji(trim($code), trim($name));
         }
@@ -65,36 +80,9 @@ final class Parser
 
     private function addEmoji(string $code, string $name)
     {
-        if(!isset($this->emojis[$this->group])) {
-            $this->emojis[$this->group] = [];
-        }
+        $emoji = new Emoji($name, $code);
 
-        if(!isset($this->emojis[$this->group][$this->subgroup])) {
-            $this->emojis[$this->group][$this->subgroup] = [];
-        }
-
-        $name = str_replace([
-            '*',
-            '#',
-            '1st',
-            '2nd',
-            '3rd',
-        ], [
-            'asterisk',
-            'hash',
-            'first',
-            'second',
-            'third',
-        ], $name);
-        $cleanName = strtolower(preg_replace("/\s+/", " ", preg_replace("/[^\w]+/", " ", $name)));
-        $const = 'CHARACTER_'.strtoupper(preg_replace("/\s+/", "", preg_replace('/(.)(?= [a-z])/', '$1_', $cleanName)));
-        $method = lcfirst(preg_replace("/\s+/", "", ucwords($cleanName)));
-
-        $this->emojis[$this->group][$this->subgroup][$code] = [
-            'name' => $name,
-            'const' => $const,
-            'method' => $method,
-            'code' => '\u{'.implode('}\u{', explode(' ', $code)).'}',
-        ];
+        $this->groups[$this->group][$this->subgroup][$code] = $emoji;
+        $this->emojis[$code] = $emoji;
     }
 }
