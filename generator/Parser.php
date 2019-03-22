@@ -76,9 +76,15 @@ final class Parser
         $name = str_replace([
             '*',
             '#',
+            '1st',
+            '2nd',
+            '3rd',
         ], [
             'asterisk',
             'hash',
+            'first',
+            'second',
+            'third',
         ], $name);
         $cleanName = strtolower(preg_replace("/\s+/", " ", preg_replace("/[^\w]+/", " ", $name)));
         $const = 'CHARACTER_'.strtoupper(preg_replace("/\s+/", "", preg_replace('/(.)(?= [a-z])/', '$1_', $cleanName)));
