@@ -2,8 +2,8 @@
 
 namespace Spatie\Emoji\Generator;
 
-use JsonSerializable;
 use ArrayAccess;
+use JsonSerializable;
 
 final class Emoji implements JsonSerializable, ArrayAccess
 {
@@ -58,9 +58,9 @@ final class Emoji implements JsonSerializable, ArrayAccess
         ]);
 
         $this->name = $name;
-        $this->cleanName = strtolower(preg_replace("/\s+/", " ", preg_replace("/[^\w]+/", " ", $this->name)));
-        $this->const = 'CHARACTER_'.strtoupper(preg_replace("/\s+/", "", preg_replace('/(.)(?= [a-z0-9])/', '$1_', $this->cleanName)));
-        $this->method = lcfirst(preg_replace("/\s+/", "", ucwords($this->cleanName)));
+        $this->cleanName = strtolower(preg_replace("/\s+/", ' ', preg_replace("/[^\w]+/", ' ', $this->name)));
+        $this->const = 'CHARACTER_'.strtoupper(preg_replace("/\s+/", '', preg_replace('/(.)(?= [a-z0-9])/', '$1_', $this->cleanName)));
+        $this->method = lcfirst(preg_replace("/\s+/", '', ucwords($this->cleanName)));
     }
 
     public function getName(): string

@@ -28,7 +28,7 @@ final class Parser
     {
         $lines = explode("\n", $this->body);
 
-        foreach($lines as $line) {
+        foreach ($lines as $line) {
             $this->parseLine(trim($line));
         }
     }
@@ -49,25 +49,27 @@ final class Parser
             return;
         }
 
-        if(strpos($line, '# group:') === 0) {
+        if (strpos($line, '# group:') === 0) {
             $this->group = trim(str_replace('# group:', '', $line));
+
             return;
         }
 
-        if(strpos($line, '# subgroup:') === 0) {
+        if (strpos($line, '# subgroup:') === 0) {
             $this->subgroup = trim(str_replace('# subgroup:', '', $line));
+
             return;
         }
 
-        if(strpos($line, '#') === 0) {
+        if (strpos($line, '#') === 0) {
             return;
         }
 
         preg_match('/^([A-Z\d ]+)\s+;\s+(fully-qualified|component)\s+# [^a-z ]* (.+)$/', $line, $matches);
-        if(count($matches) === 4) {
+        if (count($matches) === 4) {
             list(, $code, , $name) = $matches;
 
-            if(
+            if (
                 $this->subgroup === 'country-flag'
                 || $this->subgroup === 'subdivision-flag'
             ) {

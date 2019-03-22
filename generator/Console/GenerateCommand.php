@@ -2,15 +2,15 @@
 
 namespace Spatie\Emoji\Generator\Console;
 
+use ReflectionClass;
+use Twig\Environment;
 use GuzzleHttp\Client;
 use Spatie\Emoji\Emoji;
+use Twig\Loader\FilesystemLoader;
 use Spatie\Emoji\Generator\Parser;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Twig\Environment;
-use Twig\Loader\FilesystemLoader;
-use ReflectionClass;
 
 class GenerateCommand extends Command
 {
@@ -52,10 +52,10 @@ class GenerateCommand extends Command
         $currentConstants = $this->getCurrentConstants();
         $deprecatedConstants = array_values(array_diff($currentConstants, array_column($emojisArray, 'const')));
         $output->writeln('<comment>deprecated constants: '.count($deprecatedConstants).'</comment>');
-        if(!empty($deprecatedConstants)) {
+        if (! empty($deprecatedConstants)) {
             $codeToConstant = array_combine(array_column($emojisArray, 'code'), array_column($emojisArray, 'const'));
             $deprecationNotice .= PHP_EOL.'## deprecated constants'.PHP_EOL.PHP_EOL;
-            foreach($deprecatedConstants as $deprecatedConstant) {
+            foreach ($deprecatedConstants as $deprecatedConstant) {
                 $emoji = constant(Emoji::class.'::'.$deprecatedConstant);
                 $emojiCode = $this->emojiToUnicodeHex($emoji);
                 $replacedBy = $codeToConstant[$emojiCode] ?? null;
@@ -73,10 +73,10 @@ class GenerateCommand extends Command
         $currentMethods = $this->getCurrentMethods();
         $deprecatedMethods = array_values(array_diff($currentMethods, array_column($emojisArray, 'method')));
         $output->writeln('<comment>deprecated methods: '.count($deprecatedMethods).'</comment>');
-        if(!empty($deprecatedMethods)) {
+        if (! empty($deprecatedMethods)) {
             $codeToMethod = array_combine(array_column($emojisArray, 'code'), array_column($emojisArray, 'method'));
             $deprecationNotice .= PHP_EOL.'## deprecated methods'.PHP_EOL.PHP_EOL;
-            foreach($deprecatedMethods as $deprecatedMethod) {
+            foreach ($deprecatedMethods as $deprecatedMethod) {
                 $emoji = Emoji::{$deprecatedMethod}();
                 $emojiCode = $this->emojiToUnicodeHex($emoji);
                 $replacedBy = $codeToMethod[$emojiCode] ?? null;
@@ -133,7 +133,7 @@ class GenerateCommand extends Command
 
     private function emojiToUnicodeHex(string $emoji)
     {
-        return '\u{'.implode('}\u{', array_map(function($hex) {
+        return '\u{'.implode('}\u{', array_map(function ($hex) {
             return strtoupper(ltrim($hex, '0'));
         }, str_split(bin2hex(mb_convert_encoding($emoji, 'UTF-32', 'UTF-8')), 8))).'}';
     }
