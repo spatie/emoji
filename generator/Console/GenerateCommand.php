@@ -108,12 +108,12 @@ class GenerateCommand extends Command
         file_put_contents(__DIR__.'/../../tests/emojis.json', json_encode($this->emojis));
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'_groups.json', json_encode($this->groups));
     }
-    
+
     private function deprecatedConstants()
     {
         $currentConstants = $this->getCurrentConstants();
         $deprecatedConstants = array_values(array_diff($currentConstants, array_column($this->emojisArray, 'const')));
-        
+
         if (! empty($deprecatedConstants)) {
             $codeToConstant = array_combine(array_column($this->emojisArray, 'code'), array_column($this->emojisArray, 'const'));
             $this->deprecationNotice .= PHP_EOL.'## deprecated constants'.PHP_EOL.PHP_EOL;
@@ -132,7 +132,7 @@ class GenerateCommand extends Command
             }
         }
     }
-    
+
     private function deprecatedMethods()
     {
         $currentMethods = $this->getCurrentMethods();
