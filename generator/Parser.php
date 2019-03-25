@@ -2,22 +2,22 @@
 
 namespace Spatie\Emoji\Generator;
 
-final class Parser
+class Parser
 {
     /** @var string */
-    private $body;
+    protected $body;
 
     /** @var string */
-    private $group;
+    protected $group;
 
     /** @var string */
-    private $subgroup;
+    protected $subgroup;
 
     /** @var array */
-    private $emojis = [];
+    protected $emojis = [];
 
     /** @var array */
-    private $groups = [];
+    protected $groups = [];
 
     public function __construct(string $body)
     {
@@ -43,7 +43,7 @@ final class Parser
         return $this->groups;
     }
 
-    private function parseLine(string $line)
+    protected function parseLine(string $line)
     {
         if (strlen($line) === 0) {
             return;
@@ -80,7 +80,7 @@ final class Parser
         }
     }
 
-    private function addEmoji(string $code, string $name)
+    protected function addEmoji(string $code, string $name)
     {
         $emoji = new Emoji($name, $code);
 

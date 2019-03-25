@@ -5,22 +5,22 @@ namespace Spatie\Emoji\Generator;
 use ArrayAccess;
 use JsonSerializable;
 
-final class Emoji implements JsonSerializable, ArrayAccess
+class Emoji implements JsonSerializable, ArrayAccess
 {
     /** @var string */
-    private $name;
+    protected $name;
 
     /** @var string */
-    private $code;
+    protected $code;
 
     /** @var string */
-    private $cleanName;
+    protected $cleanName;
 
     /** @var string */
-    private $const;
+    protected $const;
 
     /** @var string */
-    private $method;
+    protected $method;
 
     public function __construct(string $name, string $code)
     {
@@ -28,12 +28,12 @@ final class Emoji implements JsonSerializable, ArrayAccess
         $this->setCode($code);
     }
 
-    private function setCode(string $code)
+    protected function setCode(string $code)
     {
         $this->code = '\u{'.implode('}\u{', explode(' ', $code)).'}';
     }
 
-    private function setName(string $name)
+    protected function setName(string $name)
     {
         $name = str_replace([
             '*',
