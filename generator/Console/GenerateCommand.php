@@ -15,19 +15,19 @@ use Symfony\Component\Console\Output\OutputInterface;
 class GenerateCommand extends Command
 {
     /** @var int */
-    private $now;
+    protected $now;
 
     /** @var string */
-    private $deprecationNotice = '# deprecations'.PHP_EOL;
+    protected $deprecationNotice = '# deprecations'.PHP_EOL;
 
     /** @var \Spatie\Emoji\Generator\Emoji[] */
-    private $emojis;
+    protected $emojis;
 
     /** @var array[] */
-    private $emojisArray;
+    protected $emojisArray;
 
     /** @var array[] */
-    private $groups;
+    protected $groups;
 
     protected function configure()
     {
@@ -59,14 +59,14 @@ class GenerateCommand extends Command
         return 0;
     }
 
-    private function getCurrentConstants(): array
+    protected function getCurrentConstants(): array
     {
         $reflection = new ReflectionClass(Emoji::class);
 
         return array_keys($reflection->getConstants());
     }
 
-    private function getCurrentMethods(): array
+    protected function getCurrentMethods(): array
     {
         $reflection = new ReflectionClass(Emoji::class);
 
@@ -77,14 +77,14 @@ class GenerateCommand extends Command
         return $matches[1] ?? [];
     }
 
-    private function emojiToUnicodeHex(string $emoji)
+    protected function emojiToUnicodeHex(string $emoji)
     {
         return '\u{'.implode('}\u{', array_map(function ($hex) {
             return strtoupper(ltrim($hex, '0'));
         }, str_split(bin2hex(mb_convert_encoding($emoji, 'UTF-32', 'UTF-8')), 8))).'}';
     }
 
-    private function retrieveRemoteFile(string $url)
+    protected function retrieveRemoteFile(string $url)
     {
         $client = new Client();
         $response = $client->get($url);
@@ -96,7 +96,7 @@ class GenerateCommand extends Command
         return $response->getBody();
     }
 
-    private function parseResponse(string $body)
+    protected function parseResponse(string $body)
     {
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'_response.txt', $body);
         $parser = new Parser($body);
@@ -109,7 +109,7 @@ class GenerateCommand extends Command
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'_groups.json', json_encode($this->groups));
     }
 
-    private function deprecatedConstants()
+    protected function deprecatedConstants()
     {
         $currentConstants = $this->getCurrentConstants();
         $deprecatedConstants = array_values(array_diff($currentConstants, array_column($this->emojisArray, 'const')));
@@ -133,7 +133,7 @@ class GenerateCommand extends Command
         }
     }
 
-    private function deprecatedMethods()
+    protected function deprecatedMethods()
     {
         $currentMethods = $this->getCurrentMethods();
         $deprecatedMethods = array_values(array_diff($currentMethods, array_column($this->emojisArray, 'method')));
@@ -156,7 +156,7 @@ class GenerateCommand extends Command
         }
     }
 
-    private function writeClass(string $url)
+    protected function writeClass(string $url)
     {
         $loader = new FilesystemLoader(__DIR__.'/../templates');
         $twig = new Environment($loader, [
