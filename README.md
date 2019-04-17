@@ -33,7 +33,7 @@ The best postcards will get published on the open source page on our website.
 
 You can install the package via composer:
 ``` bash
-$ composer require spatie/emoji
+composer require spatie/emoji
 ```
 
 ## Usage
