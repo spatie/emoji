@@ -49,7 +49,7 @@ class EmojiTest extends TestCase
         $this->assertSame('🇧🇪', Emoji::countryFlag('be'));
         $this->assertSame('🇦🇦', Emoji::countryFlag('AA'));
     }
-    
+
     /** @test */
     public function it_will_properly_multiply_emojis()
     {
