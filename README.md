@@ -49,6 +49,11 @@ Or your can use the shorter method by leaving off "character" and using camelCas
 Emoji::grinningFace();
 ```
 
+Want to repeat the emojis? Fine!
+```php
+Emoji::grinningFace(3);
+```
+
 You can also use an [ISO 3166 Alpha2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code and get the appropriate flag for the country:
 ```php
 Emoji::countryFlag('be'); // 🇧🇪
