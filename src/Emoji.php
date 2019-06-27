@@ -5792,7 +5792,7 @@ class Emoji
 
     public static function __callStatic(string $methodName, array $parameters) : string
     {
-        return static::getCharacter($methodName);
+        return str_repeat(static::getCharacter($methodName), $parameters[0] ?? 0);
     }
 
     protected static function convertCharacterNameToConstantName(string $characterName) : string
