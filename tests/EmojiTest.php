@@ -58,7 +58,6 @@ class EmojiTest extends TestCase
         $this->assertSame('🔟🔟🔟', Emoji::keycap10(3));
     }
 
-
     /**
      * @test
      *
