@@ -62,6 +62,26 @@ class EmojiTest extends TestCase
         Emoji::countryFlag($invalidCountryCode);
     }
 
+    /**
+     * @test
+     *
+     * @dataProvider codeToCallableProvider
+     */
+    public function can_access_emoji_by_constant($name, $code, $cleanName, $const, $method)
+    {
+        $this->assertEquals($this->unicodeHexToEmoji($code), Emoji::{$method}());
+    }
+
+    /**
+     * @test
+     *
+     * @dataProvider codeToCallableProvider
+     */
+    public function can_access_emoji_by_method($name, $code, $cleanName, $const, $method)
+    {
+        $this->assertEquals($this->unicodeHexToEmoji($code), constant(Emoji::class.'::'.$const));
+    }
+
     public function invalidCountryCodeProvider()
     {
         return [
@@ -69,5 +89,17 @@ class EmojiTest extends TestCase
             ['a'],
             ['aaa'],
         ];
+    }
+
+    public function codeToCallableProvider(): array
+    {
+        return json_decode(file_get_contents(__DIR__.'/emojis.json'), true);
+    }
+
+    private function unicodeHexToEmoji(string $code)
+    {
+        return mb_convert_encoding(hex2bin(implode('', array_map(function ($hex) {
+            return str_pad($hex, 8, '0', STR_PAD_LEFT);
+        }, explode(' ', trim(str_replace('}\u{', ' ', $code), '}\u{'))))), 'UTF-8', 'UTF-32');
     }
 }
