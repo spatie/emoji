@@ -42,7 +42,7 @@ class GenerateCommand extends Command
         $output->writeln('Generating package code...');
 
         $output->writeln('Load file...');
-        $url = 'https://unicode.org/Public/emoji/11.0/emoji-test.txt';
+        $url = 'https://unicode.org/Public/emoji/12.0/emoji-test.txt';
         $body = $this->retrieveRemoteFile($url);
 
         $output->writeln('Parse response...');
