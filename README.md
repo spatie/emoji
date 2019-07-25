@@ -54,10 +54,7 @@ You can also use an [ISO 3166 Alpha2](https://en.wikipedia.org/wiki/ISO_3166-1_a
 Emoji::countryFlag('be'); // 🇧🇪
 ```
 
-This package contains Full Emoji List v11.0 (emoji without skin-tones) based on
-https://www.unicode.org/emoji/charts/full-emoji-list.html (retrieval date: 2018-10-16)
-which include Full Emoji Modifier Sequences v11.0 (emoji with skin-tones) based on
-https://www.unicode.org/emoji/charts/full-emoji-modifiers.html (retrieval date: 2018-10-16)
+This package contains Full Emoji List v12.0 based on https://unicode.org/Public/emoji/12.0/emoji-test.txt all methods and constants are auto-generated.
 
 ## Changelog
 
