@@ -67,7 +67,7 @@ class Parser
 
         preg_match('/^([A-Z\d ]+)\s+;\s+(fully-qualified|component)\s+# [^a-z ]* (.+)$/', $line, $matches);
         if (count($matches) === 4) {
-            list(, $code, , $name) = $matches;
+            [, $code, , $name] = $matches;
 
             if (
                 $this->subgroup === 'country-flag'
