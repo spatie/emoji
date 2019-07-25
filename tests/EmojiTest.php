@@ -13,7 +13,7 @@ class EmojiTest extends TestCase
     public function it_can_return_an_emoji_character_when_given_a_constant()
     {
         $this->assertSame('😀', Emoji::CHARACTER_GRINNING_FACE);
-        $this->assertSame('🥰', Emoji::CHARACTER_SMILING_FACE_WITH_3_HEARTS);
+        $this->assertSame('🥰', Emoji::CHARACTER_SMILING_FACE_WITH_HEARTS);
         $this->assertSame('🔟', Emoji::CHARACTER_KEYCAP_10);
     }
 
@@ -21,7 +21,7 @@ class EmojiTest extends TestCase
     public function it_provides_a_convenience_method_to_return_emoji_characters()
     {
         $this->assertSame('😀', Emoji::grinningFace());
-        $this->assertSame('🥰', Emoji::smilingFaceWith3Hearts());
+        $this->assertSame('🥰', Emoji::smilingFaceWithHearts());
         $this->assertSame('🔟', Emoji::keycap10());
         $this->assertSame('🥇', Emoji::firstPlaceMedal());
         $this->assertSame('🥈', Emoji::secondPlaceMedal());
