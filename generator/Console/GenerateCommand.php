@@ -42,7 +42,7 @@ class GenerateCommand extends Command
         $output->writeln('Generating package code...');
 
         $output->writeln('Load file...');
-        $url = 'https://unicode.org/Public/emoji/11.0/emoji-test.txt';
+        $url = 'https://unicode.org/Public/emoji/12.0/emoji-test.txt';
         $body = $this->retrieveRemoteFile($url);
 
         $output->writeln('Parse response...');
@@ -166,7 +166,7 @@ class GenerateCommand extends Command
         $class = $twig->load('Emoji.twig')->render([
             'url' => $url,
             'loaded_at' => $this->now,
-            'version' => 'v11.0',
+            'version' => 'v12.0',
             'groups' => $this->groups,
         ]);
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'.php', $class);
