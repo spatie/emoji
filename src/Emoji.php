@@ -9,8 +9,8 @@ use Spatie\Emoji\Exceptions\CouldNotDetermineFlag;
  * Emoji class.
  *
  * @link https://unicode.org/Public/emoji/12.0/emoji-test.txt
- * @version v11.0
- * loaded at: 2019-07-24 19:26:19
+ * @version v12.0
+ * loaded at: 2019-07-25 08:24:05
  *
  * ##### Emoji group: SMILEYS & EMOTION #####
  * ##### Emoji subgroup: FACE-SMILING #####

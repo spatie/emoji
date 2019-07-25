@@ -166,7 +166,7 @@ class GenerateCommand extends Command
         $class = $twig->load('Emoji.twig')->render([
             'url' => $url,
             'loaded_at' => $this->now,
-            'version' => 'v11.0',
+            'version' => 'v12.0',
             'groups' => $this->groups,
         ]);
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'.php', $class);
