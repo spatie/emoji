@@ -7,13 +7,13 @@
 [![StyleCI](https://styleci.io/repos/51245349/shield?branch=master)](https://styleci.io/repos/51245349)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/emoji.svg?style=flat-square)](https://packagist.org/packages/spatie/emoji)
 
-In PHP you can display emoji characters just by typing them:
+In PHP, you can display emoji characters just by typing them:
 
 ```php
 echo "😃";
 ```
 
-This package provides some functionality to work with emoji's if your IDE or used font can't render them correctly:
+This package provides some functionality to work with emojis if your IDE or used font can't render them correctly:
 
 ```php
 Emoji::grinningFace();
@@ -44,7 +44,7 @@ The `Spatie\Emoji\Emoji`-class contains character constants that may be used dir
 Emoji::CHARACTER_GRINNING_FACE;
 ```
 
-Or your can use the shorter method by leaving off "character" and using camelCase:
+Or you can use the shorter method by leaving off "character" and using camelCase:
 ```php
 Emoji::grinningFace();
 ```
@@ -68,7 +68,7 @@ $ composer test
 
 ## Contributing
 
-We are accepting PR's that add characters to the class.
+We are accepting PRs that add characters to the class.
 Please use [this list](http://unicode.org/emoji/charts/full-emoji-list.html) to look up the unicode value and
 the name of the character.
 
