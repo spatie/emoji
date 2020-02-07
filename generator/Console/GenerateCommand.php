@@ -80,7 +80,7 @@ class GenerateCommand extends Command
     protected function emojiToUnicodeHex(string $emoji)
     {
         return '\u{'.implode('}\u{', array_map(function ($hex) {
-            return strtoupper(ltrim($hex, '0'));
+            return mb_strtoupper(ltrim($hex, '0'));
         }, str_split(bin2hex(mb_convert_encoding($emoji, 'UTF-32', 'UTF-8')), 8))).'}';
     }
 
