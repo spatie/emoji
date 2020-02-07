@@ -2,8 +2,8 @@
 
 namespace Spatie\Emoji;
 
-use Spatie\Emoji\Exceptions\UnknownCharacter;
 use Spatie\Emoji\Exceptions\CouldNotDetermineFlag;
+use Spatie\Emoji\Exceptions\UnknownCharacter;
 
 /**
  * Emoji class.
@@ -6268,7 +6268,7 @@ class Emoji
     const CHARACTER_FLAGS_FOR_FLAG_SCOTLAND = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}";
     const CHARACTER_FLAGS_FOR_FLAG_WALES = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0077}\u{E006C}\u{E0073}\u{E007F}";
 
-    public static function getCharacter(string $characterName) : string
+    public static function getCharacter(string $characterName): string
     {
         $constantName = static::convertCharacterNameToConstantName($characterName);
 
@@ -6279,7 +6279,7 @@ class Emoji
         return constant('static::'.$constantName);
     }
 
-    public static function countryFlag(string $countryCode) : string
+    public static function countryFlag(string $countryCode): string
     {
         if (strlen($countryCode) !== 2) {
             throw CouldNotDetermineFlag::countryCodeLenghtIsWrong($countryCode);
@@ -6290,12 +6290,12 @@ class Emoji
         return static::encodeCountryCodeLetter($countryCode[0]).static::encodeCountryCodeLetter($countryCode[1]);
     }
 
-    public static function __callStatic(string $methodName, array $parameters) : string
+    public static function __callStatic(string $methodName, array $parameters): string
     {
         return static::getCharacter($methodName);
     }
 
-    protected static function convertCharacterNameToConstantName(string $characterName) : string
+    protected static function convertCharacterNameToConstantName(string $characterName): string
     {
         $partialConstantName = static::convertToSnakeCase($characterName);
 
@@ -6304,7 +6304,7 @@ class Emoji
         return $constantName;
     }
 
-    protected static function convertToSnakeCase(string $value) : string
+    protected static function convertToSnakeCase(string $value): string
     {
         if (! ctype_lower($value)) {
             $value = preg_replace('/\s+/', '', $value);
@@ -6315,7 +6315,7 @@ class Emoji
         return $value;
     }
 
-    protected static function encodeCountryCodeLetter(string $letter) : string
+    protected static function encodeCountryCodeLetter(string $letter): string
     {
         return mb_convert_encoding('&#'.(127397 + ord($letter)).';', 'UTF-8', 'HTML-ENTITIES');
     }
