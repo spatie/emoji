@@ -2,15 +2,15 @@
 
 namespace Spatie\Emoji\Generator\Console;
 
-use ReflectionClass;
-use Twig\Environment;
 use GuzzleHttp\Client;
+use ReflectionClass;
 use Spatie\Emoji\Emoji;
-use Twig\Loader\FilesystemLoader;
 use Spatie\Emoji\Generator\Parser;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
 
 class GenerateCommand extends Command
 {
