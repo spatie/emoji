@@ -2,6 +2,10 @@
 
 All notable changes to `emoji` will be documented in this file
 
+## 2.1.2 - 2020-02-07
+
+- change uppercase function to mb_strtoupper instead of strtoupper (#40)
+
 ## 2.1.1 - 2018-03-22
 
 - fix methods starting with numbers
