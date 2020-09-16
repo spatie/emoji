@@ -2,7 +2,7 @@
 
 All notable changes to `emoji` will be documented in this file
 
-## 2.1.3 - unreleased
+## 2.1.3 - 2020-09-16
 
 - update generator template to use mb_* functions to match (#40)
 - adjust generator emoji name parsing to filter out emoji version string (e.g. E1.0, E0.9, etc)
