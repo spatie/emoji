@@ -14,6 +14,9 @@ use Twig\Loader\FilesystemLoader;
 
 class GenerateCommand extends Command
 {
+    /** @var string */
+    protected const EMOJI_VERSION = '12.1';
+
     /** @var int */
     protected $now;
 
@@ -42,7 +45,7 @@ class GenerateCommand extends Command
         $output->writeln('Generating package code...');
 
         $output->writeln('Load file...');
-        $url = 'https://unicode.org/Public/emoji/12.0/emoji-test.txt';
+        $url = 'https://unicode.org/Public/emoji/'.self::EMOJI_VERSION.'/emoji-test.txt';
         $body = $this->retrieveRemoteFile($url);
 
         $output->writeln('Parse response...');
@@ -166,7 +169,7 @@ class GenerateCommand extends Command
         $class = $twig->load('Emoji.twig')->render([
             'url' => $url,
             'loaded_at' => $this->now,
-            'version' => 'v12.0',
+            'version' => 'v'.self::EMOJI_VERSION,
             'groups' => $this->groups,
         ]);
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'.php', $class);

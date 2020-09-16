@@ -8,9 +8,9 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
 /**
  * Emoji class.
  *
- * @link https://unicode.org/Public/emoji/12.0/emoji-test.txt
- * @version v12.0
- * loaded at: 2019-07-25 08:24:05
+ * @link https://unicode.org/Public/emoji/12.1/emoji-test.txt
+ * @version v12.1
+ * loaded at: 2020-09-16 03:28:18
  *
  * ##### Emoji group: SMILEYS & EMOTION #####
  * ##### Emoji subgroup: FACE-SMILING #####
@@ -472,12 +472,6 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string manMediumSkinToneBeard()
  * @method static string manMediumDarkSkinToneBeard()
  * @method static string manDarkSkinToneBeard()
- * @method static string manBlondHair()
- * @method static string manLightSkinToneBlondHair()
- * @method static string manMediumLightSkinToneBlondHair()
- * @method static string manMediumSkinToneBlondHair()
- * @method static string manMediumDarkSkinToneBlondHair()
- * @method static string manDarkSkinToneBlondHair()
  * @method static string manRedHair()
  * @method static string manLightSkinToneRedHair()
  * @method static string manMediumLightSkinToneRedHair()
@@ -508,36 +502,66 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanMediumSkinTone()
  * @method static string womanMediumDarkSkinTone()
  * @method static string womanDarkSkinTone()
- * @method static string womanBlondHair()
- * @method static string womanLightSkinToneBlondHair()
- * @method static string womanMediumLightSkinToneBlondHair()
- * @method static string womanMediumSkinToneBlondHair()
- * @method static string womanMediumDarkSkinToneBlondHair()
- * @method static string womanDarkSkinToneBlondHair()
  * @method static string womanRedHair()
  * @method static string womanLightSkinToneRedHair()
  * @method static string womanMediumLightSkinToneRedHair()
  * @method static string womanMediumSkinToneRedHair()
  * @method static string womanMediumDarkSkinToneRedHair()
  * @method static string womanDarkSkinToneRedHair()
+ * @method static string personRedHair()
+ * @method static string personLightSkinToneRedHair()
+ * @method static string personMediumLightSkinToneRedHair()
+ * @method static string personMediumSkinToneRedHair()
+ * @method static string personMediumDarkSkinToneRedHair()
+ * @method static string personDarkSkinToneRedHair()
  * @method static string womanCurlyHair()
  * @method static string womanLightSkinToneCurlyHair()
  * @method static string womanMediumLightSkinToneCurlyHair()
  * @method static string womanMediumSkinToneCurlyHair()
  * @method static string womanMediumDarkSkinToneCurlyHair()
  * @method static string womanDarkSkinToneCurlyHair()
+ * @method static string personCurlyHair()
+ * @method static string personLightSkinToneCurlyHair()
+ * @method static string personMediumLightSkinToneCurlyHair()
+ * @method static string personMediumSkinToneCurlyHair()
+ * @method static string personMediumDarkSkinToneCurlyHair()
+ * @method static string personDarkSkinToneCurlyHair()
  * @method static string womanWhiteHair()
  * @method static string womanLightSkinToneWhiteHair()
  * @method static string womanMediumLightSkinToneWhiteHair()
  * @method static string womanMediumSkinToneWhiteHair()
  * @method static string womanMediumDarkSkinToneWhiteHair()
  * @method static string womanDarkSkinToneWhiteHair()
+ * @method static string personWhiteHair()
+ * @method static string personLightSkinToneWhiteHair()
+ * @method static string personMediumLightSkinToneWhiteHair()
+ * @method static string personMediumSkinToneWhiteHair()
+ * @method static string personMediumDarkSkinToneWhiteHair()
+ * @method static string personDarkSkinToneWhiteHair()
  * @method static string womanBald()
  * @method static string womanLightSkinToneBald()
  * @method static string womanMediumLightSkinToneBald()
  * @method static string womanMediumSkinToneBald()
  * @method static string womanMediumDarkSkinToneBald()
  * @method static string womanDarkSkinToneBald()
+ * @method static string personBald()
+ * @method static string personLightSkinToneBald()
+ * @method static string personMediumLightSkinToneBald()
+ * @method static string personMediumSkinToneBald()
+ * @method static string personMediumDarkSkinToneBald()
+ * @method static string personDarkSkinToneBald()
+ * @method static string womanBlondHair()
+ * @method static string womanLightSkinToneBlondHair()
+ * @method static string womanMediumLightSkinToneBlondHair()
+ * @method static string womanMediumSkinToneBlondHair()
+ * @method static string womanMediumDarkSkinToneBlondHair()
+ * @method static string womanDarkSkinToneBlondHair()
+ * @method static string manBlondHair()
+ * @method static string manLightSkinToneBlondHair()
+ * @method static string manMediumLightSkinToneBlondHair()
+ * @method static string manMediumSkinToneBlondHair()
+ * @method static string manMediumDarkSkinToneBlondHair()
+ * @method static string manDarkSkinToneBlondHair()
  * @method static string olderPerson()
  * @method static string olderPersonLightSkinTone()
  * @method static string olderPersonMediumLightSkinTone()
@@ -738,6 +762,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanShruggingMediumDarkSkinTone()
  * @method static string womanShruggingDarkSkinTone()
  * ##### Emoji subgroup: PERSON-ROLE #####
+ * @method static string healthWorker()
+ * @method static string healthWorkerLightSkinTone()
+ * @method static string healthWorkerMediumLightSkinTone()
+ * @method static string healthWorkerMediumSkinTone()
+ * @method static string healthWorkerMediumDarkSkinTone()
+ * @method static string healthWorkerDarkSkinTone()
  * @method static string manHealthWorker()
  * @method static string manHealthWorkerLightSkinTone()
  * @method static string manHealthWorkerMediumLightSkinTone()
@@ -750,6 +780,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanHealthWorkerMediumSkinTone()
  * @method static string womanHealthWorkerMediumDarkSkinTone()
  * @method static string womanHealthWorkerDarkSkinTone()
+ * @method static string student()
+ * @method static string studentLightSkinTone()
+ * @method static string studentMediumLightSkinTone()
+ * @method static string studentMediumSkinTone()
+ * @method static string studentMediumDarkSkinTone()
+ * @method static string studentDarkSkinTone()
  * @method static string manStudent()
  * @method static string manStudentLightSkinTone()
  * @method static string manStudentMediumLightSkinTone()
@@ -762,6 +798,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanStudentMediumSkinTone()
  * @method static string womanStudentMediumDarkSkinTone()
  * @method static string womanStudentDarkSkinTone()
+ * @method static string teacher()
+ * @method static string teacherLightSkinTone()
+ * @method static string teacherMediumLightSkinTone()
+ * @method static string teacherMediumSkinTone()
+ * @method static string teacherMediumDarkSkinTone()
+ * @method static string teacherDarkSkinTone()
  * @method static string manTeacher()
  * @method static string manTeacherLightSkinTone()
  * @method static string manTeacherMediumLightSkinTone()
@@ -774,6 +816,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanTeacherMediumSkinTone()
  * @method static string womanTeacherMediumDarkSkinTone()
  * @method static string womanTeacherDarkSkinTone()
+ * @method static string judge()
+ * @method static string judgeLightSkinTone()
+ * @method static string judgeMediumLightSkinTone()
+ * @method static string judgeMediumSkinTone()
+ * @method static string judgeMediumDarkSkinTone()
+ * @method static string judgeDarkSkinTone()
  * @method static string manJudge()
  * @method static string manJudgeLightSkinTone()
  * @method static string manJudgeMediumLightSkinTone()
@@ -786,6 +834,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanJudgeMediumSkinTone()
  * @method static string womanJudgeMediumDarkSkinTone()
  * @method static string womanJudgeDarkSkinTone()
+ * @method static string farmer()
+ * @method static string farmerLightSkinTone()
+ * @method static string farmerMediumLightSkinTone()
+ * @method static string farmerMediumSkinTone()
+ * @method static string farmerMediumDarkSkinTone()
+ * @method static string farmerDarkSkinTone()
  * @method static string manFarmer()
  * @method static string manFarmerLightSkinTone()
  * @method static string manFarmerMediumLightSkinTone()
@@ -798,6 +852,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanFarmerMediumSkinTone()
  * @method static string womanFarmerMediumDarkSkinTone()
  * @method static string womanFarmerDarkSkinTone()
+ * @method static string cook()
+ * @method static string cookLightSkinTone()
+ * @method static string cookMediumLightSkinTone()
+ * @method static string cookMediumSkinTone()
+ * @method static string cookMediumDarkSkinTone()
+ * @method static string cookDarkSkinTone()
  * @method static string manCook()
  * @method static string manCookLightSkinTone()
  * @method static string manCookMediumLightSkinTone()
@@ -810,6 +870,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanCookMediumSkinTone()
  * @method static string womanCookMediumDarkSkinTone()
  * @method static string womanCookDarkSkinTone()
+ * @method static string mechanic()
+ * @method static string mechanicLightSkinTone()
+ * @method static string mechanicMediumLightSkinTone()
+ * @method static string mechanicMediumSkinTone()
+ * @method static string mechanicMediumDarkSkinTone()
+ * @method static string mechanicDarkSkinTone()
  * @method static string manMechanic()
  * @method static string manMechanicLightSkinTone()
  * @method static string manMechanicMediumLightSkinTone()
@@ -822,6 +888,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanMechanicMediumSkinTone()
  * @method static string womanMechanicMediumDarkSkinTone()
  * @method static string womanMechanicDarkSkinTone()
+ * @method static string factoryWorker()
+ * @method static string factoryWorkerLightSkinTone()
+ * @method static string factoryWorkerMediumLightSkinTone()
+ * @method static string factoryWorkerMediumSkinTone()
+ * @method static string factoryWorkerMediumDarkSkinTone()
+ * @method static string factoryWorkerDarkSkinTone()
  * @method static string manFactoryWorker()
  * @method static string manFactoryWorkerLightSkinTone()
  * @method static string manFactoryWorkerMediumLightSkinTone()
@@ -834,6 +906,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanFactoryWorkerMediumSkinTone()
  * @method static string womanFactoryWorkerMediumDarkSkinTone()
  * @method static string womanFactoryWorkerDarkSkinTone()
+ * @method static string officeWorker()
+ * @method static string officeWorkerLightSkinTone()
+ * @method static string officeWorkerMediumLightSkinTone()
+ * @method static string officeWorkerMediumSkinTone()
+ * @method static string officeWorkerMediumDarkSkinTone()
+ * @method static string officeWorkerDarkSkinTone()
  * @method static string manOfficeWorker()
  * @method static string manOfficeWorkerLightSkinTone()
  * @method static string manOfficeWorkerMediumLightSkinTone()
@@ -846,6 +924,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanOfficeWorkerMediumSkinTone()
  * @method static string womanOfficeWorkerMediumDarkSkinTone()
  * @method static string womanOfficeWorkerDarkSkinTone()
+ * @method static string scientist()
+ * @method static string scientistLightSkinTone()
+ * @method static string scientistMediumLightSkinTone()
+ * @method static string scientistMediumSkinTone()
+ * @method static string scientistMediumDarkSkinTone()
+ * @method static string scientistDarkSkinTone()
  * @method static string manScientist()
  * @method static string manScientistLightSkinTone()
  * @method static string manScientistMediumLightSkinTone()
@@ -858,6 +942,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanScientistMediumSkinTone()
  * @method static string womanScientistMediumDarkSkinTone()
  * @method static string womanScientistDarkSkinTone()
+ * @method static string technologist()
+ * @method static string technologistLightSkinTone()
+ * @method static string technologistMediumLightSkinTone()
+ * @method static string technologistMediumSkinTone()
+ * @method static string technologistMediumDarkSkinTone()
+ * @method static string technologistDarkSkinTone()
  * @method static string manTechnologist()
  * @method static string manTechnologistLightSkinTone()
  * @method static string manTechnologistMediumLightSkinTone()
@@ -870,6 +960,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanTechnologistMediumSkinTone()
  * @method static string womanTechnologistMediumDarkSkinTone()
  * @method static string womanTechnologistDarkSkinTone()
+ * @method static string singer()
+ * @method static string singerLightSkinTone()
+ * @method static string singerMediumLightSkinTone()
+ * @method static string singerMediumSkinTone()
+ * @method static string singerMediumDarkSkinTone()
+ * @method static string singerDarkSkinTone()
  * @method static string manSinger()
  * @method static string manSingerLightSkinTone()
  * @method static string manSingerMediumLightSkinTone()
@@ -882,6 +978,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanSingerMediumSkinTone()
  * @method static string womanSingerMediumDarkSkinTone()
  * @method static string womanSingerDarkSkinTone()
+ * @method static string artist()
+ * @method static string artistLightSkinTone()
+ * @method static string artistMediumLightSkinTone()
+ * @method static string artistMediumSkinTone()
+ * @method static string artistMediumDarkSkinTone()
+ * @method static string artistDarkSkinTone()
  * @method static string manArtist()
  * @method static string manArtistLightSkinTone()
  * @method static string manArtistMediumLightSkinTone()
@@ -894,6 +996,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanArtistMediumSkinTone()
  * @method static string womanArtistMediumDarkSkinTone()
  * @method static string womanArtistDarkSkinTone()
+ * @method static string pilot()
+ * @method static string pilotLightSkinTone()
+ * @method static string pilotMediumLightSkinTone()
+ * @method static string pilotMediumSkinTone()
+ * @method static string pilotMediumDarkSkinTone()
+ * @method static string pilotDarkSkinTone()
  * @method static string manPilot()
  * @method static string manPilotLightSkinTone()
  * @method static string manPilotMediumLightSkinTone()
@@ -906,6 +1014,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanPilotMediumSkinTone()
  * @method static string womanPilotMediumDarkSkinTone()
  * @method static string womanPilotDarkSkinTone()
+ * @method static string astronaut()
+ * @method static string astronautLightSkinTone()
+ * @method static string astronautMediumLightSkinTone()
+ * @method static string astronautMediumSkinTone()
+ * @method static string astronautMediumDarkSkinTone()
+ * @method static string astronautDarkSkinTone()
  * @method static string manAstronaut()
  * @method static string manAstronautLightSkinTone()
  * @method static string manAstronautMediumLightSkinTone()
@@ -918,6 +1032,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanAstronautMediumSkinTone()
  * @method static string womanAstronautMediumDarkSkinTone()
  * @method static string womanAstronautDarkSkinTone()
+ * @method static string firefighter()
+ * @method static string firefighterLightSkinTone()
+ * @method static string firefighterMediumLightSkinTone()
+ * @method static string firefighterMediumSkinTone()
+ * @method static string firefighterMediumDarkSkinTone()
+ * @method static string firefighterDarkSkinTone()
  * @method static string manFirefighter()
  * @method static string manFirefighterLightSkinTone()
  * @method static string manFirefighterMediumLightSkinTone()
@@ -1032,12 +1152,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanWearingTurbanMediumSkinTone()
  * @method static string womanWearingTurbanMediumDarkSkinTone()
  * @method static string womanWearingTurbanDarkSkinTone()
- * @method static string manWithChineseCap()
- * @method static string manWithChineseCapLightSkinTone()
- * @method static string manWithChineseCapMediumLightSkinTone()
- * @method static string manWithChineseCapMediumSkinTone()
- * @method static string manWithChineseCapMediumDarkSkinTone()
- * @method static string manWithChineseCapDarkSkinTone()
+ * @method static string manWithSkullcap()
+ * @method static string manWithSkullcapLightSkinTone()
+ * @method static string manWithSkullcapMediumLightSkinTone()
+ * @method static string manWithSkullcapMediumSkinTone()
+ * @method static string manWithSkullcapMediumDarkSkinTone()
+ * @method static string manWithSkullcapDarkSkinTone()
  * @method static string womanWithHeadscarf()
  * @method static string womanWithHeadscarfLightSkinTone()
  * @method static string womanWithHeadscarfMediumLightSkinTone()
@@ -1310,6 +1430,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanKneelingMediumSkinTone()
  * @method static string womanKneelingMediumDarkSkinTone()
  * @method static string womanKneelingDarkSkinTone()
+ * @method static string personWithProbingCane()
+ * @method static string personWithProbingCaneLightSkinTone()
+ * @method static string personWithProbingCaneMediumLightSkinTone()
+ * @method static string personWithProbingCaneMediumSkinTone()
+ * @method static string personWithProbingCaneMediumDarkSkinTone()
+ * @method static string personWithProbingCaneDarkSkinTone()
  * @method static string manWithProbingCane()
  * @method static string manWithProbingCaneLightSkinTone()
  * @method static string manWithProbingCaneMediumLightSkinTone()
@@ -1322,6 +1448,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanWithProbingCaneMediumSkinTone()
  * @method static string womanWithProbingCaneMediumDarkSkinTone()
  * @method static string womanWithProbingCaneDarkSkinTone()
+ * @method static string personInMotorizedWheelchair()
+ * @method static string personInMotorizedWheelchairLightSkinTone()
+ * @method static string personInMotorizedWheelchairMediumLightSkinTone()
+ * @method static string personInMotorizedWheelchairMediumSkinTone()
+ * @method static string personInMotorizedWheelchairMediumDarkSkinTone()
+ * @method static string personInMotorizedWheelchairDarkSkinTone()
  * @method static string manInMotorizedWheelchair()
  * @method static string manInMotorizedWheelchairLightSkinTone()
  * @method static string manInMotorizedWheelchairMediumLightSkinTone()
@@ -1334,6 +1466,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanInMotorizedWheelchairMediumSkinTone()
  * @method static string womanInMotorizedWheelchairMediumDarkSkinTone()
  * @method static string womanInMotorizedWheelchairDarkSkinTone()
+ * @method static string personInManualWheelchair()
+ * @method static string personInManualWheelchairLightSkinTone()
+ * @method static string personInManualWheelchairMediumLightSkinTone()
+ * @method static string personInManualWheelchairMediumSkinTone()
+ * @method static string personInManualWheelchairMediumDarkSkinTone()
+ * @method static string personInManualWheelchairDarkSkinTone()
  * @method static string manInManualWheelchair()
  * @method static string manInManualWheelchairLightSkinTone()
  * @method static string manInManualWheelchairMediumLightSkinTone()
@@ -1689,15 +1827,25 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * ##### Emoji subgroup: FAMILY #####
  * @method static string peopleHoldingHands()
  * @method static string peopleHoldingHandsLightSkinTone()
+ * @method static string peopleHoldingHandsLightSkinToneMediumLightSkinTone()
+ * @method static string peopleHoldingHandsLightSkinToneMediumSkinTone()
+ * @method static string peopleHoldingHandsLightSkinToneMediumDarkSkinTone()
+ * @method static string peopleHoldingHandsLightSkinToneDarkSkinTone()
  * @method static string peopleHoldingHandsMediumLightSkinToneLightSkinTone()
  * @method static string peopleHoldingHandsMediumLightSkinTone()
+ * @method static string peopleHoldingHandsMediumLightSkinToneMediumSkinTone()
+ * @method static string peopleHoldingHandsMediumLightSkinToneMediumDarkSkinTone()
+ * @method static string peopleHoldingHandsMediumLightSkinToneDarkSkinTone()
  * @method static string peopleHoldingHandsMediumSkinToneLightSkinTone()
  * @method static string peopleHoldingHandsMediumSkinToneMediumLightSkinTone()
  * @method static string peopleHoldingHandsMediumSkinTone()
+ * @method static string peopleHoldingHandsMediumSkinToneMediumDarkSkinTone()
+ * @method static string peopleHoldingHandsMediumSkinToneDarkSkinTone()
  * @method static string peopleHoldingHandsMediumDarkSkinToneLightSkinTone()
  * @method static string peopleHoldingHandsMediumDarkSkinToneMediumLightSkinTone()
  * @method static string peopleHoldingHandsMediumDarkSkinToneMediumSkinTone()
  * @method static string peopleHoldingHandsMediumDarkSkinTone()
+ * @method static string peopleHoldingHandsMediumDarkSkinToneDarkSkinTone()
  * @method static string peopleHoldingHandsDarkSkinToneLightSkinTone()
  * @method static string peopleHoldingHandsDarkSkinToneMediumLightSkinTone()
  * @method static string peopleHoldingHandsDarkSkinToneMediumSkinTone()
@@ -1705,15 +1853,25 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string peopleHoldingHandsDarkSkinTone()
  * @method static string womenHoldingHands()
  * @method static string womenHoldingHandsLightSkinTone()
+ * @method static string womenHoldingHandsLightSkinToneMediumLightSkinTone()
+ * @method static string womenHoldingHandsLightSkinToneMediumSkinTone()
+ * @method static string womenHoldingHandsLightSkinToneMediumDarkSkinTone()
+ * @method static string womenHoldingHandsLightSkinToneDarkSkinTone()
  * @method static string womenHoldingHandsMediumLightSkinToneLightSkinTone()
  * @method static string womenHoldingHandsMediumLightSkinTone()
+ * @method static string womenHoldingHandsMediumLightSkinToneMediumSkinTone()
+ * @method static string womenHoldingHandsMediumLightSkinToneMediumDarkSkinTone()
+ * @method static string womenHoldingHandsMediumLightSkinToneDarkSkinTone()
  * @method static string womenHoldingHandsMediumSkinToneLightSkinTone()
  * @method static string womenHoldingHandsMediumSkinToneMediumLightSkinTone()
  * @method static string womenHoldingHandsMediumSkinTone()
+ * @method static string womenHoldingHandsMediumSkinToneMediumDarkSkinTone()
+ * @method static string womenHoldingHandsMediumSkinToneDarkSkinTone()
  * @method static string womenHoldingHandsMediumDarkSkinToneLightSkinTone()
  * @method static string womenHoldingHandsMediumDarkSkinToneMediumLightSkinTone()
  * @method static string womenHoldingHandsMediumDarkSkinToneMediumSkinTone()
  * @method static string womenHoldingHandsMediumDarkSkinTone()
+ * @method static string womenHoldingHandsMediumDarkSkinToneDarkSkinTone()
  * @method static string womenHoldingHandsDarkSkinToneLightSkinTone()
  * @method static string womenHoldingHandsDarkSkinToneMediumLightSkinTone()
  * @method static string womenHoldingHandsDarkSkinToneMediumSkinTone()
@@ -1747,15 +1905,25 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanAndManHoldingHandsDarkSkinTone()
  * @method static string menHoldingHands()
  * @method static string menHoldingHandsLightSkinTone()
+ * @method static string menHoldingHandsLightSkinToneMediumLightSkinTone()
+ * @method static string menHoldingHandsLightSkinToneMediumSkinTone()
+ * @method static string menHoldingHandsLightSkinToneMediumDarkSkinTone()
+ * @method static string menHoldingHandsLightSkinToneDarkSkinTone()
  * @method static string menHoldingHandsMediumLightSkinToneLightSkinTone()
  * @method static string menHoldingHandsMediumLightSkinTone()
+ * @method static string menHoldingHandsMediumLightSkinToneMediumSkinTone()
+ * @method static string menHoldingHandsMediumLightSkinToneMediumDarkSkinTone()
+ * @method static string menHoldingHandsMediumLightSkinToneDarkSkinTone()
  * @method static string menHoldingHandsMediumSkinToneLightSkinTone()
  * @method static string menHoldingHandsMediumSkinToneMediumLightSkinTone()
  * @method static string menHoldingHandsMediumSkinTone()
+ * @method static string menHoldingHandsMediumSkinToneMediumDarkSkinTone()
+ * @method static string menHoldingHandsMediumSkinToneDarkSkinTone()
  * @method static string menHoldingHandsMediumDarkSkinToneLightSkinTone()
  * @method static string menHoldingHandsMediumDarkSkinToneMediumLightSkinTone()
  * @method static string menHoldingHandsMediumDarkSkinToneMediumSkinTone()
  * @method static string menHoldingHandsMediumDarkSkinTone()
+ * @method static string menHoldingHandsMediumDarkSkinToneDarkSkinTone()
  * @method static string menHoldingHandsDarkSkinToneLightSkinTone()
  * @method static string menHoldingHandsDarkSkinToneMediumLightSkinTone()
  * @method static string menHoldingHandsDarkSkinToneMediumSkinTone()
@@ -2070,7 +2238,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string cupWithStraw()
  * @method static string beverageBox()
  * @method static string mate()
- * @method static string iceCube()
+ * @method static string ice()
  * ##### Emoji subgroup: DISHWARE #####
  * @method static string chopsticks()
  * @method static string forkAndKnifeWithPlate()
@@ -2403,7 +2571,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string kimono()
  * @method static string sari()
  * @method static string onePieceSwimsuit()
- * @method static string swimBrief()
+ * @method static string briefs()
  * @method static string shorts()
  * @method static string bikini()
  * @method static string womanSClothes()
@@ -2468,7 +2636,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * ##### Emoji subgroup: COMPUTER #####
  * @method static string battery()
  * @method static string electricPlug()
- * @method static string laptopComputer()
+ * @method static string laptop()
  * @method static string desktopComputer()
  * @method static string printer()
  * @method static string keyboard()
@@ -3025,7 +3193,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flagsForFlagStMartin()
  * @method static string flagsForFlagMadagascar()
  * @method static string flagsForFlagMarshallIslands()
- * @method static string flagsForFlagMacedonia()
+ * @method static string flagsForFlagNorthMacedonia()
  * @method static string flagsForFlagMali()
  * @method static string flagsForFlagMyanmarBurma()
  * @method static string flagsForFlagMongolia()
@@ -3601,12 +3769,6 @@ class Emoji
     const CHARACTER_MAN_MEDIUM_SKIN_TONE_BEARD = "\u{1F9D4}\u{1F3FD}";
     const CHARACTER_MAN_MEDIUM_DARK_SKIN_TONE_BEARD = "\u{1F9D4}\u{1F3FE}";
     const CHARACTER_MAN_DARK_SKIN_TONE_BEARD = "\u{1F9D4}\u{1F3FF}";
-    const CHARACTER_MAN_BLOND_HAIR = "\u{1F471}\u{200D}\u{2642}\u{FE0F}";
-    const CHARACTER_MAN_LIGHT_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FB}\u{200D}\u{2642}\u{FE0F}";
-    const CHARACTER_MAN_MEDIUM_LIGHT_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FC}\u{200D}\u{2642}\u{FE0F}";
-    const CHARACTER_MAN_MEDIUM_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FD}\u{200D}\u{2642}\u{FE0F}";
-    const CHARACTER_MAN_MEDIUM_DARK_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FE}\u{200D}\u{2642}\u{FE0F}";
-    const CHARACTER_MAN_DARK_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FF}\u{200D}\u{2642}\u{FE0F}";
     const CHARACTER_MAN_RED_HAIR = "\u{1F468}\u{200D}\u{1F9B0}";
     const CHARACTER_MAN_LIGHT_SKIN_TONE_RED_HAIR = "\u{1F468}\u{1F3FB}\u{200D}\u{1F9B0}";
     const CHARACTER_MAN_MEDIUM_LIGHT_SKIN_TONE_RED_HAIR = "\u{1F468}\u{1F3FC}\u{200D}\u{1F9B0}";
@@ -3637,36 +3799,66 @@ class Emoji
     const CHARACTER_WOMAN_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}";
     const CHARACTER_WOMAN_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}";
     const CHARACTER_WOMAN_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}";
-    const CHARACTER_WOMAN_BLOND_HAIR = "\u{1F471}\u{200D}\u{2640}\u{FE0F}";
-    const CHARACTER_WOMAN_LIGHT_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FB}\u{200D}\u{2640}\u{FE0F}";
-    const CHARACTER_WOMAN_MEDIUM_LIGHT_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FC}\u{200D}\u{2640}\u{FE0F}";
-    const CHARACTER_WOMAN_MEDIUM_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FD}\u{200D}\u{2640}\u{FE0F}";
-    const CHARACTER_WOMAN_MEDIUM_DARK_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FE}\u{200D}\u{2640}\u{FE0F}";
-    const CHARACTER_WOMAN_DARK_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FF}\u{200D}\u{2640}\u{FE0F}";
     const CHARACTER_WOMAN_RED_HAIR = "\u{1F469}\u{200D}\u{1F9B0}";
     const CHARACTER_WOMAN_LIGHT_SKIN_TONE_RED_HAIR = "\u{1F469}\u{1F3FB}\u{200D}\u{1F9B0}";
     const CHARACTER_WOMAN_MEDIUM_LIGHT_SKIN_TONE_RED_HAIR = "\u{1F469}\u{1F3FC}\u{200D}\u{1F9B0}";
     const CHARACTER_WOMAN_MEDIUM_SKIN_TONE_RED_HAIR = "\u{1F469}\u{1F3FD}\u{200D}\u{1F9B0}";
     const CHARACTER_WOMAN_MEDIUM_DARK_SKIN_TONE_RED_HAIR = "\u{1F469}\u{1F3FE}\u{200D}\u{1F9B0}";
     const CHARACTER_WOMAN_DARK_SKIN_TONE_RED_HAIR = "\u{1F469}\u{1F3FF}\u{200D}\u{1F9B0}";
+    const CHARACTER_PERSON_RED_HAIR = "\u{1F9D1}\u{200D}\u{1F9B0}";
+    const CHARACTER_PERSON_LIGHT_SKIN_TONE_RED_HAIR = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F9B0}";
+    const CHARACTER_PERSON_MEDIUM_LIGHT_SKIN_TONE_RED_HAIR = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F9B0}";
+    const CHARACTER_PERSON_MEDIUM_SKIN_TONE_RED_HAIR = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F9B0}";
+    const CHARACTER_PERSON_MEDIUM_DARK_SKIN_TONE_RED_HAIR = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F9B0}";
+    const CHARACTER_PERSON_DARK_SKIN_TONE_RED_HAIR = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F9B0}";
     const CHARACTER_WOMAN_CURLY_HAIR = "\u{1F469}\u{200D}\u{1F9B1}";
     const CHARACTER_WOMAN_LIGHT_SKIN_TONE_CURLY_HAIR = "\u{1F469}\u{1F3FB}\u{200D}\u{1F9B1}";
     const CHARACTER_WOMAN_MEDIUM_LIGHT_SKIN_TONE_CURLY_HAIR = "\u{1F469}\u{1F3FC}\u{200D}\u{1F9B1}";
     const CHARACTER_WOMAN_MEDIUM_SKIN_TONE_CURLY_HAIR = "\u{1F469}\u{1F3FD}\u{200D}\u{1F9B1}";
     const CHARACTER_WOMAN_MEDIUM_DARK_SKIN_TONE_CURLY_HAIR = "\u{1F469}\u{1F3FE}\u{200D}\u{1F9B1}";
     const CHARACTER_WOMAN_DARK_SKIN_TONE_CURLY_HAIR = "\u{1F469}\u{1F3FF}\u{200D}\u{1F9B1}";
+    const CHARACTER_PERSON_CURLY_HAIR = "\u{1F9D1}\u{200D}\u{1F9B1}";
+    const CHARACTER_PERSON_LIGHT_SKIN_TONE_CURLY_HAIR = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F9B1}";
+    const CHARACTER_PERSON_MEDIUM_LIGHT_SKIN_TONE_CURLY_HAIR = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F9B1}";
+    const CHARACTER_PERSON_MEDIUM_SKIN_TONE_CURLY_HAIR = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F9B1}";
+    const CHARACTER_PERSON_MEDIUM_DARK_SKIN_TONE_CURLY_HAIR = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F9B1}";
+    const CHARACTER_PERSON_DARK_SKIN_TONE_CURLY_HAIR = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F9B1}";
     const CHARACTER_WOMAN_WHITE_HAIR = "\u{1F469}\u{200D}\u{1F9B3}";
     const CHARACTER_WOMAN_LIGHT_SKIN_TONE_WHITE_HAIR = "\u{1F469}\u{1F3FB}\u{200D}\u{1F9B3}";
     const CHARACTER_WOMAN_MEDIUM_LIGHT_SKIN_TONE_WHITE_HAIR = "\u{1F469}\u{1F3FC}\u{200D}\u{1F9B3}";
     const CHARACTER_WOMAN_MEDIUM_SKIN_TONE_WHITE_HAIR = "\u{1F469}\u{1F3FD}\u{200D}\u{1F9B3}";
     const CHARACTER_WOMAN_MEDIUM_DARK_SKIN_TONE_WHITE_HAIR = "\u{1F469}\u{1F3FE}\u{200D}\u{1F9B3}";
     const CHARACTER_WOMAN_DARK_SKIN_TONE_WHITE_HAIR = "\u{1F469}\u{1F3FF}\u{200D}\u{1F9B3}";
+    const CHARACTER_PERSON_WHITE_HAIR = "\u{1F9D1}\u{200D}\u{1F9B3}";
+    const CHARACTER_PERSON_LIGHT_SKIN_TONE_WHITE_HAIR = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F9B3}";
+    const CHARACTER_PERSON_MEDIUM_LIGHT_SKIN_TONE_WHITE_HAIR = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F9B3}";
+    const CHARACTER_PERSON_MEDIUM_SKIN_TONE_WHITE_HAIR = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F9B3}";
+    const CHARACTER_PERSON_MEDIUM_DARK_SKIN_TONE_WHITE_HAIR = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F9B3}";
+    const CHARACTER_PERSON_DARK_SKIN_TONE_WHITE_HAIR = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F9B3}";
     const CHARACTER_WOMAN_BALD = "\u{1F469}\u{200D}\u{1F9B2}";
     const CHARACTER_WOMAN_LIGHT_SKIN_TONE_BALD = "\u{1F469}\u{1F3FB}\u{200D}\u{1F9B2}";
     const CHARACTER_WOMAN_MEDIUM_LIGHT_SKIN_TONE_BALD = "\u{1F469}\u{1F3FC}\u{200D}\u{1F9B2}";
     const CHARACTER_WOMAN_MEDIUM_SKIN_TONE_BALD = "\u{1F469}\u{1F3FD}\u{200D}\u{1F9B2}";
     const CHARACTER_WOMAN_MEDIUM_DARK_SKIN_TONE_BALD = "\u{1F469}\u{1F3FE}\u{200D}\u{1F9B2}";
     const CHARACTER_WOMAN_DARK_SKIN_TONE_BALD = "\u{1F469}\u{1F3FF}\u{200D}\u{1F9B2}";
+    const CHARACTER_PERSON_BALD = "\u{1F9D1}\u{200D}\u{1F9B2}";
+    const CHARACTER_PERSON_LIGHT_SKIN_TONE_BALD = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F9B2}";
+    const CHARACTER_PERSON_MEDIUM_LIGHT_SKIN_TONE_BALD = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F9B2}";
+    const CHARACTER_PERSON_MEDIUM_SKIN_TONE_BALD = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F9B2}";
+    const CHARACTER_PERSON_MEDIUM_DARK_SKIN_TONE_BALD = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F9B2}";
+    const CHARACTER_PERSON_DARK_SKIN_TONE_BALD = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F9B2}";
+    const CHARACTER_WOMAN_BLOND_HAIR = "\u{1F471}\u{200D}\u{2640}\u{FE0F}";
+    const CHARACTER_WOMAN_LIGHT_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FB}\u{200D}\u{2640}\u{FE0F}";
+    const CHARACTER_WOMAN_MEDIUM_LIGHT_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FC}\u{200D}\u{2640}\u{FE0F}";
+    const CHARACTER_WOMAN_MEDIUM_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FD}\u{200D}\u{2640}\u{FE0F}";
+    const CHARACTER_WOMAN_MEDIUM_DARK_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FE}\u{200D}\u{2640}\u{FE0F}";
+    const CHARACTER_WOMAN_DARK_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FF}\u{200D}\u{2640}\u{FE0F}";
+    const CHARACTER_MAN_BLOND_HAIR = "\u{1F471}\u{200D}\u{2642}\u{FE0F}";
+    const CHARACTER_MAN_LIGHT_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FB}\u{200D}\u{2642}\u{FE0F}";
+    const CHARACTER_MAN_MEDIUM_LIGHT_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FC}\u{200D}\u{2642}\u{FE0F}";
+    const CHARACTER_MAN_MEDIUM_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FD}\u{200D}\u{2642}\u{FE0F}";
+    const CHARACTER_MAN_MEDIUM_DARK_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FE}\u{200D}\u{2642}\u{FE0F}";
+    const CHARACTER_MAN_DARK_SKIN_TONE_BLOND_HAIR = "\u{1F471}\u{1F3FF}\u{200D}\u{2642}\u{FE0F}";
     const CHARACTER_OLDER_PERSON = "\u{1F9D3}";
     const CHARACTER_OLDER_PERSON_LIGHT_SKIN_TONE = "\u{1F9D3}\u{1F3FB}";
     const CHARACTER_OLDER_PERSON_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D3}\u{1F3FC}";
@@ -3867,6 +4059,12 @@ class Emoji
     const CHARACTER_WOMAN_SHRUGGING_MEDIUM_DARK_SKIN_TONE = "\u{1F937}\u{1F3FE}\u{200D}\u{2640}\u{FE0F}";
     const CHARACTER_WOMAN_SHRUGGING_DARK_SKIN_TONE = "\u{1F937}\u{1F3FF}\u{200D}\u{2640}\u{FE0F}";
     // ##### Emoji subgroup: PERSON-ROLE #####
+    const CHARACTER_HEALTH_WORKER = "\u{1F9D1}\u{200D}\u{2695}\u{FE0F}";
+    const CHARACTER_HEALTH_WORKER_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{2695}\u{FE0F}";
+    const CHARACTER_HEALTH_WORKER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{2695}\u{FE0F}";
+    const CHARACTER_HEALTH_WORKER_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{2695}\u{FE0F}";
+    const CHARACTER_HEALTH_WORKER_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{2695}\u{FE0F}";
+    const CHARACTER_HEALTH_WORKER_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{2695}\u{FE0F}";
     const CHARACTER_MAN_HEALTH_WORKER = "\u{1F468}\u{200D}\u{2695}\u{FE0F}";
     const CHARACTER_MAN_HEALTH_WORKER_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{2695}\u{FE0F}";
     const CHARACTER_MAN_HEALTH_WORKER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{2695}\u{FE0F}";
@@ -3879,6 +4077,12 @@ class Emoji
     const CHARACTER_WOMAN_HEALTH_WORKER_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{2695}\u{FE0F}";
     const CHARACTER_WOMAN_HEALTH_WORKER_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{2695}\u{FE0F}";
     const CHARACTER_WOMAN_HEALTH_WORKER_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{2695}\u{FE0F}";
+    const CHARACTER_STUDENT = "\u{1F9D1}\u{200D}\u{1F393}";
+    const CHARACTER_STUDENT_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F393}";
+    const CHARACTER_STUDENT_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F393}";
+    const CHARACTER_STUDENT_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F393}";
+    const CHARACTER_STUDENT_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F393}";
+    const CHARACTER_STUDENT_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F393}";
     const CHARACTER_MAN_STUDENT = "\u{1F468}\u{200D}\u{1F393}";
     const CHARACTER_MAN_STUDENT_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F393}";
     const CHARACTER_MAN_STUDENT_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F393}";
@@ -3891,6 +4095,12 @@ class Emoji
     const CHARACTER_WOMAN_STUDENT_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F393}";
     const CHARACTER_WOMAN_STUDENT_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F393}";
     const CHARACTER_WOMAN_STUDENT_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F393}";
+    const CHARACTER_TEACHER = "\u{1F9D1}\u{200D}\u{1F3EB}";
+    const CHARACTER_TEACHER_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F3EB}";
+    const CHARACTER_TEACHER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F3EB}";
+    const CHARACTER_TEACHER_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F3EB}";
+    const CHARACTER_TEACHER_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F3EB}";
+    const CHARACTER_TEACHER_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F3EB}";
     const CHARACTER_MAN_TEACHER = "\u{1F468}\u{200D}\u{1F3EB}";
     const CHARACTER_MAN_TEACHER_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F3EB}";
     const CHARACTER_MAN_TEACHER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F3EB}";
@@ -3903,6 +4113,12 @@ class Emoji
     const CHARACTER_WOMAN_TEACHER_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F3EB}";
     const CHARACTER_WOMAN_TEACHER_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F3EB}";
     const CHARACTER_WOMAN_TEACHER_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F3EB}";
+    const CHARACTER_JUDGE = "\u{1F9D1}\u{200D}\u{2696}\u{FE0F}";
+    const CHARACTER_JUDGE_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{2696}\u{FE0F}";
+    const CHARACTER_JUDGE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{2696}\u{FE0F}";
+    const CHARACTER_JUDGE_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{2696}\u{FE0F}";
+    const CHARACTER_JUDGE_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{2696}\u{FE0F}";
+    const CHARACTER_JUDGE_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{2696}\u{FE0F}";
     const CHARACTER_MAN_JUDGE = "\u{1F468}\u{200D}\u{2696}\u{FE0F}";
     const CHARACTER_MAN_JUDGE_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{2696}\u{FE0F}";
     const CHARACTER_MAN_JUDGE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{2696}\u{FE0F}";
@@ -3915,6 +4131,12 @@ class Emoji
     const CHARACTER_WOMAN_JUDGE_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{2696}\u{FE0F}";
     const CHARACTER_WOMAN_JUDGE_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{2696}\u{FE0F}";
     const CHARACTER_WOMAN_JUDGE_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{2696}\u{FE0F}";
+    const CHARACTER_FARMER = "\u{1F9D1}\u{200D}\u{1F33E}";
+    const CHARACTER_FARMER_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F33E}";
+    const CHARACTER_FARMER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F33E}";
+    const CHARACTER_FARMER_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F33E}";
+    const CHARACTER_FARMER_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F33E}";
+    const CHARACTER_FARMER_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F33E}";
     const CHARACTER_MAN_FARMER = "\u{1F468}\u{200D}\u{1F33E}";
     const CHARACTER_MAN_FARMER_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F33E}";
     const CHARACTER_MAN_FARMER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F33E}";
@@ -3927,6 +4149,12 @@ class Emoji
     const CHARACTER_WOMAN_FARMER_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F33E}";
     const CHARACTER_WOMAN_FARMER_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F33E}";
     const CHARACTER_WOMAN_FARMER_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F33E}";
+    const CHARACTER_COOK = "\u{1F9D1}\u{200D}\u{1F373}";
+    const CHARACTER_COOK_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F373}";
+    const CHARACTER_COOK_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F373}";
+    const CHARACTER_COOK_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F373}";
+    const CHARACTER_COOK_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F373}";
+    const CHARACTER_COOK_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F373}";
     const CHARACTER_MAN_COOK = "\u{1F468}\u{200D}\u{1F373}";
     const CHARACTER_MAN_COOK_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F373}";
     const CHARACTER_MAN_COOK_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F373}";
@@ -3939,6 +4167,12 @@ class Emoji
     const CHARACTER_WOMAN_COOK_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F373}";
     const CHARACTER_WOMAN_COOK_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F373}";
     const CHARACTER_WOMAN_COOK_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F373}";
+    const CHARACTER_MECHANIC = "\u{1F9D1}\u{200D}\u{1F527}";
+    const CHARACTER_MECHANIC_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F527}";
+    const CHARACTER_MECHANIC_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F527}";
+    const CHARACTER_MECHANIC_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F527}";
+    const CHARACTER_MECHANIC_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F527}";
+    const CHARACTER_MECHANIC_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F527}";
     const CHARACTER_MAN_MECHANIC = "\u{1F468}\u{200D}\u{1F527}";
     const CHARACTER_MAN_MECHANIC_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F527}";
     const CHARACTER_MAN_MECHANIC_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F527}";
@@ -3951,6 +4185,12 @@ class Emoji
     const CHARACTER_WOMAN_MECHANIC_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F527}";
     const CHARACTER_WOMAN_MECHANIC_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F527}";
     const CHARACTER_WOMAN_MECHANIC_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F527}";
+    const CHARACTER_FACTORY_WORKER = "\u{1F9D1}\u{200D}\u{1F3ED}";
+    const CHARACTER_FACTORY_WORKER_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F3ED}";
+    const CHARACTER_FACTORY_WORKER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F3ED}";
+    const CHARACTER_FACTORY_WORKER_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F3ED}";
+    const CHARACTER_FACTORY_WORKER_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F3ED}";
+    const CHARACTER_FACTORY_WORKER_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F3ED}";
     const CHARACTER_MAN_FACTORY_WORKER = "\u{1F468}\u{200D}\u{1F3ED}";
     const CHARACTER_MAN_FACTORY_WORKER_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F3ED}";
     const CHARACTER_MAN_FACTORY_WORKER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F3ED}";
@@ -3963,6 +4203,12 @@ class Emoji
     const CHARACTER_WOMAN_FACTORY_WORKER_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F3ED}";
     const CHARACTER_WOMAN_FACTORY_WORKER_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F3ED}";
     const CHARACTER_WOMAN_FACTORY_WORKER_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F3ED}";
+    const CHARACTER_OFFICE_WORKER = "\u{1F9D1}\u{200D}\u{1F4BC}";
+    const CHARACTER_OFFICE_WORKER_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F4BC}";
+    const CHARACTER_OFFICE_WORKER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F4BC}";
+    const CHARACTER_OFFICE_WORKER_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F4BC}";
+    const CHARACTER_OFFICE_WORKER_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F4BC}";
+    const CHARACTER_OFFICE_WORKER_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F4BC}";
     const CHARACTER_MAN_OFFICE_WORKER = "\u{1F468}\u{200D}\u{1F4BC}";
     const CHARACTER_MAN_OFFICE_WORKER_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F4BC}";
     const CHARACTER_MAN_OFFICE_WORKER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F4BC}";
@@ -3975,6 +4221,12 @@ class Emoji
     const CHARACTER_WOMAN_OFFICE_WORKER_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F4BC}";
     const CHARACTER_WOMAN_OFFICE_WORKER_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F4BC}";
     const CHARACTER_WOMAN_OFFICE_WORKER_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F4BC}";
+    const CHARACTER_SCIENTIST = "\u{1F9D1}\u{200D}\u{1F52C}";
+    const CHARACTER_SCIENTIST_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F52C}";
+    const CHARACTER_SCIENTIST_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F52C}";
+    const CHARACTER_SCIENTIST_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F52C}";
+    const CHARACTER_SCIENTIST_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F52C}";
+    const CHARACTER_SCIENTIST_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F52C}";
     const CHARACTER_MAN_SCIENTIST = "\u{1F468}\u{200D}\u{1F52C}";
     const CHARACTER_MAN_SCIENTIST_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F52C}";
     const CHARACTER_MAN_SCIENTIST_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F52C}";
@@ -3987,6 +4239,12 @@ class Emoji
     const CHARACTER_WOMAN_SCIENTIST_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F52C}";
     const CHARACTER_WOMAN_SCIENTIST_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F52C}";
     const CHARACTER_WOMAN_SCIENTIST_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F52C}";
+    const CHARACTER_TECHNOLOGIST = "\u{1F9D1}\u{200D}\u{1F4BB}";
+    const CHARACTER_TECHNOLOGIST_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F4BB}";
+    const CHARACTER_TECHNOLOGIST_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F4BB}";
+    const CHARACTER_TECHNOLOGIST_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F4BB}";
+    const CHARACTER_TECHNOLOGIST_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F4BB}";
+    const CHARACTER_TECHNOLOGIST_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F4BB}";
     const CHARACTER_MAN_TECHNOLOGIST = "\u{1F468}\u{200D}\u{1F4BB}";
     const CHARACTER_MAN_TECHNOLOGIST_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F4BB}";
     const CHARACTER_MAN_TECHNOLOGIST_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F4BB}";
@@ -3999,6 +4257,12 @@ class Emoji
     const CHARACTER_WOMAN_TECHNOLOGIST_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F4BB}";
     const CHARACTER_WOMAN_TECHNOLOGIST_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F4BB}";
     const CHARACTER_WOMAN_TECHNOLOGIST_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F4BB}";
+    const CHARACTER_SINGER = "\u{1F9D1}\u{200D}\u{1F3A4}";
+    const CHARACTER_SINGER_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F3A4}";
+    const CHARACTER_SINGER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F3A4}";
+    const CHARACTER_SINGER_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F3A4}";
+    const CHARACTER_SINGER_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F3A4}";
+    const CHARACTER_SINGER_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F3A4}";
     const CHARACTER_MAN_SINGER = "\u{1F468}\u{200D}\u{1F3A4}";
     const CHARACTER_MAN_SINGER_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F3A4}";
     const CHARACTER_MAN_SINGER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F3A4}";
@@ -4011,6 +4275,12 @@ class Emoji
     const CHARACTER_WOMAN_SINGER_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F3A4}";
     const CHARACTER_WOMAN_SINGER_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F3A4}";
     const CHARACTER_WOMAN_SINGER_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F3A4}";
+    const CHARACTER_ARTIST = "\u{1F9D1}\u{200D}\u{1F3A8}";
+    const CHARACTER_ARTIST_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F3A8}";
+    const CHARACTER_ARTIST_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F3A8}";
+    const CHARACTER_ARTIST_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F3A8}";
+    const CHARACTER_ARTIST_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F3A8}";
+    const CHARACTER_ARTIST_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F3A8}";
     const CHARACTER_MAN_ARTIST = "\u{1F468}\u{200D}\u{1F3A8}";
     const CHARACTER_MAN_ARTIST_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F3A8}";
     const CHARACTER_MAN_ARTIST_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F3A8}";
@@ -4023,6 +4293,12 @@ class Emoji
     const CHARACTER_WOMAN_ARTIST_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F3A8}";
     const CHARACTER_WOMAN_ARTIST_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F3A8}";
     const CHARACTER_WOMAN_ARTIST_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F3A8}";
+    const CHARACTER_PILOT = "\u{1F9D1}\u{200D}\u{2708}\u{FE0F}";
+    const CHARACTER_PILOT_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{2708}\u{FE0F}";
+    const CHARACTER_PILOT_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{2708}\u{FE0F}";
+    const CHARACTER_PILOT_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{2708}\u{FE0F}";
+    const CHARACTER_PILOT_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{2708}\u{FE0F}";
+    const CHARACTER_PILOT_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{2708}\u{FE0F}";
     const CHARACTER_MAN_PILOT = "\u{1F468}\u{200D}\u{2708}\u{FE0F}";
     const CHARACTER_MAN_PILOT_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{2708}\u{FE0F}";
     const CHARACTER_MAN_PILOT_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{2708}\u{FE0F}";
@@ -4035,6 +4311,12 @@ class Emoji
     const CHARACTER_WOMAN_PILOT_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{2708}\u{FE0F}";
     const CHARACTER_WOMAN_PILOT_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{2708}\u{FE0F}";
     const CHARACTER_WOMAN_PILOT_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{2708}\u{FE0F}";
+    const CHARACTER_ASTRONAUT = "\u{1F9D1}\u{200D}\u{1F680}";
+    const CHARACTER_ASTRONAUT_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F680}";
+    const CHARACTER_ASTRONAUT_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F680}";
+    const CHARACTER_ASTRONAUT_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F680}";
+    const CHARACTER_ASTRONAUT_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F680}";
+    const CHARACTER_ASTRONAUT_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F680}";
     const CHARACTER_MAN_ASTRONAUT = "\u{1F468}\u{200D}\u{1F680}";
     const CHARACTER_MAN_ASTRONAUT_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F680}";
     const CHARACTER_MAN_ASTRONAUT_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F680}";
@@ -4047,6 +4329,12 @@ class Emoji
     const CHARACTER_WOMAN_ASTRONAUT_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F680}";
     const CHARACTER_WOMAN_ASTRONAUT_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F680}";
     const CHARACTER_WOMAN_ASTRONAUT_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F680}";
+    const CHARACTER_FIREFIGHTER = "\u{1F9D1}\u{200D}\u{1F692}";
+    const CHARACTER_FIREFIGHTER_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F692}";
+    const CHARACTER_FIREFIGHTER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F692}";
+    const CHARACTER_FIREFIGHTER_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F692}";
+    const CHARACTER_FIREFIGHTER_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F692}";
+    const CHARACTER_FIREFIGHTER_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F692}";
     const CHARACTER_MAN_FIREFIGHTER = "\u{1F468}\u{200D}\u{1F692}";
     const CHARACTER_MAN_FIREFIGHTER_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F692}";
     const CHARACTER_MAN_FIREFIGHTER_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F692}";
@@ -4161,12 +4449,12 @@ class Emoji
     const CHARACTER_WOMAN_WEARING_TURBAN_MEDIUM_SKIN_TONE = "\u{1F473}\u{1F3FD}\u{200D}\u{2640}\u{FE0F}";
     const CHARACTER_WOMAN_WEARING_TURBAN_MEDIUM_DARK_SKIN_TONE = "\u{1F473}\u{1F3FE}\u{200D}\u{2640}\u{FE0F}";
     const CHARACTER_WOMAN_WEARING_TURBAN_DARK_SKIN_TONE = "\u{1F473}\u{1F3FF}\u{200D}\u{2640}\u{FE0F}";
-    const CHARACTER_MAN_WITH_CHINESE_CAP = "\u{1F472}";
-    const CHARACTER_MAN_WITH_CHINESE_CAP_LIGHT_SKIN_TONE = "\u{1F472}\u{1F3FB}";
-    const CHARACTER_MAN_WITH_CHINESE_CAP_MEDIUM_LIGHT_SKIN_TONE = "\u{1F472}\u{1F3FC}";
-    const CHARACTER_MAN_WITH_CHINESE_CAP_MEDIUM_SKIN_TONE = "\u{1F472}\u{1F3FD}";
-    const CHARACTER_MAN_WITH_CHINESE_CAP_MEDIUM_DARK_SKIN_TONE = "\u{1F472}\u{1F3FE}";
-    const CHARACTER_MAN_WITH_CHINESE_CAP_DARK_SKIN_TONE = "\u{1F472}\u{1F3FF}";
+    const CHARACTER_MAN_WITH_SKULLCAP = "\u{1F472}";
+    const CHARACTER_MAN_WITH_SKULLCAP_LIGHT_SKIN_TONE = "\u{1F472}\u{1F3FB}";
+    const CHARACTER_MAN_WITH_SKULLCAP_MEDIUM_LIGHT_SKIN_TONE = "\u{1F472}\u{1F3FC}";
+    const CHARACTER_MAN_WITH_SKULLCAP_MEDIUM_SKIN_TONE = "\u{1F472}\u{1F3FD}";
+    const CHARACTER_MAN_WITH_SKULLCAP_MEDIUM_DARK_SKIN_TONE = "\u{1F472}\u{1F3FE}";
+    const CHARACTER_MAN_WITH_SKULLCAP_DARK_SKIN_TONE = "\u{1F472}\u{1F3FF}";
     const CHARACTER_WOMAN_WITH_HEADSCARF = "\u{1F9D5}";
     const CHARACTER_WOMAN_WITH_HEADSCARF_LIGHT_SKIN_TONE = "\u{1F9D5}\u{1F3FB}";
     const CHARACTER_WOMAN_WITH_HEADSCARF_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D5}\u{1F3FC}";
@@ -4439,6 +4727,12 @@ class Emoji
     const CHARACTER_WOMAN_KNEELING_MEDIUM_SKIN_TONE = "\u{1F9CE}\u{1F3FD}\u{200D}\u{2640}\u{FE0F}";
     const CHARACTER_WOMAN_KNEELING_MEDIUM_DARK_SKIN_TONE = "\u{1F9CE}\u{1F3FE}\u{200D}\u{2640}\u{FE0F}";
     const CHARACTER_WOMAN_KNEELING_DARK_SKIN_TONE = "\u{1F9CE}\u{1F3FF}\u{200D}\u{2640}\u{FE0F}";
+    const CHARACTER_PERSON_WITH_PROBING_CANE = "\u{1F9D1}\u{200D}\u{1F9AF}";
+    const CHARACTER_PERSON_WITH_PROBING_CANE_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F9AF}";
+    const CHARACTER_PERSON_WITH_PROBING_CANE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F9AF}";
+    const CHARACTER_PERSON_WITH_PROBING_CANE_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F9AF}";
+    const CHARACTER_PERSON_WITH_PROBING_CANE_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F9AF}";
+    const CHARACTER_PERSON_WITH_PROBING_CANE_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F9AF}";
     const CHARACTER_MAN_WITH_PROBING_CANE = "\u{1F468}\u{200D}\u{1F9AF}";
     const CHARACTER_MAN_WITH_PROBING_CANE_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F9AF}";
     const CHARACTER_MAN_WITH_PROBING_CANE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F9AF}";
@@ -4451,6 +4745,12 @@ class Emoji
     const CHARACTER_WOMAN_WITH_PROBING_CANE_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F9AF}";
     const CHARACTER_WOMAN_WITH_PROBING_CANE_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F9AF}";
     const CHARACTER_WOMAN_WITH_PROBING_CANE_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F9AF}";
+    const CHARACTER_PERSON_IN_MOTORIZED_WHEELCHAIR = "\u{1F9D1}\u{200D}\u{1F9BC}";
+    const CHARACTER_PERSON_IN_MOTORIZED_WHEELCHAIR_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F9BC}";
+    const CHARACTER_PERSON_IN_MOTORIZED_WHEELCHAIR_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F9BC}";
+    const CHARACTER_PERSON_IN_MOTORIZED_WHEELCHAIR_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F9BC}";
+    const CHARACTER_PERSON_IN_MOTORIZED_WHEELCHAIR_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F9BC}";
+    const CHARACTER_PERSON_IN_MOTORIZED_WHEELCHAIR_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F9BC}";
     const CHARACTER_MAN_IN_MOTORIZED_WHEELCHAIR = "\u{1F468}\u{200D}\u{1F9BC}";
     const CHARACTER_MAN_IN_MOTORIZED_WHEELCHAIR_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F9BC}";
     const CHARACTER_MAN_IN_MOTORIZED_WHEELCHAIR_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F9BC}";
@@ -4463,6 +4763,12 @@ class Emoji
     const CHARACTER_WOMAN_IN_MOTORIZED_WHEELCHAIR_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F9BC}";
     const CHARACTER_WOMAN_IN_MOTORIZED_WHEELCHAIR_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F9BC}";
     const CHARACTER_WOMAN_IN_MOTORIZED_WHEELCHAIR_DARK_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F9BC}";
+    const CHARACTER_PERSON_IN_MANUAL_WHEELCHAIR = "\u{1F9D1}\u{200D}\u{1F9BD}";
+    const CHARACTER_PERSON_IN_MANUAL_WHEELCHAIR_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F9BD}";
+    const CHARACTER_PERSON_IN_MANUAL_WHEELCHAIR_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F9BD}";
+    const CHARACTER_PERSON_IN_MANUAL_WHEELCHAIR_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F9BD}";
+    const CHARACTER_PERSON_IN_MANUAL_WHEELCHAIR_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F9BD}";
+    const CHARACTER_PERSON_IN_MANUAL_WHEELCHAIR_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F9BD}";
     const CHARACTER_MAN_IN_MANUAL_WHEELCHAIR = "\u{1F468}\u{200D}\u{1F9BD}";
     const CHARACTER_MAN_IN_MANUAL_WHEELCHAIR_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F9BD}";
     const CHARACTER_MAN_IN_MANUAL_WHEELCHAIR_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F9BD}";
@@ -4818,15 +5124,25 @@ class Emoji
     // ##### Emoji subgroup: FAMILY #####
     const CHARACTER_PEOPLE_HOLDING_HANDS = "\u{1F9D1}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FB}";
+    const CHARACTER_PEOPLE_HOLDING_HANDS_LIGHT_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FC}";
+    const CHARACTER_PEOPLE_HOLDING_HANDS_LIGHT_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FD}";
+    const CHARACTER_PEOPLE_HOLDING_HANDS_LIGHT_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FE}";
+    const CHARACTER_PEOPLE_HOLDING_HANDS_LIGHT_SKIN_TONE_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FF}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FB}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FC}";
+    const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FD}";
+    const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FE}";
+    const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FF}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FB}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FC}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FD}";
+    const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FE}";
+    const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_SKIN_TONE_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FF}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FB}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FC}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FD}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FE}";
+    const CHARACTER_PEOPLE_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FF}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_DARK_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FB}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_DARK_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FC}";
     const CHARACTER_PEOPLE_HOLDING_HANDS_DARK_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FD}";
@@ -4834,15 +5150,25 @@ class Emoji
     const CHARACTER_PEOPLE_HOLDING_HANDS_DARK_SKIN_TONE = "\u{1F9D1}\u{1F3FF}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}\u{1F3FF}";
     const CHARACTER_WOMEN_HOLDING_HANDS = "\u{1F46D}";
     const CHARACTER_WOMEN_HOLDING_HANDS_LIGHT_SKIN_TONE = "\u{1F46D}\u{1F3FB}";
+    const CHARACTER_WOMEN_HOLDING_HANDS_LIGHT_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F469}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FC}";
+    const CHARACTER_WOMEN_HOLDING_HANDS_LIGHT_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FD}";
+    const CHARACTER_WOMEN_HOLDING_HANDS_LIGHT_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FE}";
+    const CHARACTER_WOMEN_HOLDING_HANDS_LIGHT_SKIN_TONE_DARK_SKIN_TONE = "\u{1F469}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FF}";
     const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F469}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FB}";
     const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE = "\u{1F46D}\u{1F3FC}";
+    const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FD}";
+    const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FE}";
+    const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_DARK_SKIN_TONE = "\u{1F469}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FF}";
     const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FB}";
     const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FC}";
     const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_SKIN_TONE = "\u{1F46D}\u{1F3FD}";
+    const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FE}";
+    const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_SKIN_TONE_DARK_SKIN_TONE = "\u{1F469}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FF}";
     const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FB}";
     const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FC}";
     const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FD}";
     const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE = "\u{1F46D}\u{1F3FE}";
+    const CHARACTER_WOMEN_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_DARK_SKIN_TONE = "\u{1F469}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FF}";
     const CHARACTER_WOMEN_HOLDING_HANDS_DARK_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FB}";
     const CHARACTER_WOMEN_HOLDING_HANDS_DARK_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FC}";
     const CHARACTER_WOMEN_HOLDING_HANDS_DARK_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F469}\u{1F3FF}\u{200D}\u{1F91D}\u{200D}\u{1F469}\u{1F3FD}";
@@ -4876,15 +5202,25 @@ class Emoji
     const CHARACTER_WOMAN_AND_MAN_HOLDING_HANDS_DARK_SKIN_TONE = "\u{1F46B}\u{1F3FF}";
     const CHARACTER_MEN_HOLDING_HANDS = "\u{1F46C}";
     const CHARACTER_MEN_HOLDING_HANDS_LIGHT_SKIN_TONE = "\u{1F46C}\u{1F3FB}";
+    const CHARACTER_MEN_HOLDING_HANDS_LIGHT_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FC}";
+    const CHARACTER_MEN_HOLDING_HANDS_LIGHT_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FD}";
+    const CHARACTER_MEN_HOLDING_HANDS_LIGHT_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FE}";
+    const CHARACTER_MEN_HOLDING_HANDS_LIGHT_SKIN_TONE_DARK_SKIN_TONE = "\u{1F468}\u{1F3FB}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FF}";
     const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FB}";
     const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE = "\u{1F46C}\u{1F3FC}";
+    const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FD}";
+    const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FE}";
+    const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_LIGHT_SKIN_TONE_DARK_SKIN_TONE = "\u{1F468}\u{1F3FC}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FF}";
     const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FB}";
     const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FC}";
     const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_SKIN_TONE = "\u{1F46C}\u{1F3FD}";
+    const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1F468}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FE}";
+    const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_SKIN_TONE_DARK_SKIN_TONE = "\u{1F468}\u{1F3FD}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FF}";
     const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FB}";
     const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FC}";
     const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F468}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FD}";
     const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE = "\u{1F46C}\u{1F3FE}";
+    const CHARACTER_MEN_HOLDING_HANDS_MEDIUM_DARK_SKIN_TONE_DARK_SKIN_TONE = "\u{1F468}\u{1F3FE}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FF}";
     const CHARACTER_MEN_HOLDING_HANDS_DARK_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FF}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FB}";
     const CHARACTER_MEN_HOLDING_HANDS_DARK_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F468}\u{1F3FF}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FC}";
     const CHARACTER_MEN_HOLDING_HANDS_DARK_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1F468}\u{1F3FF}\u{200D}\u{1F91D}\u{200D}\u{1F468}\u{1F3FD}";
@@ -5199,7 +5535,7 @@ class Emoji
     const CHARACTER_CUP_WITH_STRAW = "\u{1F964}";
     const CHARACTER_BEVERAGE_BOX = "\u{1F9C3}";
     const CHARACTER_MATE = "\u{1F9C9}";
-    const CHARACTER_ICE_CUBE = "\u{1F9CA}";
+    const CHARACTER_ICE = "\u{1F9CA}";
     // ##### Emoji subgroup: DISHWARE #####
     const CHARACTER_CHOPSTICKS = "\u{1F962}";
     const CHARACTER_FORK_AND_KNIFE_WITH_PLATE = "\u{1F37D}\u{FE0F}";
@@ -5532,7 +5868,7 @@ class Emoji
     const CHARACTER_KIMONO = "\u{1F458}";
     const CHARACTER_SARI = "\u{1F97B}";
     const CHARACTER_ONE_PIECE_SWIMSUIT = "\u{1FA71}";
-    const CHARACTER_SWIM_BRIEF = "\u{1FA72}";
+    const CHARACTER_BRIEFS = "\u{1FA72}";
     const CHARACTER_SHORTS = "\u{1FA73}";
     const CHARACTER_BIKINI = "\u{1F459}";
     const CHARACTER_WOMAN_S_CLOTHES = "\u{1F45A}";
@@ -5597,7 +5933,7 @@ class Emoji
     // ##### Emoji subgroup: COMPUTER #####
     const CHARACTER_BATTERY = "\u{1F50B}";
     const CHARACTER_ELECTRIC_PLUG = "\u{1F50C}";
-    const CHARACTER_LAPTOP_COMPUTER = "\u{1F4BB}";
+    const CHARACTER_LAPTOP = "\u{1F4BB}";
     const CHARACTER_DESKTOP_COMPUTER = "\u{1F5A5}\u{FE0F}";
     const CHARACTER_PRINTER = "\u{1F5A8}\u{FE0F}";
     const CHARACTER_KEYBOARD = "\u{2328}\u{FE0F}";
@@ -6154,7 +6490,7 @@ class Emoji
     const CHARACTER_FLAGS_FOR_FLAG_ST_MARTIN = "\u{1F1F2}\u{1F1EB}";
     const CHARACTER_FLAGS_FOR_FLAG_MADAGASCAR = "\u{1F1F2}\u{1F1EC}";
     const CHARACTER_FLAGS_FOR_FLAG_MARSHALL_ISLANDS = "\u{1F1F2}\u{1F1ED}";
-    const CHARACTER_FLAGS_FOR_FLAG_MACEDONIA = "\u{1F1F2}\u{1F1F0}";
+    const CHARACTER_FLAGS_FOR_FLAG_NORTH_MACEDONIA = "\u{1F1F2}\u{1F1F0}";
     const CHARACTER_FLAGS_FOR_FLAG_MALI = "\u{1F1F2}\u{1F1F1}";
     const CHARACTER_FLAGS_FOR_FLAG_MYANMAR_BURMA = "\u{1F1F2}\u{1F1F2}";
     const CHARACTER_FLAGS_FOR_FLAG_MONGOLIA = "\u{1F1F2}\u{1F1F3}";
