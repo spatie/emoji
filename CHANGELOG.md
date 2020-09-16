@@ -2,6 +2,12 @@
 
 All notable changes to `emoji` will be documented in this file
 
+## 2.1.3 - unreleased
+
+- update generator template to use mb_* functions to match (#40)
+- adjust generator emoji name parsing to filter out emoji version string (e.g. E1.0, E0.9, etc)
+- update to Emoji 12.1 version
+
 ## 2.1.2 - 2020-02-07
 
 - change uppercase function to mb_strtoupper instead of strtoupper (#40)

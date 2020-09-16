@@ -14,7 +14,8 @@ use Twig\Loader\FilesystemLoader;
 
 class GenerateCommand extends Command
 {
-    const EMOJI_VERSION = '12.1';
+    /** @var string */
+    protected const EMOJI_VERSION = '12.1';
 
     /** @var int */
     protected $now;
