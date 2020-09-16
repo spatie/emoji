@@ -51,7 +51,7 @@ class Emoji
             throw CouldNotDetermineFlag::countryCodeLenghtIsWrong($countryCode);
         }
 
-        $countryCode = strtoupper($countryCode);
+        $countryCode = mb_strtoupper($countryCode);
 
         return static::encodeCountryCodeLetter($countryCode[0]).static::encodeCountryCodeLetter($countryCode[1]);
     }
