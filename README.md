@@ -64,7 +64,7 @@ You can also use an [ISO 3166 Alpha2](https://en.wikipedia.org/wiki/ISO_3166-1_a
 Emoji::countryFlag('be'); // 🇧🇪
 ```
 
-This package contains Full Emoji List v12.1 based on https://unicode.org/Public/emoji/12.1/emoji-test.txt all methods and constants are auto-generated.
+This package contains Full Emoji List v13.1 based on https://unicode.org/Public/emoji/13.1/emoji-test.txt all methods and constants are auto-generated.
 
 ## Changelog
 

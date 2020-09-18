@@ -2,6 +2,10 @@
 
 All notable changes to `emoji` will be documented in this file
 
+## 2.1.4 - unreleased
+
+- update to Emoji 13.1 version
+
 ## 2.1.3 - 2020-09-16
 
 - update generator template to use mb_* functions to match (#40)
