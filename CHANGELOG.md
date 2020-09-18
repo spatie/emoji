@@ -2,7 +2,7 @@
 
 All notable changes to `emoji` will be documented in this file
 
-## 2.1.4 - unreleased
+## 2.1.4 - 2020-09-18
 
 - update to Emoji 13.1 version
 
