@@ -9,11 +9,13 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * Emoji class.
  *
  * @link https://unicode.org/Public/emoji/13.1/emoji-test.txt
+ *
  * @version v13.1
  * loaded at: 2020-09-18 00:16:06
  *
  * ##### Emoji group: SMILEYS & EMOTION #####
  * ##### Emoji subgroup: FACE-SMILING #####
+ *
  * @method static string grinningFace()
  * @method static string grinningFaceWithBigEyes()
  * @method static string grinningFaceWithSmilingEyes()
@@ -27,7 +29,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string winkingFace()
  * @method static string smilingFaceWithSmilingEyes()
  * @method static string smilingFaceWithHalo()
- * ##### Emoji subgroup: FACE-AFFECTION #####
+ *                                                                                          ##### Emoji subgroup: FACE-AFFECTION #####
  * @method static string smilingFaceWithHearts()
  * @method static string smilingFaceWithHeartEyes()
  * @method static string starStruck()
@@ -37,19 +39,19 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string kissingFaceWithClosedEyes()
  * @method static string kissingFaceWithSmilingEyes()
  * @method static string smilingFaceWithTear()
- * ##### Emoji subgroup: FACE-TONGUE #####
+ *                                                                                          ##### Emoji subgroup: FACE-TONGUE #####
  * @method static string faceSavoringFood()
  * @method static string faceWithTongue()
  * @method static string winkingFaceWithTongue()
  * @method static string zanyFace()
  * @method static string squintingFaceWithTongue()
  * @method static string moneyMouthFace()
- * ##### Emoji subgroup: FACE-HAND #####
+ *                                                                                          ##### Emoji subgroup: FACE-HAND #####
  * @method static string huggingFace()
  * @method static string faceWithHandOverMouth()
  * @method static string shushingFace()
  * @method static string thinkingFace()
- * ##### Emoji subgroup: FACE-NEUTRAL-SKEPTICAL #####
+ *                                                                                          ##### Emoji subgroup: FACE-NEUTRAL-SKEPTICAL #####
  * @method static string zipperMouthFace()
  * @method static string faceWithRaisedEyebrow()
  * @method static string neutralFace()
@@ -62,13 +64,13 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string grimacingFace()
  * @method static string faceExhaling()
  * @method static string lyingFace()
- * ##### Emoji subgroup: FACE-SLEEPY #####
+ *                                                                                          ##### Emoji subgroup: FACE-SLEEPY #####
  * @method static string relievedFace()
  * @method static string pensiveFace()
  * @method static string sleepyFace()
  * @method static string droolingFace()
  * @method static string sleepingFace()
- * ##### Emoji subgroup: FACE-UNWELL #####
+ *                                                                                          ##### Emoji subgroup: FACE-UNWELL #####
  * @method static string faceWithMedicalMask()
  * @method static string faceWithThermometer()
  * @method static string faceWithHeadBandage()
@@ -81,15 +83,15 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string knockedOutFace()
  * @method static string faceWithSpiralEyes()
  * @method static string explodingHead()
- * ##### Emoji subgroup: FACE-HAT #####
+ *                                                                                          ##### Emoji subgroup: FACE-HAT #####
  * @method static string cowboyHatFace()
  * @method static string partyingFace()
  * @method static string disguisedFace()
- * ##### Emoji subgroup: FACE-GLASSES #####
+ *                                                                                          ##### Emoji subgroup: FACE-GLASSES #####
  * @method static string smilingFaceWithSunglasses()
  * @method static string nerdFace()
  * @method static string faceWithMonocle()
- * ##### Emoji subgroup: FACE-CONCERNED #####
+ *                                                                                          ##### Emoji subgroup: FACE-CONCERNED #####
  * @method static string confusedFace()
  * @method static string worriedFace()
  * @method static string slightlyFrowningFace()
@@ -114,7 +116,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string wearyFace()
  * @method static string tiredFace()
  * @method static string yawningFace()
- * ##### Emoji subgroup: FACE-NEGATIVE #####
+ *                                                                                          ##### Emoji subgroup: FACE-NEGATIVE #####
  * @method static string faceWithSteamFromNose()
  * @method static string poutingFace()
  * @method static string angryFace()
@@ -123,7 +125,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string angryFaceWithHorns()
  * @method static string skull()
  * @method static string skullAndCrossbones()
- * ##### Emoji subgroup: FACE-COSTUME #####
+ *                                                                                          ##### Emoji subgroup: FACE-COSTUME #####
  * @method static string pileOfPoo()
  * @method static string clownFace()
  * @method static string ogre()
@@ -132,7 +134,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string alien()
  * @method static string alienMonster()
  * @method static string robot()
- * ##### Emoji subgroup: CAT-FACE #####
+ *                                                                                          ##### Emoji subgroup: CAT-FACE #####
  * @method static string grinningCat()
  * @method static string grinningCatWithSmilingEyes()
  * @method static string catWithTearsOfJoy()
@@ -142,11 +144,11 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string wearyCat()
  * @method static string cryingCat()
  * @method static string poutingCat()
- * ##### Emoji subgroup: MONKEY-FACE #####
+ *                                                                                          ##### Emoji subgroup: MONKEY-FACE #####
  * @method static string seeNoEvilMonkey()
  * @method static string hearNoEvilMonkey()
  * @method static string speakNoEvilMonkey()
- * ##### Emoji subgroup: EMOTION #####
+ *                                                                                          ##### Emoji subgroup: EMOTION #####
  * @method static string kissMark()
  * @method static string loveLetter()
  * @method static string heartWithArrow()
@@ -184,8 +186,8 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string rightAngerBubble()
  * @method static string thoughtBalloon()
  * @method static string zzz()
- * ##### Emoji group: PEOPLE & BODY #####
- * ##### Emoji subgroup: HAND-FINGERS-OPEN #####
+ *                                                                                          ##### Emoji group: PEOPLE & BODY #####
+ *                                                                                          ##### Emoji subgroup: HAND-FINGERS-OPEN #####
  * @method static string wavingHand()
  * @method static string wavingHandLightSkinTone()
  * @method static string wavingHandMediumLightSkinTone()
@@ -216,7 +218,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string vulcanSaluteMediumSkinTone()
  * @method static string vulcanSaluteMediumDarkSkinTone()
  * @method static string vulcanSaluteDarkSkinTone()
- * ##### Emoji subgroup: HAND-FINGERS-PARTIAL #####
+ *                                                                                          ##### Emoji subgroup: HAND-FINGERS-PARTIAL #####
  * @method static string okHand()
  * @method static string okHandLightSkinTone()
  * @method static string okHandMediumLightSkinTone()
@@ -265,7 +267,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string callMeHandMediumSkinTone()
  * @method static string callMeHandMediumDarkSkinTone()
  * @method static string callMeHandDarkSkinTone()
- * ##### Emoji subgroup: HAND-SINGLE-FINGER #####
+ *                                                                                          ##### Emoji subgroup: HAND-SINGLE-FINGER #####
  * @method static string backhandIndexPointingLeft()
  * @method static string backhandIndexPointingLeftLightSkinTone()
  * @method static string backhandIndexPointingLeftMediumLightSkinTone()
@@ -302,7 +304,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string indexPointingUpMediumSkinTone()
  * @method static string indexPointingUpMediumDarkSkinTone()
  * @method static string indexPointingUpDarkSkinTone()
- * ##### Emoji subgroup: HAND-FINGERS-CLOSED #####
+ *                                                                                          ##### Emoji subgroup: HAND-FINGERS-CLOSED #####
  * @method static string thumbsUp()
  * @method static string thumbsUpLightSkinTone()
  * @method static string thumbsUpMediumLightSkinTone()
@@ -339,7 +341,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string rightFacingFistMediumSkinTone()
  * @method static string rightFacingFistMediumDarkSkinTone()
  * @method static string rightFacingFistDarkSkinTone()
- * ##### Emoji subgroup: HANDS #####
+ *                                                                                          ##### Emoji subgroup: HANDS #####
  * @method static string clappingHands()
  * @method static string clappingHandsLightSkinTone()
  * @method static string clappingHandsMediumLightSkinTone()
@@ -371,7 +373,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string foldedHandsMediumSkinTone()
  * @method static string foldedHandsMediumDarkSkinTone()
  * @method static string foldedHandsDarkSkinTone()
- * ##### Emoji subgroup: HAND-PROP #####
+ *                                                                                          ##### Emoji subgroup: HAND-PROP #####
  * @method static string writingHand()
  * @method static string writingHandLightSkinTone()
  * @method static string writingHandMediumLightSkinTone()
@@ -390,7 +392,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string selfieMediumSkinTone()
  * @method static string selfieMediumDarkSkinTone()
  * @method static string selfieDarkSkinTone()
- * ##### Emoji subgroup: BODY-PARTS #####
+ *                                                                                          ##### Emoji subgroup: BODY-PARTS #####
  * @method static string flexedBiceps()
  * @method static string flexedBicepsLightSkinTone()
  * @method static string flexedBicepsMediumLightSkinTone()
@@ -438,7 +440,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string eye()
  * @method static string tongue()
  * @method static string mouth()
- * ##### Emoji subgroup: PERSON #####
+ *                                                                                          ##### Emoji subgroup: PERSON #####
  * @method static string baby()
  * @method static string babyLightSkinTone()
  * @method static string babyMediumLightSkinTone()
@@ -607,7 +609,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string oldWomanMediumSkinTone()
  * @method static string oldWomanMediumDarkSkinTone()
  * @method static string oldWomanDarkSkinTone()
- * ##### Emoji subgroup: PERSON-GESTURE #####
+ *                                                                                          ##### Emoji subgroup: PERSON-GESTURE #####
  * @method static string personFrowning()
  * @method static string personFrowningLightSkinTone()
  * @method static string personFrowningMediumLightSkinTone()
@@ -788,7 +790,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanShruggingMediumSkinTone()
  * @method static string womanShruggingMediumDarkSkinTone()
  * @method static string womanShruggingDarkSkinTone()
- * ##### Emoji subgroup: PERSON-ROLE #####
+ *                                                                                          ##### Emoji subgroup: PERSON-ROLE #####
  * @method static string healthWorker()
  * @method static string healthWorkerLightSkinTone()
  * @method static string healthWorkerMediumLightSkinTone()
@@ -1263,7 +1265,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string personFeedingBabyMediumSkinTone()
  * @method static string personFeedingBabyMediumDarkSkinTone()
  * @method static string personFeedingBabyDarkSkinTone()
- * ##### Emoji subgroup: PERSON-FANTASY #####
+ *                                                                                          ##### Emoji subgroup: PERSON-FANTASY #####
  * @method static string babyAngel()
  * @method static string babyAngelLightSkinTone()
  * @method static string babyAngelMediumLightSkinTone()
@@ -1420,7 +1422,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string zombie()
  * @method static string manZombie()
  * @method static string womanZombie()
- * ##### Emoji subgroup: PERSON-ACTIVITY #####
+ *                                                                                          ##### Emoji subgroup: PERSON-ACTIVITY #####
  * @method static string personGettingMassage()
  * @method static string personGettingMassageLightSkinTone()
  * @method static string personGettingMassageMediumLightSkinTone()
@@ -1640,7 +1642,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanClimbingMediumSkinTone()
  * @method static string womanClimbingMediumDarkSkinTone()
  * @method static string womanClimbingDarkSkinTone()
- * ##### Emoji subgroup: PERSON-SPORT #####
+ *                                                                                          ##### Emoji subgroup: PERSON-SPORT #####
  * @method static string personFencing()
  * @method static string horseRacing()
  * @method static string horseRacingLightSkinTone()
@@ -1874,7 +1876,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanJugglingMediumSkinTone()
  * @method static string womanJugglingMediumDarkSkinTone()
  * @method static string womanJugglingDarkSkinTone()
- * ##### Emoji subgroup: PERSON-RESTING #####
+ *                                                                                          ##### Emoji subgroup: PERSON-RESTING #####
  * @method static string personInLotusPosition()
  * @method static string personInLotusPositionLightSkinTone()
  * @method static string personInLotusPositionMediumLightSkinTone()
@@ -1905,7 +1907,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string personInBedMediumSkinTone()
  * @method static string personInBedMediumDarkSkinTone()
  * @method static string personInBedDarkSkinTone()
- * ##### Emoji subgroup: FAMILY #####
+ *                                                                                          ##### Emoji subgroup: FAMILY #####
  * @method static string peopleHoldingHands()
  * @method static string peopleHoldingHandsLightSkinTone()
  * @method static string peopleHoldingHandsLightSkinToneMediumLightSkinTone()
@@ -2244,26 +2246,26 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string familyWomanGirl()
  * @method static string familyWomanGirlBoy()
  * @method static string familyWomanGirlGirl()
- * ##### Emoji subgroup: PERSON-SYMBOL #####
+ *                                                                                          ##### Emoji subgroup: PERSON-SYMBOL #####
  * @method static string speakingHead()
  * @method static string bustInSilhouette()
  * @method static string bustsInSilhouette()
  * @method static string peopleHugging()
  * @method static string footprints()
- * ##### Emoji group: COMPONENT #####
- * ##### Emoji subgroup: SKIN-TONE #####
+ *                                                                                          ##### Emoji group: COMPONENT #####
+ *                                                                                          ##### Emoji subgroup: SKIN-TONE #####
  * @method static string lightSkinTone()
  * @method static string mediumLightSkinTone()
  * @method static string mediumSkinTone()
  * @method static string mediumDarkSkinTone()
  * @method static string darkSkinTone()
- * ##### Emoji subgroup: HAIR-STYLE #####
+ *                                                                                          ##### Emoji subgroup: HAIR-STYLE #####
  * @method static string redHair()
  * @method static string curlyHair()
  * @method static string whiteHair()
  * @method static string bald()
- * ##### Emoji group: ANIMALS & NATURE #####
- * ##### Emoji subgroup: ANIMAL-MAMMAL #####
+ *                                                                                          ##### Emoji group: ANIMALS & NATURE #####
+ *                                                                                          ##### Emoji subgroup: ANIMAL-MAMMAL #####
  * @method static string monkeyFace()
  * @method static string monkey()
  * @method static string gorilla()
@@ -2328,7 +2330,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string kangaroo()
  * @method static string badger()
  * @method static string pawPrints()
- * ##### Emoji subgroup: ANIMAL-BIRD #####
+ *                                                                                          ##### Emoji subgroup: ANIMAL-BIRD #####
  * @method static string turkey()
  * @method static string chicken()
  * @method static string rooster()
@@ -2347,9 +2349,9 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flamingo()
  * @method static string peacock()
  * @method static string parrot()
- * ##### Emoji subgroup: ANIMAL-AMPHIBIAN #####
+ *                                                                                          ##### Emoji subgroup: ANIMAL-AMPHIBIAN #####
  * @method static string frog()
- * ##### Emoji subgroup: ANIMAL-REPTILE #####
+ *                                                                                          ##### Emoji subgroup: ANIMAL-REPTILE #####
  * @method static string crocodile()
  * @method static string turtle()
  * @method static string lizard()
@@ -2358,7 +2360,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string dragon()
  * @method static string sauropod()
  * @method static string tRex()
- * ##### Emoji subgroup: ANIMAL-MARINE #####
+ *                                                                                          ##### Emoji subgroup: ANIMAL-MARINE #####
  * @method static string spoutingWhale()
  * @method static string whale()
  * @method static string dolphin()
@@ -2369,7 +2371,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string shark()
  * @method static string octopus()
  * @method static string spiralShell()
- * ##### Emoji subgroup: ANIMAL-BUG #####
+ *                                                                                          ##### Emoji subgroup: ANIMAL-BUG #####
  * @method static string snail()
  * @method static string butterfly()
  * @method static string bug()
@@ -2386,7 +2388,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string fly()
  * @method static string worm()
  * @method static string microbe()
- * ##### Emoji subgroup: PLANT-FLOWER #####
+ *                                                                                          ##### Emoji subgroup: PLANT-FLOWER #####
  * @method static string bouquet()
  * @method static string cherryBlossom()
  * @method static string whiteFlower()
@@ -2397,7 +2399,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string sunflower()
  * @method static string blossom()
  * @method static string tulip()
- * ##### Emoji subgroup: PLANT-OTHER #####
+ *                                                                                          ##### Emoji subgroup: PLANT-OTHER #####
  * @method static string seedling()
  * @method static string pottedPlant()
  * @method static string evergreenTree()
@@ -2411,8 +2413,8 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string mapleLeaf()
  * @method static string fallenLeaf()
  * @method static string leafFlutteringInWind()
- * ##### Emoji group: FOOD & DRINK #####
- * ##### Emoji subgroup: FOOD-FRUIT #####
+ *                                                                                          ##### Emoji group: FOOD & DRINK #####
+ *                                                                                          ##### Emoji subgroup: FOOD-FRUIT #####
  * @method static string grapes()
  * @method static string melon()
  * @method static string watermelon()
@@ -2432,7 +2434,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string tomato()
  * @method static string olive()
  * @method static string coconut()
- * ##### Emoji subgroup: FOOD-VEGETABLE #####
+ *                                                                                          ##### Emoji subgroup: FOOD-VEGETABLE #####
  * @method static string avocado()
  * @method static string eggplant()
  * @method static string potato()
@@ -2448,7 +2450,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string mushroom()
  * @method static string peanuts()
  * @method static string chestnut()
- * ##### Emoji subgroup: FOOD-PREPARED #####
+ *                                                                                          ##### Emoji subgroup: FOOD-PREPARED #####
  * @method static string bread()
  * @method static string croissant()
  * @method static string baguetteBread()
@@ -2483,7 +2485,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string butter()
  * @method static string salt()
  * @method static string cannedFood()
- * ##### Emoji subgroup: FOOD-ASIAN #####
+ *                                                                                          ##### Emoji subgroup: FOOD-ASIAN #####
  * @method static string bentoBox()
  * @method static string riceCracker()
  * @method static string riceBall()
@@ -2501,13 +2503,13 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string dumpling()
  * @method static string fortuneCookie()
  * @method static string takeoutBox()
- * ##### Emoji subgroup: FOOD-MARINE #####
+ *                                                                                          ##### Emoji subgroup: FOOD-MARINE #####
  * @method static string crab()
  * @method static string lobster()
  * @method static string shrimp()
  * @method static string squid()
  * @method static string oyster()
- * ##### Emoji subgroup: FOOD-SWEET #####
+ *                                                                                          ##### Emoji subgroup: FOOD-SWEET #####
  * @method static string softIceCream()
  * @method static string shavedIce()
  * @method static string iceCream()
@@ -2522,7 +2524,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string lollipop()
  * @method static string custard()
  * @method static string honeyPot()
- * ##### Emoji subgroup: DRINK #####
+ *                                                                                          ##### Emoji subgroup: DRINK #####
  * @method static string babyBottle()
  * @method static string glassOfMilk()
  * @method static string hotBeverage()
@@ -2542,15 +2544,15 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string beverageBox()
  * @method static string mate()
  * @method static string ice()
- * ##### Emoji subgroup: DISHWARE #####
+ *                                                                                          ##### Emoji subgroup: DISHWARE #####
  * @method static string chopsticks()
  * @method static string forkAndKnifeWithPlate()
  * @method static string forkAndKnife()
  * @method static string spoon()
  * @method static string kitchenKnife()
  * @method static string amphora()
- * ##### Emoji group: TRAVEL & PLACES #####
- * ##### Emoji subgroup: PLACE-MAP #####
+ *                                                                                          ##### Emoji group: TRAVEL & PLACES #####
+ *                                                                                          ##### Emoji subgroup: PLACE-MAP #####
  * @method static string globeShowingEuropeAfrica()
  * @method static string globeShowingAmericas()
  * @method static string globeShowingAsiaAustralia()
@@ -2558,7 +2560,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string worldMap()
  * @method static string mapOfJapan()
  * @method static string compass()
- * ##### Emoji subgroup: PLACE-GEOGRAPHIC #####
+ *                                                                                          ##### Emoji subgroup: PLACE-GEOGRAPHIC #####
  * @method static string snowCappedMountain()
  * @method static string mountain()
  * @method static string volcano()
@@ -2568,7 +2570,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string desert()
  * @method static string desertIsland()
  * @method static string nationalPark()
- * ##### Emoji subgroup: PLACE-BUILDING #####
+ *                                                                                          ##### Emoji subgroup: PLACE-BUILDING #####
  * @method static string stadium()
  * @method static string classicalBuilding()
  * @method static string buildingConstruction()
@@ -2596,14 +2598,14 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string wedding()
  * @method static string tokyoTower()
  * @method static string statueOfLiberty()
- * ##### Emoji subgroup: PLACE-RELIGIOUS #####
+ *                                                                                          ##### Emoji subgroup: PLACE-RELIGIOUS #####
  * @method static string church()
  * @method static string mosque()
  * @method static string hinduTemple()
  * @method static string synagogue()
  * @method static string shintoShrine()
  * @method static string kaaba()
- * ##### Emoji subgroup: PLACE-OTHER #####
+ *                                                                                          ##### Emoji subgroup: PLACE-OTHER #####
  * @method static string fountain()
  * @method static string tent()
  * @method static string foggy()
@@ -2620,7 +2622,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string rollerCoaster()
  * @method static string barberPole()
  * @method static string circusTent()
- * ##### Emoji subgroup: TRANSPORT-GROUND #####
+ *                                                                                          ##### Emoji subgroup: TRANSPORT-GROUND #####
  * @method static string locomotive()
  * @method static string railwayCar()
  * @method static string highSpeedTrain()
@@ -2670,7 +2672,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string verticalTrafficLight()
  * @method static string stopSign()
  * @method static string construction()
- * ##### Emoji subgroup: TRANSPORT-WATER #####
+ *                                                                                          ##### Emoji subgroup: TRANSPORT-WATER #####
  * @method static string anchor()
  * @method static string sailboat()
  * @method static string canoe()
@@ -2679,7 +2681,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string ferry()
  * @method static string motorBoat()
  * @method static string ship()
- * ##### Emoji subgroup: TRANSPORT-AIR #####
+ *                                                                                          ##### Emoji subgroup: TRANSPORT-AIR #####
  * @method static string airplane()
  * @method static string smallAirplane()
  * @method static string airplaneDeparture()
@@ -2693,10 +2695,10 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string satellite()
  * @method static string rocket()
  * @method static string flyingSaucer()
- * ##### Emoji subgroup: HOTEL #####
+ *                                                                                          ##### Emoji subgroup: HOTEL #####
  * @method static string bellhopBell()
  * @method static string luggage()
- * ##### Emoji subgroup: TIME #####
+ *                                                                                          ##### Emoji subgroup: TIME #####
  * @method static string hourglassDone()
  * @method static string hourglassNotDone()
  * @method static string watch()
@@ -2728,7 +2730,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string tenThirty()
  * @method static string elevenOClock()
  * @method static string elevenThirty()
- * ##### Emoji subgroup: SKY & WEATHER #####
+ *                                                                                          ##### Emoji subgroup: SKY & WEATHER #####
  * @method static string newMoon()
  * @method static string waxingCrescentMoon()
  * @method static string firstQuarterMoon()
@@ -2776,8 +2778,8 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string fire()
  * @method static string droplet()
  * @method static string waterWave()
- * ##### Emoji group: ACTIVITIES #####
- * ##### Emoji subgroup: EVENT #####
+ *                                                                                          ##### Emoji group: ACTIVITIES #####
+ *                                                                                          ##### Emoji subgroup: EVENT #####
  * @method static string jackOLantern()
  * @method static string christmasTree()
  * @method static string fireworks()
@@ -2799,14 +2801,14 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string reminderRibbon()
  * @method static string admissionTickets()
  * @method static string ticket()
- * ##### Emoji subgroup: AWARD-MEDAL #####
+ *                                                                                          ##### Emoji subgroup: AWARD-MEDAL #####
  * @method static string militaryMedal()
  * @method static string trophy()
  * @method static string sportsMedal()
  * @method static string firstPlaceMedal()
  * @method static string secondPlaceMedal()
  * @method static string thirdPlaceMedal()
- * ##### Emoji subgroup: SPORT #####
+ *                                                                                          ##### Emoji subgroup: SPORT #####
  * @method static string soccerBall()
  * @method static string baseball()
  * @method static string softball()
@@ -2834,7 +2836,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string skis()
  * @method static string sled()
  * @method static string curlingStone()
- * ##### Emoji subgroup: GAME #####
+ *                                                                                          ##### Emoji subgroup: GAME #####
  * @method static string bullseye()
  * @method static string yoYo()
  * @method static string kite()
@@ -2858,7 +2860,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string joker()
  * @method static string mahjongRedDragon()
  * @method static string flowerPlayingCards()
- * ##### Emoji subgroup: ARTS & CRAFTS #####
+ *                                                                                          ##### Emoji subgroup: ARTS & CRAFTS #####
  * @method static string performingArts()
  * @method static string framedPicture()
  * @method static string artistPalette()
@@ -2866,8 +2868,8 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string sewingNeedle()
  * @method static string yarn()
  * @method static string knot()
- * ##### Emoji group: OBJECTS #####
- * ##### Emoji subgroup: CLOTHING #####
+ *                                                                                          ##### Emoji group: OBJECTS #####
+ *                                                                                          ##### Emoji subgroup: CLOTHING #####
  * @method static string glasses()
  * @method static string sunglasses()
  * @method static string goggles()
@@ -2913,7 +2915,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string lipstick()
  * @method static string ring()
  * @method static string gemStone()
- * ##### Emoji subgroup: SOUND #####
+ *                                                                                          ##### Emoji subgroup: SOUND #####
  * @method static string mutedSpeaker()
  * @method static string speakerLowVolume()
  * @method static string speakerMediumVolume()
@@ -2923,7 +2925,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string postalHorn()
  * @method static string bell()
  * @method static string bellWithSlash()
- * ##### Emoji subgroup: MUSIC #####
+ *                                                                                          ##### Emoji subgroup: MUSIC #####
  * @method static string musicalScore()
  * @method static string musicalNote()
  * @method static string musicalNotes()
@@ -2933,7 +2935,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string microphone()
  * @method static string headphone()
  * @method static string radio()
- * ##### Emoji subgroup: MUSICAL-INSTRUMENT #####
+ *                                                                                          ##### Emoji subgroup: MUSICAL-INSTRUMENT #####
  * @method static string saxophone()
  * @method static string accordion()
  * @method static string guitar()
@@ -2943,14 +2945,14 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string banjo()
  * @method static string drum()
  * @method static string longDrum()
- * ##### Emoji subgroup: PHONE #####
+ *                                                                                          ##### Emoji subgroup: PHONE #####
  * @method static string mobilePhone()
  * @method static string mobilePhoneWithArrow()
  * @method static string telephone()
  * @method static string telephoneReceiver()
  * @method static string pager()
  * @method static string faxMachine()
- * ##### Emoji subgroup: COMPUTER #####
+ *                                                                                          ##### Emoji subgroup: COMPUTER #####
  * @method static string battery()
  * @method static string electricPlug()
  * @method static string laptop()
@@ -2964,7 +2966,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string opticalDisk()
  * @method static string dvd()
  * @method static string abacus()
- * ##### Emoji subgroup: LIGHT & VIDEO #####
+ *                                                                                          ##### Emoji subgroup: LIGHT & VIDEO #####
  * @method static string movieCamera()
  * @method static string filmFrames()
  * @method static string filmProjector()
@@ -2981,7 +2983,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flashlight()
  * @method static string redPaperLantern()
  * @method static string diyaLamp()
- * ##### Emoji subgroup: BOOK-PAPER #####
+ *                                                                                          ##### Emoji subgroup: BOOK-PAPER #####
  * @method static string notebookWithDecorativeCover()
  * @method static string closedBook()
  * @method static string openBook()
@@ -2999,7 +3001,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string bookmarkTabs()
  * @method static string bookmark()
  * @method static string label()
- * ##### Emoji subgroup: MONEY #####
+ *                                                                                          ##### Emoji subgroup: MONEY #####
  * @method static string moneyBag()
  * @method static string coin()
  * @method static string yenBanknote()
@@ -3010,7 +3012,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string creditCard()
  * @method static string receipt()
  * @method static string chartIncreasingWithYen()
- * ##### Emoji subgroup: MAIL #####
+ *                                                                                          ##### Emoji subgroup: MAIL #####
  * @method static string envelope()
  * @method static string eMail()
  * @method static string incomingEnvelope()
@@ -3024,7 +3026,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string openMailboxWithLoweredFlag()
  * @method static string postbox()
  * @method static string ballotBoxWithBallot()
- * ##### Emoji subgroup: WRITING #####
+ *                                                                                          ##### Emoji subgroup: WRITING #####
  * @method static string pencil()
  * @method static string blackNib()
  * @method static string fountainPen()
@@ -3032,7 +3034,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string paintbrush()
  * @method static string crayon()
  * @method static string memo()
- * ##### Emoji subgroup: OFFICE #####
+ *                                                                                          ##### Emoji subgroup: OFFICE #####
  * @method static string briefcase()
  * @method static string fileFolder()
  * @method static string openFileFolder()
@@ -3056,14 +3058,14 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string cardFileBox()
  * @method static string fileCabinet()
  * @method static string wastebasket()
- * ##### Emoji subgroup: LOCK #####
+ *                                                                                          ##### Emoji subgroup: LOCK #####
  * @method static string locked()
  * @method static string unlocked()
  * @method static string lockedWithPen()
  * @method static string lockedWithKey()
  * @method static string key()
  * @method static string oldKey()
- * ##### Emoji subgroup: TOOL #####
+ *                                                                                          ##### Emoji subgroup: TOOL #####
  * @method static string hammer()
  * @method static string axe()
  * @method static string pick()
@@ -3089,7 +3091,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string toolbox()
  * @method static string magnet()
  * @method static string ladder()
- * ##### Emoji subgroup: SCIENCE #####
+ *                                                                                          ##### Emoji subgroup: SCIENCE #####
  * @method static string alembic()
  * @method static string testTube()
  * @method static string petriDish()
@@ -3097,13 +3099,13 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string microscope()
  * @method static string telescope()
  * @method static string satelliteAntenna()
- * ##### Emoji subgroup: MEDICAL #####
+ *                                                                                          ##### Emoji subgroup: MEDICAL #####
  * @method static string syringe()
  * @method static string dropOfBlood()
  * @method static string pill()
  * @method static string adhesiveBandage()
  * @method static string stethoscope()
- * ##### Emoji subgroup: HOUSEHOLD #####
+ *                                                                                          ##### Emoji subgroup: HOUSEHOLD #####
  * @method static string door()
  * @method static string elevator()
  * @method static string mirror()
@@ -3128,15 +3130,15 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string sponge()
  * @method static string fireExtinguisher()
  * @method static string shoppingCart()
- * ##### Emoji subgroup: OTHER-OBJECT #####
+ *                                                                                          ##### Emoji subgroup: OTHER-OBJECT #####
  * @method static string cigarette()
  * @method static string coffin()
  * @method static string headstone()
  * @method static string funeralUrn()
  * @method static string moai()
  * @method static string placard()
- * ##### Emoji group: SYMBOLS #####
- * ##### Emoji subgroup: TRANSPORT-SIGN #####
+ *                                                                                          ##### Emoji group: SYMBOLS #####
+ *                                                                                          ##### Emoji subgroup: TRANSPORT-SIGN #####
  * @method static string atmSign()
  * @method static string litterInBinSign()
  * @method static string potableWater()
@@ -3150,7 +3152,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string customs()
  * @method static string baggageClaim()
  * @method static string leftLuggage()
- * ##### Emoji subgroup: WARNING #####
+ *                                                                                          ##### Emoji subgroup: WARNING #####
  * @method static string warning()
  * @method static string childrenCrossing()
  * @method static string noEntry()
@@ -3164,7 +3166,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string noOneUnderEighteen()
  * @method static string radioactive()
  * @method static string biohazard()
- * ##### Emoji subgroup: ARROW #####
+ *                                                                                          ##### Emoji subgroup: ARROW #####
  * @method static string upArrow()
  * @method static string upRightArrow()
  * @method static string rightArrow()
@@ -3186,7 +3188,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string onArrow()
  * @method static string soonArrow()
  * @method static string topArrow()
- * ##### Emoji subgroup: RELIGION #####
+ *                                                                                          ##### Emoji subgroup: RELIGION #####
  * @method static string placeOfWorship()
  * @method static string atomSymbol()
  * @method static string om()
@@ -3199,7 +3201,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string peaceSymbol()
  * @method static string menorah()
  * @method static string dottedSixPointedStar()
- * ##### Emoji subgroup: ZODIAC #####
+ *                                                                                          ##### Emoji subgroup: ZODIAC #####
  * @method static string aries()
  * @method static string taurus()
  * @method static string gemini()
@@ -3213,7 +3215,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string aquarius()
  * @method static string pisces()
  * @method static string ophiuchus()
- * ##### Emoji subgroup: AV-SYMBOL #####
+ *                                                                                          ##### Emoji subgroup: AV-SYMBOL #####
  * @method static string shuffleTracksButton()
  * @method static string repeatButton()
  * @method static string repeatSingleButton()
@@ -3238,17 +3240,17 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string antennaBars()
  * @method static string vibrationMode()
  * @method static string mobilePhoneOff()
- * ##### Emoji subgroup: GENDER #####
+ *                                                                                          ##### Emoji subgroup: GENDER #####
  * @method static string femaleSign()
  * @method static string maleSign()
  * @method static string transgenderSymbol()
- * ##### Emoji subgroup: MATH #####
+ *                                                                                          ##### Emoji subgroup: MATH #####
  * @method static string multiply()
  * @method static string plus()
  * @method static string minus()
  * @method static string divide()
  * @method static string infinity()
- * ##### Emoji subgroup: PUNCTUATION #####
+ *                                                                                          ##### Emoji subgroup: PUNCTUATION #####
  * @method static string doubleExclamationMark()
  * @method static string exclamationQuestionMark()
  * @method static string redQuestionMark()
@@ -3256,10 +3258,10 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string whiteExclamationMark()
  * @method static string redExclamationMark()
  * @method static string wavyDash()
- * ##### Emoji subgroup: CURRENCY #####
+ *                                                                                          ##### Emoji subgroup: CURRENCY #####
  * @method static string currencyExchange()
  * @method static string heavyDollarSign()
- * ##### Emoji subgroup: OTHER-SYMBOL #####
+ *                                                                                          ##### Emoji subgroup: OTHER-SYMBOL #####
  * @method static string medicalSymbol()
  * @method static string recyclingSymbol()
  * @method static string fleurDeLis()
@@ -3281,7 +3283,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string copyright()
  * @method static string registered()
  * @method static string tradeMark()
- * ##### Emoji subgroup: KEYCAP #####
+ *                                                                                          ##### Emoji subgroup: KEYCAP #####
  * @method static string keycapHash()
  * @method static string keycapAsterisk()
  * @method static string keycap0()
@@ -3295,7 +3297,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string keycap8()
  * @method static string keycap9()
  * @method static string keycap10()
- * ##### Emoji subgroup: ALPHANUM #####
+ *                                                                                          ##### Emoji subgroup: ALPHANUM #####
  * @method static string inputLatinUppercase()
  * @method static string inputLatinLowercase()
  * @method static string inputNumbers()
@@ -3335,7 +3337,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string japaneseSecretButton()
  * @method static string japaneseOpenForBusinessButton()
  * @method static string japaneseNoVacancyButton()
- * ##### Emoji subgroup: GEOMETRIC #####
+ *                                                                                          ##### Emoji subgroup: GEOMETRIC #####
  * @method static string redCircle()
  * @method static string orangeCircle()
  * @method static string yellowCircle()
@@ -3370,8 +3372,8 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string radioButton()
  * @method static string whiteSquareButton()
  * @method static string blackSquareButton()
- * ##### Emoji group: FLAGS #####
- * ##### Emoji subgroup: FLAG #####
+ *                                                                                          ##### Emoji group: FLAGS #####
+ *                                                                                          ##### Emoji subgroup: FLAG #####
  * @method static string chequeredFlag()
  * @method static string triangularFlag()
  * @method static string crossedFlags()
@@ -3380,7 +3382,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string rainbowFlag()
  * @method static string transgenderFlag()
  * @method static string pirateFlag()
- * ##### Emoji subgroup: COUNTRY-FLAG #####
+ *                                                                                          ##### Emoji subgroup: COUNTRY-FLAG #####
  * @method static string flagsForFlagAscensionIsland()
  * @method static string flagsForFlagAndorra()
  * @method static string flagsForFlagUnitedArabEmirates()
@@ -3639,7 +3641,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flagsForFlagSouthAfrica()
  * @method static string flagsForFlagZambia()
  * @method static string flagsForFlagZimbabwe()
- * ##### Emoji subgroup: SUBDIVISION-FLAG #####
+ *                                                                                          ##### Emoji subgroup: SUBDIVISION-FLAG #####
  * @method static string flagsForFlagEngland()
  * @method static string flagsForFlagScotland()
  * @method static string flagsForFlagWales()
@@ -7282,7 +7284,7 @@ class Emoji
     {
         $constantName = static::convertCharacterNameToConstantName($characterName);
 
-        if (! defined("static::{$constantName}")) {
+        if (!defined("static::{$constantName}")) {
             throw UnknownCharacter::create($characterName);
         }
 
@@ -7316,7 +7318,7 @@ class Emoji
 
     protected static function convertToSnakeCase(string $value): string
     {
-        if (! ctype_lower($value)) {
+        if (!ctype_lower($value)) {
             $value = preg_replace('/\s+/', '', $value);
 
             $value = mb_strtolower(preg_replace('/([^0-9])(?=[0-9])/', '$1'.'_', preg_replace('/(.)(?=[A-Z])/', '$1'.'_', $value)));

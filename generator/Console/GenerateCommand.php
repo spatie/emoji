@@ -117,7 +117,7 @@ class GenerateCommand extends Command
         $currentConstants = $this->getCurrentConstants();
         $deprecatedConstants = array_values(array_diff($currentConstants, array_column($this->emojisArray, 'const')));
 
-        if (! empty($deprecatedConstants)) {
+        if (!empty($deprecatedConstants)) {
             $codeToConstant = array_combine(array_column($this->emojisArray, 'code'), array_column($this->emojisArray, 'const'));
             $this->deprecationNotice .= PHP_EOL.'## deprecated constants'.PHP_EOL.PHP_EOL;
             foreach ($deprecatedConstants as $deprecatedConstant) {
@@ -126,12 +126,12 @@ class GenerateCommand extends Command
                 $replacedBy = $codeToConstant[$emojiCode] ?? null;
 
                 $this->deprecationNotice .= sprintf(
-                        '* %s *%s* `%s` => `%s`',
-                        $emoji,
-                        $emojiCode,
-                        Emoji::class.'::'.$deprecatedConstant,
-                        ($replacedBy ? Emoji::class.'::'.$replacedBy : 'N/A')
-                    ).PHP_EOL;
+                    '* %s *%s* `%s` => `%s`',
+                    $emoji,
+                    $emojiCode,
+                    Emoji::class.'::'.$deprecatedConstant,
+                    ($replacedBy ? Emoji::class.'::'.$replacedBy : 'N/A')
+                ).PHP_EOL;
             }
         }
     }
@@ -140,7 +140,7 @@ class GenerateCommand extends Command
     {
         $currentMethods = $this->getCurrentMethods();
         $deprecatedMethods = array_values(array_diff($currentMethods, array_column($this->emojisArray, 'method')));
-        if (! empty($deprecatedMethods)) {
+        if (!empty($deprecatedMethods)) {
             $codeToMethod = array_combine(array_column($this->emojisArray, 'code'), array_column($this->emojisArray, 'method'));
             $this->deprecationNotice .= PHP_EOL.'## deprecated methods'.PHP_EOL.PHP_EOL;
             foreach ($deprecatedMethods as $deprecatedMethod) {
@@ -149,12 +149,12 @@ class GenerateCommand extends Command
                 $replacedBy = $codeToMethod[$emojiCode] ?? null;
 
                 $this->deprecationNotice .= sprintf(
-                        '* %s *%s* `%s` => `%s`',
-                        $emoji,
-                        $emojiCode,
-                        Emoji::class.'::'.$deprecatedMethod.'()',
-                        ($replacedBy ? Emoji::class.'::'.$replacedBy.'()' : 'N/A')
-                    ).PHP_EOL;
+                    '* %s *%s* `%s` => `%s`',
+                    $emoji,
+                    $emojiCode,
+                    Emoji::class.'::'.$deprecatedMethod.'()',
+                    ($replacedBy ? Emoji::class.'::'.$replacedBy.'()' : 'N/A')
+                ).PHP_EOL;
             }
         }
     }
@@ -163,14 +163,14 @@ class GenerateCommand extends Command
     {
         $loader = new FilesystemLoader(__DIR__.'/../templates');
         $twig = new Environment($loader, [
-            'cache' => false,
+            'cache'      => false,
             'autoescape' => false,
         ]);
         $class = $twig->load('Emoji.twig')->render([
-            'url' => $url,
+            'url'       => $url,
             'loaded_at' => $this->now,
-            'version' => 'v'.self::EMOJI_VERSION,
-            'groups' => $this->groups,
+            'version'   => 'v'.self::EMOJI_VERSION,
+            'groups'    => $this->groups,
         ]);
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'.php', $class);
         file_put_contents(__DIR__.'/../../src/Emoji.php', $class);
