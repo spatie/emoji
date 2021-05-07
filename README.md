@@ -55,6 +55,11 @@ Or you can use the shorter method by leaving off "character" and using camelCase
 Emoji::grinningFace();
 ```
 
+If you want to get an array containing all emojis, you can use this method:
+```php
+Emoji::all();
+ ```
+
 You can also use an [ISO 3166 Alpha2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code and get the appropriate flag for the country:
 ```php
 Emoji::countryFlag('be'); // 🇧🇪

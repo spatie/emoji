@@ -50,6 +50,23 @@ class EmojiTest extends TestCase
         $this->assertSame('🇦🇦', Emoji::countryFlag('AA'));
     }
 
+    /** @test */
+    public function it_can_return_an_array_of_all_emoji_characters()
+    {
+        $this->assertIsArray(Emoji::all());
+        $this->assertCount(count($this->codeToCallableProvider()), Emoji::all());
+    }
+
+    /**
+     * @test
+     *
+     * @dataProvider codeToCallableProvider
+     */
+    public function all_emojis_list_will_contain_every_emoji_defined_as_const($name, $code, $cleanName, $const, $method)
+    {
+        $this->assertSame($this->unicodeHexToEmoji($code), Emoji::all()[$const]);
+    }
+
     /**
      * @test
      *

@@ -7300,6 +7300,13 @@ class Emoji
         return static::encodeCountryCodeLetter($countryCode[0]).static::encodeCountryCodeLetter($countryCode[1]);
     }
 
+    public static function all(): array
+    {
+        $reflectionClass = new \ReflectionClass(self::class);
+
+        return $reflectionClass->getConstants();
+    }
+
     public static function __callStatic(string $methodName, array $parameters): string
     {
         return static::getCharacter($methodName);
