@@ -2,6 +2,10 @@
 
 All notable changes to `emoji` will be documented in this file
 
+## 2.3.0 - 2021-05-09
+
+- add Emoji::all() method (#50)
+
 ## 2.2.0 - 2020-12-04
 
 - support PHP 8
