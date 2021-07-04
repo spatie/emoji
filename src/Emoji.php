@@ -10,7 +10,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  *
  * @link https://unicode.org/Public/emoji/13.1/emoji-test.txt
  * @version v13.1
- * loaded at: 2020-09-18 00:16:06
+ * loaded at: 2021-06-30 13:43:33
  *
  * ##### Emoji group: SMILEYS & EMOTION #####
  * ##### Emoji subgroup: FACE-SMILING #####
