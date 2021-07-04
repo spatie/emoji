@@ -2,6 +2,10 @@
 
 All notable changes to `emoji` will be documented in this file
 
+## 2.3.1 - 2021-07-04
+
+- fix generate command to create `all()` static method (#51)
+
 ## 2.3.0 - 2021-05-09
 
 - add Emoji::all() method (#50)
