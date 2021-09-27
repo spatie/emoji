@@ -2,6 +2,12 @@
 
 All notable changes to `emoji` will be documented in this file
 
+## 3.0.0 - 2021-09-27
+
+- Update to use Emoji 14 (#53)
+
+New major release as some of the emojis have been renamed
+
 ## 2.3.1 - 2021-07-04
 
 - fix generate command to create `all()` static method (#51)
