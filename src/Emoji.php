@@ -8,9 +8,9 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
 /**
  * Emoji class.
  *
- * @link https://unicode.org/Public/emoji/13.1/emoji-test.txt
- * @version v13.1
- * loaded at: 2021-06-30 13:43:33
+ * @link https://unicode.org/Public/emoji/14.0/emoji-test.txt
+ * @version v14.0
+ * loaded at: 2021-09-27 16:43:12
  *
  * ##### Emoji group: SMILEYS & EMOTION #####
  * ##### Emoji subgroup: FACE-SMILING #####
@@ -24,6 +24,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string faceWithTearsOfJoy()
  * @method static string slightlySmilingFace()
  * @method static string upsideDownFace()
+ * @method static string meltingFace()
  * @method static string winkingFace()
  * @method static string smilingFaceWithSmilingEyes()
  * @method static string smilingFaceWithHalo()
@@ -45,16 +46,20 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string squintingFaceWithTongue()
  * @method static string moneyMouthFace()
  * ##### Emoji subgroup: FACE-HAND #####
- * @method static string huggingFace()
+ * @method static string smilingFaceWithOpenHands()
  * @method static string faceWithHandOverMouth()
+ * @method static string faceWithOpenEyesAndHandOverMouth()
+ * @method static string faceWithPeekingEye()
  * @method static string shushingFace()
  * @method static string thinkingFace()
+ * @method static string salutingFace()
  * ##### Emoji subgroup: FACE-NEUTRAL-SKEPTICAL #####
  * @method static string zipperMouthFace()
  * @method static string faceWithRaisedEyebrow()
  * @method static string neutralFace()
  * @method static string expressionlessFace()
  * @method static string faceWithoutMouth()
+ * @method static string dottedLineFace()
  * @method static string faceInClouds()
  * @method static string smirkingFace()
  * @method static string unamusedFace()
@@ -78,7 +83,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string hotFace()
  * @method static string coldFace()
  * @method static string woozyFace()
- * @method static string knockedOutFace()
+ * @method static string faceWithCrossedOutEyes()
  * @method static string faceWithSpiralEyes()
  * @method static string explodingHead()
  * ##### Emoji subgroup: FACE-HAT #####
@@ -91,6 +96,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string faceWithMonocle()
  * ##### Emoji subgroup: FACE-CONCERNED #####
  * @method static string confusedFace()
+ * @method static string faceWithDiagonalMouth()
  * @method static string worriedFace()
  * @method static string slightlyFrowningFace()
  * @method static string frowningFace()
@@ -99,6 +105,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string astonishedFace()
  * @method static string flushedFace()
  * @method static string pleadingFace()
+ * @method static string faceHoldingBackTears()
  * @method static string frowningFaceWithOpenMouth()
  * @method static string anguishedFace()
  * @method static string fearfulFace()
@@ -216,6 +223,30 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string vulcanSaluteMediumSkinTone()
  * @method static string vulcanSaluteMediumDarkSkinTone()
  * @method static string vulcanSaluteDarkSkinTone()
+ * @method static string rightwardsHand()
+ * @method static string rightwardsHandLightSkinTone()
+ * @method static string rightwardsHandMediumLightSkinTone()
+ * @method static string rightwardsHandMediumSkinTone()
+ * @method static string rightwardsHandMediumDarkSkinTone()
+ * @method static string rightwardsHandDarkSkinTone()
+ * @method static string leftwardsHand()
+ * @method static string leftwardsHandLightSkinTone()
+ * @method static string leftwardsHandMediumLightSkinTone()
+ * @method static string leftwardsHandMediumSkinTone()
+ * @method static string leftwardsHandMediumDarkSkinTone()
+ * @method static string leftwardsHandDarkSkinTone()
+ * @method static string palmDownHand()
+ * @method static string palmDownHandLightSkinTone()
+ * @method static string palmDownHandMediumLightSkinTone()
+ * @method static string palmDownHandMediumSkinTone()
+ * @method static string palmDownHandMediumDarkSkinTone()
+ * @method static string palmDownHandDarkSkinTone()
+ * @method static string palmUpHand()
+ * @method static string palmUpHandLightSkinTone()
+ * @method static string palmUpHandMediumLightSkinTone()
+ * @method static string palmUpHandMediumSkinTone()
+ * @method static string palmUpHandMediumDarkSkinTone()
+ * @method static string palmUpHandDarkSkinTone()
  * ##### Emoji subgroup: HAND-FINGERS-PARTIAL #####
  * @method static string okHand()
  * @method static string okHandLightSkinTone()
@@ -247,6 +278,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string crossedFingersMediumSkinTone()
  * @method static string crossedFingersMediumDarkSkinTone()
  * @method static string crossedFingersDarkSkinTone()
+ * @method static string handWithIndexFingerAndThumbCrossed()
+ * @method static string handWithIndexFingerAndThumbCrossedLightSkinTone()
+ * @method static string handWithIndexFingerAndThumbCrossedMediumLightSkinTone()
+ * @method static string handWithIndexFingerAndThumbCrossedMediumSkinTone()
+ * @method static string handWithIndexFingerAndThumbCrossedMediumDarkSkinTone()
+ * @method static string handWithIndexFingerAndThumbCrossedDarkSkinTone()
  * @method static string loveYouGesture()
  * @method static string loveYouGestureLightSkinTone()
  * @method static string loveYouGestureMediumLightSkinTone()
@@ -302,6 +339,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string indexPointingUpMediumSkinTone()
  * @method static string indexPointingUpMediumDarkSkinTone()
  * @method static string indexPointingUpDarkSkinTone()
+ * @method static string indexPointingAtTheViewer()
+ * @method static string indexPointingAtTheViewerLightSkinTone()
+ * @method static string indexPointingAtTheViewerMediumLightSkinTone()
+ * @method static string indexPointingAtTheViewerMediumSkinTone()
+ * @method static string indexPointingAtTheViewerMediumDarkSkinTone()
+ * @method static string indexPointingAtTheViewerDarkSkinTone()
  * ##### Emoji subgroup: HAND-FINGERS-CLOSED #####
  * @method static string thumbsUp()
  * @method static string thumbsUpLightSkinTone()
@@ -352,6 +395,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string raisingHandsMediumSkinTone()
  * @method static string raisingHandsMediumDarkSkinTone()
  * @method static string raisingHandsDarkSkinTone()
+ * @method static string heartHands()
+ * @method static string heartHandsLightSkinTone()
+ * @method static string heartHandsMediumLightSkinTone()
+ * @method static string heartHandsMediumSkinTone()
+ * @method static string heartHandsMediumDarkSkinTone()
+ * @method static string heartHandsDarkSkinTone()
  * @method static string openHands()
  * @method static string openHandsLightSkinTone()
  * @method static string openHandsMediumLightSkinTone()
@@ -365,6 +414,31 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string palmsUpTogetherMediumDarkSkinTone()
  * @method static string palmsUpTogetherDarkSkinTone()
  * @method static string handshake()
+ * @method static string handshakeLightSkinTone()
+ * @method static string handshakeMediumLightSkinTone()
+ * @method static string handshakeMediumSkinTone()
+ * @method static string handshakeMediumDarkSkinTone()
+ * @method static string handshakeDarkSkinTone()
+ * @method static string handshakeLightSkinToneMediumLightSkinTone()
+ * @method static string handshakeLightSkinToneMediumSkinTone()
+ * @method static string handshakeLightSkinToneMediumDarkSkinTone()
+ * @method static string handshakeLightSkinToneDarkSkinTone()
+ * @method static string handshakeMediumLightSkinToneLightSkinTone()
+ * @method static string handshakeMediumLightSkinToneMediumSkinTone()
+ * @method static string handshakeMediumLightSkinToneMediumDarkSkinTone()
+ * @method static string handshakeMediumLightSkinToneDarkSkinTone()
+ * @method static string handshakeMediumSkinToneLightSkinTone()
+ * @method static string handshakeMediumSkinToneMediumLightSkinTone()
+ * @method static string handshakeMediumSkinToneMediumDarkSkinTone()
+ * @method static string handshakeMediumSkinToneDarkSkinTone()
+ * @method static string handshakeMediumDarkSkinToneLightSkinTone()
+ * @method static string handshakeMediumDarkSkinToneMediumLightSkinTone()
+ * @method static string handshakeMediumDarkSkinToneMediumSkinTone()
+ * @method static string handshakeMediumDarkSkinToneDarkSkinTone()
+ * @method static string handshakeDarkSkinToneLightSkinTone()
+ * @method static string handshakeDarkSkinToneMediumLightSkinTone()
+ * @method static string handshakeDarkSkinToneMediumSkinTone()
+ * @method static string handshakeDarkSkinToneMediumDarkSkinTone()
  * @method static string foldedHands()
  * @method static string foldedHandsLightSkinTone()
  * @method static string foldedHandsMediumLightSkinTone()
@@ -438,6 +512,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string eye()
  * @method static string tongue()
  * @method static string mouth()
+ * @method static string bitingLip()
  * ##### Emoji subgroup: PERSON #####
  * @method static string baby()
  * @method static string babyLightSkinTone()
@@ -1155,6 +1230,12 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanConstructionWorkerMediumSkinTone()
  * @method static string womanConstructionWorkerMediumDarkSkinTone()
  * @method static string womanConstructionWorkerDarkSkinTone()
+ * @method static string personWithCrown()
+ * @method static string personWithCrownLightSkinTone()
+ * @method static string personWithCrownMediumLightSkinTone()
+ * @method static string personWithCrownMediumSkinTone()
+ * @method static string personWithCrownMediumDarkSkinTone()
+ * @method static string personWithCrownDarkSkinTone()
  * @method static string prince()
  * @method static string princeLightSkinTone()
  * @method static string princeMediumLightSkinTone()
@@ -1239,6 +1320,18 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string pregnantWomanMediumSkinTone()
  * @method static string pregnantWomanMediumDarkSkinTone()
  * @method static string pregnantWomanDarkSkinTone()
+ * @method static string pregnantMan()
+ * @method static string pregnantManLightSkinTone()
+ * @method static string pregnantManMediumLightSkinTone()
+ * @method static string pregnantManMediumSkinTone()
+ * @method static string pregnantManMediumDarkSkinTone()
+ * @method static string pregnantManDarkSkinTone()
+ * @method static string pregnantPerson()
+ * @method static string pregnantPersonLightSkinTone()
+ * @method static string pregnantPersonMediumLightSkinTone()
+ * @method static string pregnantPersonMediumSkinTone()
+ * @method static string pregnantPersonMediumDarkSkinTone()
+ * @method static string pregnantPersonDarkSkinTone()
  * @method static string breastFeeding()
  * @method static string breastFeedingLightSkinTone()
  * @method static string breastFeedingMediumLightSkinTone()
@@ -1420,6 +1513,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string zombie()
  * @method static string manZombie()
  * @method static string womanZombie()
+ * @method static string troll()
  * ##### Emoji subgroup: PERSON-ACTIVITY #####
  * @method static string personGettingMassage()
  * @method static string personGettingMassageLightSkinTone()
@@ -2369,6 +2463,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string shark()
  * @method static string octopus()
  * @method static string spiralShell()
+ * @method static string coral()
  * ##### Emoji subgroup: ANIMAL-BUG #####
  * @method static string snail()
  * @method static string butterfly()
@@ -2390,6 +2485,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string bouquet()
  * @method static string cherryBlossom()
  * @method static string whiteFlower()
+ * @method static string lotus()
  * @method static string rosette()
  * @method static string rose()
  * @method static string wiltedFlower()
@@ -2411,6 +2507,8 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string mapleLeaf()
  * @method static string fallenLeaf()
  * @method static string leafFlutteringInWind()
+ * @method static string emptyNest()
+ * @method static string nestWithEggs()
  * ##### Emoji group: FOOD & DRINK #####
  * ##### Emoji subgroup: FOOD-FRUIT #####
  * @method static string grapes()
@@ -2447,6 +2545,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string onion()
  * @method static string mushroom()
  * @method static string peanuts()
+ * @method static string beans()
  * @method static string chestnut()
  * ##### Emoji subgroup: FOOD-PREPARED #####
  * @method static string bread()
@@ -2537,6 +2636,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string clinkingBeerMugs()
  * @method static string clinkingGlasses()
  * @method static string tumblerGlass()
+ * @method static string pouringLiquid()
  * @method static string cupWithStraw()
  * @method static string bubbleTea()
  * @method static string beverageBox()
@@ -2548,6 +2648,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string forkAndKnife()
  * @method static string spoon()
  * @method static string kitchenKnife()
+ * @method static string jar()
  * @method static string amphora()
  * ##### Emoji group: TRAVEL & PLACES #####
  * ##### Emoji subgroup: PLACE-MAP #####
@@ -2616,6 +2717,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string bridgeAtNight()
  * @method static string hotSprings()
  * @method static string carouselHorse()
+ * @method static string playgroundSlide()
  * @method static string ferrisWheel()
  * @method static string rollerCoaster()
  * @method static string barberPole()
@@ -2665,6 +2767,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string railwayTrack()
  * @method static string oilDrum()
  * @method static string fuelPump()
+ * @method static string wheel()
  * @method static string policeCarLight()
  * @method static string horizontalTrafficLight()
  * @method static string verticalTrafficLight()
@@ -2672,6 +2775,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string construction()
  * ##### Emoji subgroup: TRANSPORT-WATER #####
  * @method static string anchor()
+ * @method static string ringBuoy()
  * @method static string sailboat()
  * @method static string canoe()
  * @method static string speedboat()
@@ -2842,6 +2946,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string crystalBall()
  * @method static string magicWand()
  * @method static string nazarAmulet()
+ * @method static string hamsa()
  * @method static string videoGame()
  * @method static string joystick()
  * @method static string slotMachine()
@@ -2849,6 +2954,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string puzzlePiece()
  * @method static string teddyBear()
  * @method static string pinata()
+ * @method static string mirrorBall()
  * @method static string nestingDolls()
  * @method static string spadeSuit()
  * @method static string heartSuit()
@@ -2952,6 +3058,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string faxMachine()
  * ##### Emoji subgroup: COMPUTER #####
  * @method static string battery()
+ * @method static string lowBattery()
  * @method static string electricPlug()
  * @method static string laptop()
  * @method static string desktopComputer()
@@ -3102,7 +3209,9 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string dropOfBlood()
  * @method static string pill()
  * @method static string adhesiveBandage()
+ * @method static string crutch()
  * @method static string stethoscope()
+ * @method static string xRay()
  * ##### Emoji subgroup: HOUSEHOLD #####
  * @method static string door()
  * @method static string elevator()
@@ -3124,6 +3233,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string rollOfPaper()
  * @method static string bucket()
  * @method static string soap()
+ * @method static string bubbles()
  * @method static string toothbrush()
  * @method static string sponge()
  * @method static string fireExtinguisher()
@@ -3135,6 +3245,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string funeralUrn()
  * @method static string moai()
  * @method static string placard()
+ * @method static string identificationCard()
  * ##### Emoji group: SYMBOLS #####
  * ##### Emoji subgroup: TRANSPORT-SIGN #####
  * @method static string atmSign()
@@ -3247,6 +3358,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string plus()
  * @method static string minus()
  * @method static string divide()
+ * @method static string heavyEqualsSign()
  * @method static string infinity()
  * ##### Emoji subgroup: PUNCTUATION #####
  * @method static string doubleExclamationMark()
@@ -3658,6 +3770,7 @@ class Emoji
     const CHARACTER_FACE_WITH_TEARS_OF_JOY = "\u{1F602}";
     const CHARACTER_SLIGHTLY_SMILING_FACE = "\u{1F642}";
     const CHARACTER_UPSIDE_DOWN_FACE = "\u{1F643}";
+    const CHARACTER_MELTING_FACE = "\u{1FAE0}";
     const CHARACTER_WINKING_FACE = "\u{1F609}";
     const CHARACTER_SMILING_FACE_WITH_SMILING_EYES = "\u{1F60A}";
     const CHARACTER_SMILING_FACE_WITH_HALO = "\u{1F607}";
@@ -3679,16 +3792,20 @@ class Emoji
     const CHARACTER_SQUINTING_FACE_WITH_TONGUE = "\u{1F61D}";
     const CHARACTER_MONEY_MOUTH_FACE = "\u{1F911}";
     // ##### Emoji subgroup: FACE-HAND #####
-    const CHARACTER_HUGGING_FACE = "\u{1F917}";
+    const CHARACTER_SMILING_FACE_WITH_OPEN_HANDS = "\u{1F917}";
     const CHARACTER_FACE_WITH_HAND_OVER_MOUTH = "\u{1F92D}";
+    const CHARACTER_FACE_WITH_OPEN_EYES_AND_HAND_OVER_MOUTH = "\u{1FAE2}";
+    const CHARACTER_FACE_WITH_PEEKING_EYE = "\u{1FAE3}";
     const CHARACTER_SHUSHING_FACE = "\u{1F92B}";
     const CHARACTER_THINKING_FACE = "\u{1F914}";
+    const CHARACTER_SALUTING_FACE = "\u{1FAE1}";
     // ##### Emoji subgroup: FACE-NEUTRAL-SKEPTICAL #####
     const CHARACTER_ZIPPER_MOUTH_FACE = "\u{1F910}";
     const CHARACTER_FACE_WITH_RAISED_EYEBROW = "\u{1F928}";
     const CHARACTER_NEUTRAL_FACE = "\u{1F610}";
     const CHARACTER_EXPRESSIONLESS_FACE = "\u{1F611}";
     const CHARACTER_FACE_WITHOUT_MOUTH = "\u{1F636}";
+    const CHARACTER_DOTTED_LINE_FACE = "\u{1FAE5}";
     const CHARACTER_FACE_IN_CLOUDS = "\u{1F636}\u{200D}\u{1F32B}\u{FE0F}";
     const CHARACTER_SMIRKING_FACE = "\u{1F60F}";
     const CHARACTER_UNAMUSED_FACE = "\u{1F612}";
@@ -3712,7 +3829,7 @@ class Emoji
     const CHARACTER_HOT_FACE = "\u{1F975}";
     const CHARACTER_COLD_FACE = "\u{1F976}";
     const CHARACTER_WOOZY_FACE = "\u{1F974}";
-    const CHARACTER_KNOCKED_OUT_FACE = "\u{1F635}";
+    const CHARACTER_FACE_WITH_CROSSED_OUT_EYES = "\u{1F635}";
     const CHARACTER_FACE_WITH_SPIRAL_EYES = "\u{1F635}\u{200D}\u{1F4AB}";
     const CHARACTER_EXPLODING_HEAD = "\u{1F92F}";
     // ##### Emoji subgroup: FACE-HAT #####
@@ -3725,6 +3842,7 @@ class Emoji
     const CHARACTER_FACE_WITH_MONOCLE = "\u{1F9D0}";
     // ##### Emoji subgroup: FACE-CONCERNED #####
     const CHARACTER_CONFUSED_FACE = "\u{1F615}";
+    const CHARACTER_FACE_WITH_DIAGONAL_MOUTH = "\u{1FAE4}";
     const CHARACTER_WORRIED_FACE = "\u{1F61F}";
     const CHARACTER_SLIGHTLY_FROWNING_FACE = "\u{1F641}";
     const CHARACTER_FROWNING_FACE = "\u{2639}\u{FE0F}";
@@ -3733,6 +3851,7 @@ class Emoji
     const CHARACTER_ASTONISHED_FACE = "\u{1F632}";
     const CHARACTER_FLUSHED_FACE = "\u{1F633}";
     const CHARACTER_PLEADING_FACE = "\u{1F97A}";
+    const CHARACTER_FACE_HOLDING_BACK_TEARS = "\u{1F979}";
     const CHARACTER_FROWNING_FACE_WITH_OPEN_MOUTH = "\u{1F626}";
     const CHARACTER_ANGUISHED_FACE = "\u{1F627}";
     const CHARACTER_FEARFUL_FACE = "\u{1F628}";
@@ -3850,6 +3969,30 @@ class Emoji
     const CHARACTER_VULCAN_SALUTE_MEDIUM_SKIN_TONE = "\u{1F596}\u{1F3FD}";
     const CHARACTER_VULCAN_SALUTE_MEDIUM_DARK_SKIN_TONE = "\u{1F596}\u{1F3FE}";
     const CHARACTER_VULCAN_SALUTE_DARK_SKIN_TONE = "\u{1F596}\u{1F3FF}";
+    const CHARACTER_RIGHTWARDS_HAND = "\u{1FAF1}";
+    const CHARACTER_RIGHTWARDS_HAND_LIGHT_SKIN_TONE = "\u{1FAF1}\u{1F3FB}";
+    const CHARACTER_RIGHTWARDS_HAND_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF1}\u{1F3FC}";
+    const CHARACTER_RIGHTWARDS_HAND_MEDIUM_SKIN_TONE = "\u{1FAF1}\u{1F3FD}";
+    const CHARACTER_RIGHTWARDS_HAND_MEDIUM_DARK_SKIN_TONE = "\u{1FAF1}\u{1F3FE}";
+    const CHARACTER_RIGHTWARDS_HAND_DARK_SKIN_TONE = "\u{1FAF1}\u{1F3FF}";
+    const CHARACTER_LEFTWARDS_HAND = "\u{1FAF2}";
+    const CHARACTER_LEFTWARDS_HAND_LIGHT_SKIN_TONE = "\u{1FAF2}\u{1F3FB}";
+    const CHARACTER_LEFTWARDS_HAND_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF2}\u{1F3FC}";
+    const CHARACTER_LEFTWARDS_HAND_MEDIUM_SKIN_TONE = "\u{1FAF2}\u{1F3FD}";
+    const CHARACTER_LEFTWARDS_HAND_MEDIUM_DARK_SKIN_TONE = "\u{1FAF2}\u{1F3FE}";
+    const CHARACTER_LEFTWARDS_HAND_DARK_SKIN_TONE = "\u{1FAF2}\u{1F3FF}";
+    const CHARACTER_PALM_DOWN_HAND = "\u{1FAF3}";
+    const CHARACTER_PALM_DOWN_HAND_LIGHT_SKIN_TONE = "\u{1FAF3}\u{1F3FB}";
+    const CHARACTER_PALM_DOWN_HAND_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF3}\u{1F3FC}";
+    const CHARACTER_PALM_DOWN_HAND_MEDIUM_SKIN_TONE = "\u{1FAF3}\u{1F3FD}";
+    const CHARACTER_PALM_DOWN_HAND_MEDIUM_DARK_SKIN_TONE = "\u{1FAF3}\u{1F3FE}";
+    const CHARACTER_PALM_DOWN_HAND_DARK_SKIN_TONE = "\u{1FAF3}\u{1F3FF}";
+    const CHARACTER_PALM_UP_HAND = "\u{1FAF4}";
+    const CHARACTER_PALM_UP_HAND_LIGHT_SKIN_TONE = "\u{1FAF4}\u{1F3FB}";
+    const CHARACTER_PALM_UP_HAND_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF4}\u{1F3FC}";
+    const CHARACTER_PALM_UP_HAND_MEDIUM_SKIN_TONE = "\u{1FAF4}\u{1F3FD}";
+    const CHARACTER_PALM_UP_HAND_MEDIUM_DARK_SKIN_TONE = "\u{1FAF4}\u{1F3FE}";
+    const CHARACTER_PALM_UP_HAND_DARK_SKIN_TONE = "\u{1FAF4}\u{1F3FF}";
     // ##### Emoji subgroup: HAND-FINGERS-PARTIAL #####
     const CHARACTER_OK_HAND = "\u{1F44C}";
     const CHARACTER_OK_HAND_LIGHT_SKIN_TONE = "\u{1F44C}\u{1F3FB}";
@@ -3881,6 +4024,12 @@ class Emoji
     const CHARACTER_CROSSED_FINGERS_MEDIUM_SKIN_TONE = "\u{1F91E}\u{1F3FD}";
     const CHARACTER_CROSSED_FINGERS_MEDIUM_DARK_SKIN_TONE = "\u{1F91E}\u{1F3FE}";
     const CHARACTER_CROSSED_FINGERS_DARK_SKIN_TONE = "\u{1F91E}\u{1F3FF}";
+    const CHARACTER_HAND_WITH_INDEX_FINGER_AND_THUMB_CROSSED = "\u{1FAF0}";
+    const CHARACTER_HAND_WITH_INDEX_FINGER_AND_THUMB_CROSSED_LIGHT_SKIN_TONE = "\u{1FAF0}\u{1F3FB}";
+    const CHARACTER_HAND_WITH_INDEX_FINGER_AND_THUMB_CROSSED_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF0}\u{1F3FC}";
+    const CHARACTER_HAND_WITH_INDEX_FINGER_AND_THUMB_CROSSED_MEDIUM_SKIN_TONE = "\u{1FAF0}\u{1F3FD}";
+    const CHARACTER_HAND_WITH_INDEX_FINGER_AND_THUMB_CROSSED_MEDIUM_DARK_SKIN_TONE = "\u{1FAF0}\u{1F3FE}";
+    const CHARACTER_HAND_WITH_INDEX_FINGER_AND_THUMB_CROSSED_DARK_SKIN_TONE = "\u{1FAF0}\u{1F3FF}";
     const CHARACTER_LOVE_YOU_GESTURE = "\u{1F91F}";
     const CHARACTER_LOVE_YOU_GESTURE_LIGHT_SKIN_TONE = "\u{1F91F}\u{1F3FB}";
     const CHARACTER_LOVE_YOU_GESTURE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F91F}\u{1F3FC}";
@@ -3936,6 +4085,12 @@ class Emoji
     const CHARACTER_INDEX_POINTING_UP_MEDIUM_SKIN_TONE = "\u{261D}\u{1F3FD}";
     const CHARACTER_INDEX_POINTING_UP_MEDIUM_DARK_SKIN_TONE = "\u{261D}\u{1F3FE}";
     const CHARACTER_INDEX_POINTING_UP_DARK_SKIN_TONE = "\u{261D}\u{1F3FF}";
+    const CHARACTER_INDEX_POINTING_AT_THE_VIEWER = "\u{1FAF5}";
+    const CHARACTER_INDEX_POINTING_AT_THE_VIEWER_LIGHT_SKIN_TONE = "\u{1FAF5}\u{1F3FB}";
+    const CHARACTER_INDEX_POINTING_AT_THE_VIEWER_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF5}\u{1F3FC}";
+    const CHARACTER_INDEX_POINTING_AT_THE_VIEWER_MEDIUM_SKIN_TONE = "\u{1FAF5}\u{1F3FD}";
+    const CHARACTER_INDEX_POINTING_AT_THE_VIEWER_MEDIUM_DARK_SKIN_TONE = "\u{1FAF5}\u{1F3FE}";
+    const CHARACTER_INDEX_POINTING_AT_THE_VIEWER_DARK_SKIN_TONE = "\u{1FAF5}\u{1F3FF}";
     // ##### Emoji subgroup: HAND-FINGERS-CLOSED #####
     const CHARACTER_THUMBS_UP = "\u{1F44D}";
     const CHARACTER_THUMBS_UP_LIGHT_SKIN_TONE = "\u{1F44D}\u{1F3FB}";
@@ -3986,6 +4141,12 @@ class Emoji
     const CHARACTER_RAISING_HANDS_MEDIUM_SKIN_TONE = "\u{1F64C}\u{1F3FD}";
     const CHARACTER_RAISING_HANDS_MEDIUM_DARK_SKIN_TONE = "\u{1F64C}\u{1F3FE}";
     const CHARACTER_RAISING_HANDS_DARK_SKIN_TONE = "\u{1F64C}\u{1F3FF}";
+    const CHARACTER_HEART_HANDS = "\u{1FAF6}";
+    const CHARACTER_HEART_HANDS_LIGHT_SKIN_TONE = "\u{1FAF6}\u{1F3FB}";
+    const CHARACTER_HEART_HANDS_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF6}\u{1F3FC}";
+    const CHARACTER_HEART_HANDS_MEDIUM_SKIN_TONE = "\u{1FAF6}\u{1F3FD}";
+    const CHARACTER_HEART_HANDS_MEDIUM_DARK_SKIN_TONE = "\u{1FAF6}\u{1F3FE}";
+    const CHARACTER_HEART_HANDS_DARK_SKIN_TONE = "\u{1FAF6}\u{1F3FF}";
     const CHARACTER_OPEN_HANDS = "\u{1F450}";
     const CHARACTER_OPEN_HANDS_LIGHT_SKIN_TONE = "\u{1F450}\u{1F3FB}";
     const CHARACTER_OPEN_HANDS_MEDIUM_LIGHT_SKIN_TONE = "\u{1F450}\u{1F3FC}";
@@ -3999,6 +4160,31 @@ class Emoji
     const CHARACTER_PALMS_UP_TOGETHER_MEDIUM_DARK_SKIN_TONE = "\u{1F932}\u{1F3FE}";
     const CHARACTER_PALMS_UP_TOGETHER_DARK_SKIN_TONE = "\u{1F932}\u{1F3FF}";
     const CHARACTER_HANDSHAKE = "\u{1F91D}";
+    const CHARACTER_HANDSHAKE_LIGHT_SKIN_TONE = "\u{1F91D}\u{1F3FB}";
+    const CHARACTER_HANDSHAKE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F91D}\u{1F3FC}";
+    const CHARACTER_HANDSHAKE_MEDIUM_SKIN_TONE = "\u{1F91D}\u{1F3FD}";
+    const CHARACTER_HANDSHAKE_MEDIUM_DARK_SKIN_TONE = "\u{1F91D}\u{1F3FE}";
+    const CHARACTER_HANDSHAKE_DARK_SKIN_TONE = "\u{1F91D}\u{1F3FF}";
+    const CHARACTER_HANDSHAKE_LIGHT_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF1}\u{1F3FB}\u{200D}\u{1FAF2}\u{1F3FC}";
+    const CHARACTER_HANDSHAKE_LIGHT_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1FAF1}\u{1F3FB}\u{200D}\u{1FAF2}\u{1F3FD}";
+    const CHARACTER_HANDSHAKE_LIGHT_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1FAF1}\u{1F3FB}\u{200D}\u{1FAF2}\u{1F3FE}";
+    const CHARACTER_HANDSHAKE_LIGHT_SKIN_TONE_DARK_SKIN_TONE = "\u{1FAF1}\u{1F3FB}\u{200D}\u{1FAF2}\u{1F3FF}";
+    const CHARACTER_HANDSHAKE_MEDIUM_LIGHT_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1FAF1}\u{1F3FC}\u{200D}\u{1FAF2}\u{1F3FB}";
+    const CHARACTER_HANDSHAKE_MEDIUM_LIGHT_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1FAF1}\u{1F3FC}\u{200D}\u{1FAF2}\u{1F3FD}";
+    const CHARACTER_HANDSHAKE_MEDIUM_LIGHT_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1FAF1}\u{1F3FC}\u{200D}\u{1FAF2}\u{1F3FE}";
+    const CHARACTER_HANDSHAKE_MEDIUM_LIGHT_SKIN_TONE_DARK_SKIN_TONE = "\u{1FAF1}\u{1F3FC}\u{200D}\u{1FAF2}\u{1F3FF}";
+    const CHARACTER_HANDSHAKE_MEDIUM_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1FAF1}\u{1F3FD}\u{200D}\u{1FAF2}\u{1F3FB}";
+    const CHARACTER_HANDSHAKE_MEDIUM_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF1}\u{1F3FD}\u{200D}\u{1FAF2}\u{1F3FC}";
+    const CHARACTER_HANDSHAKE_MEDIUM_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1FAF1}\u{1F3FD}\u{200D}\u{1FAF2}\u{1F3FE}";
+    const CHARACTER_HANDSHAKE_MEDIUM_SKIN_TONE_DARK_SKIN_TONE = "\u{1FAF1}\u{1F3FD}\u{200D}\u{1FAF2}\u{1F3FF}";
+    const CHARACTER_HANDSHAKE_MEDIUM_DARK_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1FAF1}\u{1F3FE}\u{200D}\u{1FAF2}\u{1F3FB}";
+    const CHARACTER_HANDSHAKE_MEDIUM_DARK_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF1}\u{1F3FE}\u{200D}\u{1FAF2}\u{1F3FC}";
+    const CHARACTER_HANDSHAKE_MEDIUM_DARK_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1FAF1}\u{1F3FE}\u{200D}\u{1FAF2}\u{1F3FD}";
+    const CHARACTER_HANDSHAKE_MEDIUM_DARK_SKIN_TONE_DARK_SKIN_TONE = "\u{1FAF1}\u{1F3FE}\u{200D}\u{1FAF2}\u{1F3FF}";
+    const CHARACTER_HANDSHAKE_DARK_SKIN_TONE_LIGHT_SKIN_TONE = "\u{1FAF1}\u{1F3FF}\u{200D}\u{1FAF2}\u{1F3FB}";
+    const CHARACTER_HANDSHAKE_DARK_SKIN_TONE_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF1}\u{1F3FF}\u{200D}\u{1FAF2}\u{1F3FC}";
+    const CHARACTER_HANDSHAKE_DARK_SKIN_TONE_MEDIUM_SKIN_TONE = "\u{1FAF1}\u{1F3FF}\u{200D}\u{1FAF2}\u{1F3FD}";
+    const CHARACTER_HANDSHAKE_DARK_SKIN_TONE_MEDIUM_DARK_SKIN_TONE = "\u{1FAF1}\u{1F3FF}\u{200D}\u{1FAF2}\u{1F3FE}";
     const CHARACTER_FOLDED_HANDS = "\u{1F64F}";
     const CHARACTER_FOLDED_HANDS_LIGHT_SKIN_TONE = "\u{1F64F}\u{1F3FB}";
     const CHARACTER_FOLDED_HANDS_MEDIUM_LIGHT_SKIN_TONE = "\u{1F64F}\u{1F3FC}";
@@ -4072,6 +4258,7 @@ class Emoji
     const CHARACTER_EYE = "\u{1F441}\u{FE0F}";
     const CHARACTER_TONGUE = "\u{1F445}";
     const CHARACTER_MOUTH = "\u{1F444}";
+    const CHARACTER_BITING_LIP = "\u{1FAE6}";
     // ##### Emoji subgroup: PERSON #####
     const CHARACTER_BABY = "\u{1F476}";
     const CHARACTER_BABY_LIGHT_SKIN_TONE = "\u{1F476}\u{1F3FB}";
@@ -4789,6 +4976,12 @@ class Emoji
     const CHARACTER_WOMAN_CONSTRUCTION_WORKER_MEDIUM_SKIN_TONE = "\u{1F477}\u{1F3FD}\u{200D}\u{2640}\u{FE0F}";
     const CHARACTER_WOMAN_CONSTRUCTION_WORKER_MEDIUM_DARK_SKIN_TONE = "\u{1F477}\u{1F3FE}\u{200D}\u{2640}\u{FE0F}";
     const CHARACTER_WOMAN_CONSTRUCTION_WORKER_DARK_SKIN_TONE = "\u{1F477}\u{1F3FF}\u{200D}\u{2640}\u{FE0F}";
+    const CHARACTER_PERSON_WITH_CROWN = "\u{1FAC5}";
+    const CHARACTER_PERSON_WITH_CROWN_LIGHT_SKIN_TONE = "\u{1FAC5}\u{1F3FB}";
+    const CHARACTER_PERSON_WITH_CROWN_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAC5}\u{1F3FC}";
+    const CHARACTER_PERSON_WITH_CROWN_MEDIUM_SKIN_TONE = "\u{1FAC5}\u{1F3FD}";
+    const CHARACTER_PERSON_WITH_CROWN_MEDIUM_DARK_SKIN_TONE = "\u{1FAC5}\u{1F3FE}";
+    const CHARACTER_PERSON_WITH_CROWN_DARK_SKIN_TONE = "\u{1FAC5}\u{1F3FF}";
     const CHARACTER_PRINCE = "\u{1F934}";
     const CHARACTER_PRINCE_LIGHT_SKIN_TONE = "\u{1F934}\u{1F3FB}";
     const CHARACTER_PRINCE_MEDIUM_LIGHT_SKIN_TONE = "\u{1F934}\u{1F3FC}";
@@ -4873,6 +5066,18 @@ class Emoji
     const CHARACTER_PREGNANT_WOMAN_MEDIUM_SKIN_TONE = "\u{1F930}\u{1F3FD}";
     const CHARACTER_PREGNANT_WOMAN_MEDIUM_DARK_SKIN_TONE = "\u{1F930}\u{1F3FE}";
     const CHARACTER_PREGNANT_WOMAN_DARK_SKIN_TONE = "\u{1F930}\u{1F3FF}";
+    const CHARACTER_PREGNANT_MAN = "\u{1FAC3}";
+    const CHARACTER_PREGNANT_MAN_LIGHT_SKIN_TONE = "\u{1FAC3}\u{1F3FB}";
+    const CHARACTER_PREGNANT_MAN_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAC3}\u{1F3FC}";
+    const CHARACTER_PREGNANT_MAN_MEDIUM_SKIN_TONE = "\u{1FAC3}\u{1F3FD}";
+    const CHARACTER_PREGNANT_MAN_MEDIUM_DARK_SKIN_TONE = "\u{1FAC3}\u{1F3FE}";
+    const CHARACTER_PREGNANT_MAN_DARK_SKIN_TONE = "\u{1FAC3}\u{1F3FF}";
+    const CHARACTER_PREGNANT_PERSON = "\u{1FAC4}";
+    const CHARACTER_PREGNANT_PERSON_LIGHT_SKIN_TONE = "\u{1FAC4}\u{1F3FB}";
+    const CHARACTER_PREGNANT_PERSON_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAC4}\u{1F3FC}";
+    const CHARACTER_PREGNANT_PERSON_MEDIUM_SKIN_TONE = "\u{1FAC4}\u{1F3FD}";
+    const CHARACTER_PREGNANT_PERSON_MEDIUM_DARK_SKIN_TONE = "\u{1FAC4}\u{1F3FE}";
+    const CHARACTER_PREGNANT_PERSON_DARK_SKIN_TONE = "\u{1FAC4}\u{1F3FF}";
     const CHARACTER_BREAST_FEEDING = "\u{1F931}";
     const CHARACTER_BREAST_FEEDING_LIGHT_SKIN_TONE = "\u{1F931}\u{1F3FB}";
     const CHARACTER_BREAST_FEEDING_MEDIUM_LIGHT_SKIN_TONE = "\u{1F931}\u{1F3FC}";
@@ -5054,6 +5259,7 @@ class Emoji
     const CHARACTER_ZOMBIE = "\u{1F9DF}";
     const CHARACTER_MAN_ZOMBIE = "\u{1F9DF}\u{200D}\u{2642}\u{FE0F}";
     const CHARACTER_WOMAN_ZOMBIE = "\u{1F9DF}\u{200D}\u{2640}\u{FE0F}";
+    const CHARACTER_TROLL = "\u{1F9CC}";
     // ##### Emoji subgroup: PERSON-ACTIVITY #####
     const CHARACTER_PERSON_GETTING_MASSAGE = "\u{1F486}";
     const CHARACTER_PERSON_GETTING_MASSAGE_LIGHT_SKIN_TONE = "\u{1F486}\u{1F3FB}";
@@ -6003,6 +6209,7 @@ class Emoji
     const CHARACTER_SHARK = "\u{1F988}";
     const CHARACTER_OCTOPUS = "\u{1F419}";
     const CHARACTER_SPIRAL_SHELL = "\u{1F41A}";
+    const CHARACTER_CORAL = "\u{1FAB8}";
     // ##### Emoji subgroup: ANIMAL-BUG #####
     const CHARACTER_SNAIL = "\u{1F40C}";
     const CHARACTER_BUTTERFLY = "\u{1F98B}";
@@ -6024,6 +6231,7 @@ class Emoji
     const CHARACTER_BOUQUET = "\u{1F490}";
     const CHARACTER_CHERRY_BLOSSOM = "\u{1F338}";
     const CHARACTER_WHITE_FLOWER = "\u{1F4AE}";
+    const CHARACTER_LOTUS = "\u{1FAB7}";
     const CHARACTER_ROSETTE = "\u{1F3F5}\u{FE0F}";
     const CHARACTER_ROSE = "\u{1F339}";
     const CHARACTER_WILTED_FLOWER = "\u{1F940}";
@@ -6045,6 +6253,8 @@ class Emoji
     const CHARACTER_MAPLE_LEAF = "\u{1F341}";
     const CHARACTER_FALLEN_LEAF = "\u{1F342}";
     const CHARACTER_LEAF_FLUTTERING_IN_WIND = "\u{1F343}";
+    const CHARACTER_EMPTY_NEST = "\u{1FAB9}";
+    const CHARACTER_NEST_WITH_EGGS = "\u{1FABA}";
     // ##### Emoji group: FOOD & DRINK #####
     // ##### Emoji subgroup: FOOD-FRUIT #####
     const CHARACTER_GRAPES = "\u{1F347}";
@@ -6081,6 +6291,7 @@ class Emoji
     const CHARACTER_ONION = "\u{1F9C5}";
     const CHARACTER_MUSHROOM = "\u{1F344}";
     const CHARACTER_PEANUTS = "\u{1F95C}";
+    const CHARACTER_BEANS = "\u{1FAD8}";
     const CHARACTER_CHESTNUT = "\u{1F330}";
     // ##### Emoji subgroup: FOOD-PREPARED #####
     const CHARACTER_BREAD = "\u{1F35E}";
@@ -6171,6 +6382,7 @@ class Emoji
     const CHARACTER_CLINKING_BEER_MUGS = "\u{1F37B}";
     const CHARACTER_CLINKING_GLASSES = "\u{1F942}";
     const CHARACTER_TUMBLER_GLASS = "\u{1F943}";
+    const CHARACTER_POURING_LIQUID = "\u{1FAD7}";
     const CHARACTER_CUP_WITH_STRAW = "\u{1F964}";
     const CHARACTER_BUBBLE_TEA = "\u{1F9CB}";
     const CHARACTER_BEVERAGE_BOX = "\u{1F9C3}";
@@ -6182,6 +6394,7 @@ class Emoji
     const CHARACTER_FORK_AND_KNIFE = "\u{1F374}";
     const CHARACTER_SPOON = "\u{1F944}";
     const CHARACTER_KITCHEN_KNIFE = "\u{1F52A}";
+    const CHARACTER_JAR = "\u{1FAD9}";
     const CHARACTER_AMPHORA = "\u{1F3FA}";
     // ##### Emoji group: TRAVEL & PLACES #####
     // ##### Emoji subgroup: PLACE-MAP #####
@@ -6250,6 +6463,7 @@ class Emoji
     const CHARACTER_BRIDGE_AT_NIGHT = "\u{1F309}";
     const CHARACTER_HOT_SPRINGS = "\u{2668}\u{FE0F}";
     const CHARACTER_CAROUSEL_HORSE = "\u{1F3A0}";
+    const CHARACTER_PLAYGROUND_SLIDE = "\u{1F6DD}";
     const CHARACTER_FERRIS_WHEEL = "\u{1F3A1}";
     const CHARACTER_ROLLER_COASTER = "\u{1F3A2}";
     const CHARACTER_BARBER_POLE = "\u{1F488}";
@@ -6299,6 +6513,7 @@ class Emoji
     const CHARACTER_RAILWAY_TRACK = "\u{1F6E4}\u{FE0F}";
     const CHARACTER_OIL_DRUM = "\u{1F6E2}\u{FE0F}";
     const CHARACTER_FUEL_PUMP = "\u{26FD}";
+    const CHARACTER_WHEEL = "\u{1F6DE}";
     const CHARACTER_POLICE_CAR_LIGHT = "\u{1F6A8}";
     const CHARACTER_HORIZONTAL_TRAFFIC_LIGHT = "\u{1F6A5}";
     const CHARACTER_VERTICAL_TRAFFIC_LIGHT = "\u{1F6A6}";
@@ -6306,6 +6521,7 @@ class Emoji
     const CHARACTER_CONSTRUCTION = "\u{1F6A7}";
     // ##### Emoji subgroup: TRANSPORT-WATER #####
     const CHARACTER_ANCHOR = "\u{2693}";
+    const CHARACTER_RING_BUOY = "\u{1F6DF}";
     const CHARACTER_SAILBOAT = "\u{26F5}";
     const CHARACTER_CANOE = "\u{1F6F6}";
     const CHARACTER_SPEEDBOAT = "\u{1F6A4}";
@@ -6476,6 +6692,7 @@ class Emoji
     const CHARACTER_CRYSTAL_BALL = "\u{1F52E}";
     const CHARACTER_MAGIC_WAND = "\u{1FA84}";
     const CHARACTER_NAZAR_AMULET = "\u{1F9FF}";
+    const CHARACTER_HAMSA = "\u{1FAAC}";
     const CHARACTER_VIDEO_GAME = "\u{1F3AE}";
     const CHARACTER_JOYSTICK = "\u{1F579}\u{FE0F}";
     const CHARACTER_SLOT_MACHINE = "\u{1F3B0}";
@@ -6483,6 +6700,7 @@ class Emoji
     const CHARACTER_PUZZLE_PIECE = "\u{1F9E9}";
     const CHARACTER_TEDDY_BEAR = "\u{1F9F8}";
     const CHARACTER_PINATA = "\u{1FA85}";
+    const CHARACTER_MIRROR_BALL = "\u{1FAA9}";
     const CHARACTER_NESTING_DOLLS = "\u{1FA86}";
     const CHARACTER_SPADE_SUIT = "\u{2660}\u{FE0F}";
     const CHARACTER_HEART_SUIT = "\u{2665}\u{FE0F}";
@@ -6586,6 +6804,7 @@ class Emoji
     const CHARACTER_FAX_MACHINE = "\u{1F4E0}";
     // ##### Emoji subgroup: COMPUTER #####
     const CHARACTER_BATTERY = "\u{1F50B}";
+    const CHARACTER_LOW_BATTERY = "\u{1FAAB}";
     const CHARACTER_ELECTRIC_PLUG = "\u{1F50C}";
     const CHARACTER_LAPTOP = "\u{1F4BB}";
     const CHARACTER_DESKTOP_COMPUTER = "\u{1F5A5}\u{FE0F}";
@@ -6736,7 +6955,9 @@ class Emoji
     const CHARACTER_DROP_OF_BLOOD = "\u{1FA78}";
     const CHARACTER_PILL = "\u{1F48A}";
     const CHARACTER_ADHESIVE_BANDAGE = "\u{1FA79}";
+    const CHARACTER_CRUTCH = "\u{1FA7C}";
     const CHARACTER_STETHOSCOPE = "\u{1FA7A}";
+    const CHARACTER_X_RAY = "\u{1FA7B}";
     // ##### Emoji subgroup: HOUSEHOLD #####
     const CHARACTER_DOOR = "\u{1F6AA}";
     const CHARACTER_ELEVATOR = "\u{1F6D7}";
@@ -6758,6 +6979,7 @@ class Emoji
     const CHARACTER_ROLL_OF_PAPER = "\u{1F9FB}";
     const CHARACTER_BUCKET = "\u{1FAA3}";
     const CHARACTER_SOAP = "\u{1F9FC}";
+    const CHARACTER_BUBBLES = "\u{1FAE7}";
     const CHARACTER_TOOTHBRUSH = "\u{1FAA5}";
     const CHARACTER_SPONGE = "\u{1F9FD}";
     const CHARACTER_FIRE_EXTINGUISHER = "\u{1F9EF}";
@@ -6769,6 +6991,7 @@ class Emoji
     const CHARACTER_FUNERAL_URN = "\u{26B1}\u{FE0F}";
     const CHARACTER_MOAI = "\u{1F5FF}";
     const CHARACTER_PLACARD = "\u{1FAA7}";
+    const CHARACTER_IDENTIFICATION_CARD = "\u{1FAAA}";
     // ##### Emoji group: SYMBOLS #####
     // ##### Emoji subgroup: TRANSPORT-SIGN #####
     const CHARACTER_ATM_SIGN = "\u{1F3E7}";
@@ -6881,6 +7104,7 @@ class Emoji
     const CHARACTER_PLUS = "\u{2795}";
     const CHARACTER_MINUS = "\u{2796}";
     const CHARACTER_DIVIDE = "\u{2797}";
+    const CHARACTER_HEAVY_EQUALS_SIGN = "\u{1F7F0}";
     const CHARACTER_INFINITY = "\u{267E}\u{FE0F}";
     // ##### Emoji subgroup: PUNCTUATION #####
     const CHARACTER_DOUBLE_EXCLAMATION_MARK = "\u{203C}\u{FE0F}";
