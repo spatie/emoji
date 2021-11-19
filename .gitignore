@@ -9,3 +9,4 @@ phpunit.xml
 psalm.xml
 vendor
 .idea
+.php-cs-fixer.cache
