@@ -86,7 +86,7 @@ We are accepting PRs that add characters to the class.
 Please use [this list](http://unicode.org/emoji/charts/full-emoji-list.html) to look up the unicode value and
 the name of the character.
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/spatie/.github/blob/main/CONTRIBUTING.md) for details.
 
 ## Security
 
