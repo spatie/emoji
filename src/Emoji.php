@@ -8,9 +8,9 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
 /**
  * Emoji class.
  *
- * @link https://unicode.org/Public/emoji/14.0/emoji-test.txt
- * @version v14.0
- * loaded at: 2021-09-27 16:43:12
+ * @link https://unicode.org/Public/emoji/15.0/emoji-test.txt
+ * @version v15.0
+ * loaded at: 2022-09-22 07:33:41
  *
  * ##### Emoji group: SMILEYS & EMOTION #####
  * ##### Emoji subgroup: FACE-SMILING #####
@@ -67,6 +67,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string grimacingFace()
  * @method static string faceExhaling()
  * @method static string lyingFace()
+ * @method static string shakingFace()
  * ##### Emoji subgroup: FACE-SLEEPY #####
  * @method static string relievedFace()
  * @method static string pensiveFace()
@@ -123,7 +124,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string yawningFace()
  * ##### Emoji subgroup: FACE-NEGATIVE #####
  * @method static string faceWithSteamFromNose()
- * @method static string poutingFace()
+ * @method static string enragedFace()
  * @method static string angryFace()
  * @method static string faceWithSymbolsOnMouth()
  * @method static string smilingFaceWithHorns()
@@ -153,8 +154,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string seeNoEvilMonkey()
  * @method static string hearNoEvilMonkey()
  * @method static string speakNoEvilMonkey()
- * ##### Emoji subgroup: EMOTION #####
- * @method static string kissMark()
+ * ##### Emoji subgroup: HEART #####
  * @method static string loveLetter()
  * @method static string heartWithArrow()
  * @method static string heartWithRibbon()
@@ -169,14 +169,19 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string heartOnFire()
  * @method static string mendingHeart()
  * @method static string redHeart()
+ * @method static string pinkHeart()
  * @method static string orangeHeart()
  * @method static string yellowHeart()
  * @method static string greenHeart()
  * @method static string blueHeart()
+ * @method static string lightBlueHeart()
  * @method static string purpleHeart()
  * @method static string brownHeart()
  * @method static string blackHeart()
+ * @method static string greyHeart()
  * @method static string whiteHeart()
+ * ##### Emoji subgroup: EMOTION #####
+ * @method static string kissMark()
  * @method static string hundredPoints()
  * @method static string angerSymbol()
  * @method static string collision()
@@ -184,7 +189,6 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string sweatDroplets()
  * @method static string dashingAway()
  * @method static string hole()
- * @method static string bomb()
  * @method static string speechBalloon()
  * @method static string eyeInSpeechBubble()
  * @method static string leftSpeechBubble()
@@ -247,6 +251,18 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string palmUpHandMediumSkinTone()
  * @method static string palmUpHandMediumDarkSkinTone()
  * @method static string palmUpHandDarkSkinTone()
+ * @method static string leftwardsPushingHand()
+ * @method static string leftwardsPushingHandLightSkinTone()
+ * @method static string leftwardsPushingHandMediumLightSkinTone()
+ * @method static string leftwardsPushingHandMediumSkinTone()
+ * @method static string leftwardsPushingHandMediumDarkSkinTone()
+ * @method static string leftwardsPushingHandDarkSkinTone()
+ * @method static string rightwardsPushingHand()
+ * @method static string rightwardsPushingHandLightSkinTone()
+ * @method static string rightwardsPushingHandMediumLightSkinTone()
+ * @method static string rightwardsPushingHandMediumSkinTone()
+ * @method static string rightwardsPushingHandMediumDarkSkinTone()
+ * @method static string rightwardsPushingHandDarkSkinTone()
  * ##### Emoji subgroup: HAND-FINGERS-PARTIAL #####
  * @method static string okHand()
  * @method static string okHandLightSkinTone()
@@ -2378,6 +2394,8 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string tiger()
  * @method static string leopard()
  * @method static string horseFace()
+ * @method static string moose()
+ * @method static string donkey()
  * @method static string horse()
  * @method static string unicorn()
  * @method static string zebra()
@@ -2441,6 +2459,9 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flamingo()
  * @method static string peacock()
  * @method static string parrot()
+ * @method static string wing()
+ * @method static string blackBird()
+ * @method static string goose()
  * ##### Emoji subgroup: ANIMAL-AMPHIBIAN #####
  * @method static string frog()
  * ##### Emoji subgroup: ANIMAL-REPTILE #####
@@ -2464,6 +2485,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string octopus()
  * @method static string spiralShell()
  * @method static string coral()
+ * @method static string jellyfish()
  * ##### Emoji subgroup: ANIMAL-BUG #####
  * @method static string snail()
  * @method static string butterfly()
@@ -2493,6 +2515,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string sunflower()
  * @method static string blossom()
  * @method static string tulip()
+ * @method static string hyacinth()
  * ##### Emoji subgroup: PLANT-OTHER #####
  * @method static string seedling()
  * @method static string pottedPlant()
@@ -2509,6 +2532,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string leafFlutteringInWind()
  * @method static string emptyNest()
  * @method static string nestWithEggs()
+ * @method static string mushroom()
  * ##### Emoji group: FOOD & DRINK #####
  * ##### Emoji subgroup: FOOD-FRUIT #####
  * @method static string grapes()
@@ -2543,10 +2567,11 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string broccoli()
  * @method static string garlic()
  * @method static string onion()
- * @method static string mushroom()
  * @method static string peanuts()
  * @method static string beans()
  * @method static string chestnut()
+ * @method static string gingerRoot()
+ * @method static string peaPod()
  * ##### Emoji subgroup: FOOD-PREPARED #####
  * @method static string bread()
  * @method static string croissant()
@@ -2942,11 +2967,10 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string bullseye()
  * @method static string yoYo()
  * @method static string kite()
+ * @method static string waterPistol()
  * @method static string pool8Ball()
  * @method static string crystalBall()
  * @method static string magicWand()
- * @method static string nazarAmulet()
- * @method static string hamsa()
  * @method static string videoGame()
  * @method static string joystick()
  * @method static string slotMachine()
@@ -2994,6 +3018,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string shorts()
  * @method static string bikini()
  * @method static string womanSClothes()
+ * @method static string foldingHandFan()
  * @method static string purse()
  * @method static string handbag()
  * @method static string clutchBag()
@@ -3008,6 +3033,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string womanSSandal()
  * @method static string balletShoes()
  * @method static string womanSBoot()
+ * @method static string hairPick()
  * @method static string crown()
  * @method static string womanSHat()
  * @method static string topHat()
@@ -3049,6 +3075,8 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string banjo()
  * @method static string drum()
  * @method static string longDrum()
+ * @method static string maracas()
+ * @method static string flute()
  * ##### Emoji subgroup: PHONE #####
  * @method static string mobilePhone()
  * @method static string mobilePhoneWithArrow()
@@ -3178,7 +3206,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string hammerAndWrench()
  * @method static string dagger()
  * @method static string crossedSwords()
- * @method static string waterPistol()
+ * @method static string bomb()
  * @method static string boomerang()
  * @method static string bowAndArrow()
  * @method static string shield()
@@ -3243,6 +3271,8 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string coffin()
  * @method static string headstone()
  * @method static string funeralUrn()
+ * @method static string nazarAmulet()
+ * @method static string hamsa()
  * @method static string moai()
  * @method static string placard()
  * @method static string identificationCard()
@@ -3310,6 +3340,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string peaceSymbol()
  * @method static string menorah()
  * @method static string dottedSixPointedStar()
+ * @method static string khanda()
  * ##### Emoji subgroup: ZODIAC #####
  * @method static string aries()
  * @method static string taurus()
@@ -3347,6 +3378,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string dimButton()
  * @method static string brightButton()
  * @method static string antennaBars()
+ * @method static string wireless()
  * @method static string vibrationMode()
  * @method static string mobilePhoneOff()
  * ##### Emoji subgroup: GENDER #####
@@ -3813,6 +3845,7 @@ class Emoji
     public const CHARACTER_GRIMACING_FACE = "\u{1F62C}";
     public const CHARACTER_FACE_EXHALING = "\u{1F62E}\u{200D}\u{1F4A8}";
     public const CHARACTER_LYING_FACE = "\u{1F925}";
+    public const CHARACTER_SHAKING_FACE = "\u{1FAE8}";
     // ##### Emoji subgroup: FACE-SLEEPY #####
     public const CHARACTER_RELIEVED_FACE = "\u{1F60C}";
     public const CHARACTER_PENSIVE_FACE = "\u{1F614}";
@@ -3869,7 +3902,7 @@ class Emoji
     public const CHARACTER_YAWNING_FACE = "\u{1F971}";
     // ##### Emoji subgroup: FACE-NEGATIVE #####
     public const CHARACTER_FACE_WITH_STEAM_FROM_NOSE = "\u{1F624}";
-    public const CHARACTER_POUTING_FACE = "\u{1F621}";
+    public const CHARACTER_ENRAGED_FACE = "\u{1F621}";
     public const CHARACTER_ANGRY_FACE = "\u{1F620}";
     public const CHARACTER_FACE_WITH_SYMBOLS_ON_MOUTH = "\u{1F92C}";
     public const CHARACTER_SMILING_FACE_WITH_HORNS = "\u{1F608}";
@@ -3899,8 +3932,7 @@ class Emoji
     public const CHARACTER_SEE_NO_EVIL_MONKEY = "\u{1F648}";
     public const CHARACTER_HEAR_NO_EVIL_MONKEY = "\u{1F649}";
     public const CHARACTER_SPEAK_NO_EVIL_MONKEY = "\u{1F64A}";
-    // ##### Emoji subgroup: EMOTION #####
-    public const CHARACTER_KISS_MARK = "\u{1F48B}";
+    // ##### Emoji subgroup: HEART #####
     public const CHARACTER_LOVE_LETTER = "\u{1F48C}";
     public const CHARACTER_HEART_WITH_ARROW = "\u{1F498}";
     public const CHARACTER_HEART_WITH_RIBBON = "\u{1F49D}";
@@ -3915,14 +3947,19 @@ class Emoji
     public const CHARACTER_HEART_ON_FIRE = "\u{2764}\u{FE0F}\u{200D}\u{1F525}";
     public const CHARACTER_MENDING_HEART = "\u{2764}\u{FE0F}\u{200D}\u{1FA79}";
     public const CHARACTER_RED_HEART = "\u{2764}\u{FE0F}";
+    public const CHARACTER_PINK_HEART = "\u{1FA77}";
     public const CHARACTER_ORANGE_HEART = "\u{1F9E1}";
     public const CHARACTER_YELLOW_HEART = "\u{1F49B}";
     public const CHARACTER_GREEN_HEART = "\u{1F49A}";
     public const CHARACTER_BLUE_HEART = "\u{1F499}";
+    public const CHARACTER_LIGHT_BLUE_HEART = "\u{1FA75}";
     public const CHARACTER_PURPLE_HEART = "\u{1F49C}";
     public const CHARACTER_BROWN_HEART = "\u{1F90E}";
     public const CHARACTER_BLACK_HEART = "\u{1F5A4}";
+    public const CHARACTER_GREY_HEART = "\u{1FA76}";
     public const CHARACTER_WHITE_HEART = "\u{1F90D}";
+    // ##### Emoji subgroup: EMOTION #####
+    public const CHARACTER_KISS_MARK = "\u{1F48B}";
     public const CHARACTER_HUNDRED_POINTS = "\u{1F4AF}";
     public const CHARACTER_ANGER_SYMBOL = "\u{1F4A2}";
     public const CHARACTER_COLLISION = "\u{1F4A5}";
@@ -3930,7 +3967,6 @@ class Emoji
     public const CHARACTER_SWEAT_DROPLETS = "\u{1F4A6}";
     public const CHARACTER_DASHING_AWAY = "\u{1F4A8}";
     public const CHARACTER_HOLE = "\u{1F573}\u{FE0F}";
-    public const CHARACTER_BOMB = "\u{1F4A3}";
     public const CHARACTER_SPEECH_BALLOON = "\u{1F4AC}";
     public const CHARACTER_EYE_IN_SPEECH_BUBBLE = "\u{1F441}\u{FE0F}\u{200D}\u{1F5E8}\u{FE0F}";
     public const CHARACTER_LEFT_SPEECH_BUBBLE = "\u{1F5E8}\u{FE0F}";
@@ -3993,6 +4029,18 @@ class Emoji
     public const CHARACTER_PALM_UP_HAND_MEDIUM_SKIN_TONE = "\u{1FAF4}\u{1F3FD}";
     public const CHARACTER_PALM_UP_HAND_MEDIUM_DARK_SKIN_TONE = "\u{1FAF4}\u{1F3FE}";
     public const CHARACTER_PALM_UP_HAND_DARK_SKIN_TONE = "\u{1FAF4}\u{1F3FF}";
+    public const CHARACTER_LEFTWARDS_PUSHING_HAND = "\u{1FAF7}";
+    public const CHARACTER_LEFTWARDS_PUSHING_HAND_LIGHT_SKIN_TONE = "\u{1FAF7}\u{1F3FB}";
+    public const CHARACTER_LEFTWARDS_PUSHING_HAND_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF7}\u{1F3FC}";
+    public const CHARACTER_LEFTWARDS_PUSHING_HAND_MEDIUM_SKIN_TONE = "\u{1FAF7}\u{1F3FD}";
+    public const CHARACTER_LEFTWARDS_PUSHING_HAND_MEDIUM_DARK_SKIN_TONE = "\u{1FAF7}\u{1F3FE}";
+    public const CHARACTER_LEFTWARDS_PUSHING_HAND_DARK_SKIN_TONE = "\u{1FAF7}\u{1F3FF}";
+    public const CHARACTER_RIGHTWARDS_PUSHING_HAND = "\u{1FAF8}";
+    public const CHARACTER_RIGHTWARDS_PUSHING_HAND_LIGHT_SKIN_TONE = "\u{1FAF8}\u{1F3FB}";
+    public const CHARACTER_RIGHTWARDS_PUSHING_HAND_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF8}\u{1F3FC}";
+    public const CHARACTER_RIGHTWARDS_PUSHING_HAND_MEDIUM_SKIN_TONE = "\u{1FAF8}\u{1F3FD}";
+    public const CHARACTER_RIGHTWARDS_PUSHING_HAND_MEDIUM_DARK_SKIN_TONE = "\u{1FAF8}\u{1F3FE}";
+    public const CHARACTER_RIGHTWARDS_PUSHING_HAND_DARK_SKIN_TONE = "\u{1FAF8}\u{1F3FF}";
     // ##### Emoji subgroup: HAND-FINGERS-PARTIAL #####
     public const CHARACTER_OK_HAND = "\u{1F44C}";
     public const CHARACTER_OK_HAND_LIGHT_SKIN_TONE = "\u{1F44C}\u{1F3FB}";
@@ -6124,6 +6172,8 @@ class Emoji
     public const CHARACTER_TIGER = "\u{1F405}";
     public const CHARACTER_LEOPARD = "\u{1F406}";
     public const CHARACTER_HORSE_FACE = "\u{1F434}";
+    public const CHARACTER_MOOSE = "\u{1FACE}";
+    public const CHARACTER_DONKEY = "\u{1FACF}";
     public const CHARACTER_HORSE = "\u{1F40E}";
     public const CHARACTER_UNICORN = "\u{1F984}";
     public const CHARACTER_ZEBRA = "\u{1F993}";
@@ -6187,6 +6237,9 @@ class Emoji
     public const CHARACTER_FLAMINGO = "\u{1F9A9}";
     public const CHARACTER_PEACOCK = "\u{1F99A}";
     public const CHARACTER_PARROT = "\u{1F99C}";
+    public const CHARACTER_WING = "\u{1FABD}";
+    public const CHARACTER_BLACK_BIRD = "\u{1F426}\u{200D}\u{2B1B}";
+    public const CHARACTER_GOOSE = "\u{1FABF}";
     // ##### Emoji subgroup: ANIMAL-AMPHIBIAN #####
     public const CHARACTER_FROG = "\u{1F438}";
     // ##### Emoji subgroup: ANIMAL-REPTILE #####
@@ -6210,6 +6263,7 @@ class Emoji
     public const CHARACTER_OCTOPUS = "\u{1F419}";
     public const CHARACTER_SPIRAL_SHELL = "\u{1F41A}";
     public const CHARACTER_CORAL = "\u{1FAB8}";
+    public const CHARACTER_JELLYFISH = "\u{1FABC}";
     // ##### Emoji subgroup: ANIMAL-BUG #####
     public const CHARACTER_SNAIL = "\u{1F40C}";
     public const CHARACTER_BUTTERFLY = "\u{1F98B}";
@@ -6239,6 +6293,7 @@ class Emoji
     public const CHARACTER_SUNFLOWER = "\u{1F33B}";
     public const CHARACTER_BLOSSOM = "\u{1F33C}";
     public const CHARACTER_TULIP = "\u{1F337}";
+    public const CHARACTER_HYACINTH = "\u{1FABB}";
     // ##### Emoji subgroup: PLANT-OTHER #####
     public const CHARACTER_SEEDLING = "\u{1F331}";
     public const CHARACTER_POTTED_PLANT = "\u{1FAB4}";
@@ -6255,6 +6310,7 @@ class Emoji
     public const CHARACTER_LEAF_FLUTTERING_IN_WIND = "\u{1F343}";
     public const CHARACTER_EMPTY_NEST = "\u{1FAB9}";
     public const CHARACTER_NEST_WITH_EGGS = "\u{1FABA}";
+    public const CHARACTER_MUSHROOM = "\u{1F344}";
     // ##### Emoji group: FOOD & DRINK #####
     // ##### Emoji subgroup: FOOD-FRUIT #####
     public const CHARACTER_GRAPES = "\u{1F347}";
@@ -6289,10 +6345,11 @@ class Emoji
     public const CHARACTER_BROCCOLI = "\u{1F966}";
     public const CHARACTER_GARLIC = "\u{1F9C4}";
     public const CHARACTER_ONION = "\u{1F9C5}";
-    public const CHARACTER_MUSHROOM = "\u{1F344}";
     public const CHARACTER_PEANUTS = "\u{1F95C}";
     public const CHARACTER_BEANS = "\u{1FAD8}";
     public const CHARACTER_CHESTNUT = "\u{1F330}";
+    public const CHARACTER_GINGER_ROOT = "\u{1FADA}";
+    public const CHARACTER_PEA_POD = "\u{1FADB}";
     // ##### Emoji subgroup: FOOD-PREPARED #####
     public const CHARACTER_BREAD = "\u{1F35E}";
     public const CHARACTER_CROISSANT = "\u{1F950}";
@@ -6688,11 +6745,10 @@ class Emoji
     public const CHARACTER_BULLSEYE = "\u{1F3AF}";
     public const CHARACTER_YO_YO = "\u{1FA80}";
     public const CHARACTER_KITE = "\u{1FA81}";
+    public const CHARACTER_WATER_PISTOL = "\u{1F52B}";
     public const CHARACTER_POOL_8_BALL = "\u{1F3B1}";
     public const CHARACTER_CRYSTAL_BALL = "\u{1F52E}";
     public const CHARACTER_MAGIC_WAND = "\u{1FA84}";
-    public const CHARACTER_NAZAR_AMULET = "\u{1F9FF}";
-    public const CHARACTER_HAMSA = "\u{1FAAC}";
     public const CHARACTER_VIDEO_GAME = "\u{1F3AE}";
     public const CHARACTER_JOYSTICK = "\u{1F579}\u{FE0F}";
     public const CHARACTER_SLOT_MACHINE = "\u{1F3B0}";
@@ -6740,6 +6796,7 @@ class Emoji
     public const CHARACTER_SHORTS = "\u{1FA73}";
     public const CHARACTER_BIKINI = "\u{1F459}";
     public const CHARACTER_WOMAN_S_CLOTHES = "\u{1F45A}";
+    public const CHARACTER_FOLDING_HAND_FAN = "\u{1FAAD}";
     public const CHARACTER_PURSE = "\u{1F45B}";
     public const CHARACTER_HANDBAG = "\u{1F45C}";
     public const CHARACTER_CLUTCH_BAG = "\u{1F45D}";
@@ -6754,6 +6811,7 @@ class Emoji
     public const CHARACTER_WOMAN_S_SANDAL = "\u{1F461}";
     public const CHARACTER_BALLET_SHOES = "\u{1FA70}";
     public const CHARACTER_WOMAN_S_BOOT = "\u{1F462}";
+    public const CHARACTER_HAIR_PICK = "\u{1FAAE}";
     public const CHARACTER_CROWN = "\u{1F451}";
     public const CHARACTER_WOMAN_S_HAT = "\u{1F452}";
     public const CHARACTER_TOP_HAT = "\u{1F3A9}";
@@ -6795,6 +6853,8 @@ class Emoji
     public const CHARACTER_BANJO = "\u{1FA95}";
     public const CHARACTER_DRUM = "\u{1F941}";
     public const CHARACTER_LONG_DRUM = "\u{1FA98}";
+    public const CHARACTER_MARACAS = "\u{1FA87}";
+    public const CHARACTER_FLUTE = "\u{1FA88}";
     // ##### Emoji subgroup: PHONE #####
     public const CHARACTER_MOBILE_PHONE = "\u{1F4F1}";
     public const CHARACTER_MOBILE_PHONE_WITH_ARROW = "\u{1F4F2}";
@@ -6924,7 +6984,7 @@ class Emoji
     public const CHARACTER_HAMMER_AND_WRENCH = "\u{1F6E0}\u{FE0F}";
     public const CHARACTER_DAGGER = "\u{1F5E1}\u{FE0F}";
     public const CHARACTER_CROSSED_SWORDS = "\u{2694}\u{FE0F}";
-    public const CHARACTER_WATER_PISTOL = "\u{1F52B}";
+    public const CHARACTER_BOMB = "\u{1F4A3}";
     public const CHARACTER_BOOMERANG = "\u{1FA83}";
     public const CHARACTER_BOW_AND_ARROW = "\u{1F3F9}";
     public const CHARACTER_SHIELD = "\u{1F6E1}\u{FE0F}";
@@ -6989,6 +7049,8 @@ class Emoji
     public const CHARACTER_COFFIN = "\u{26B0}\u{FE0F}";
     public const CHARACTER_HEADSTONE = "\u{1FAA6}";
     public const CHARACTER_FUNERAL_URN = "\u{26B1}\u{FE0F}";
+    public const CHARACTER_NAZAR_AMULET = "\u{1F9FF}";
+    public const CHARACTER_HAMSA = "\u{1FAAC}";
     public const CHARACTER_MOAI = "\u{1F5FF}";
     public const CHARACTER_PLACARD = "\u{1FAA7}";
     public const CHARACTER_IDENTIFICATION_CARD = "\u{1FAAA}";
@@ -7056,6 +7118,7 @@ class Emoji
     public const CHARACTER_PEACE_SYMBOL = "\u{262E}\u{FE0F}";
     public const CHARACTER_MENORAH = "\u{1F54E}";
     public const CHARACTER_DOTTED_SIX_POINTED_STAR = "\u{1F52F}";
+    public const CHARACTER_KHANDA = "\u{1FAAF}";
     // ##### Emoji subgroup: ZODIAC #####
     public const CHARACTER_ARIES = "\u{2648}";
     public const CHARACTER_TAURUS = "\u{2649}";
@@ -7093,6 +7156,7 @@ class Emoji
     public const CHARACTER_DIM_BUTTON = "\u{1F505}";
     public const CHARACTER_BRIGHT_BUTTON = "\u{1F506}";
     public const CHARACTER_ANTENNA_BARS = "\u{1F4F6}";
+    public const CHARACTER_WIRELESS = "\u{1F6DC}";
     public const CHARACTER_VIBRATION_MODE = "\u{1F4F3}";
     public const CHARACTER_MOBILE_PHONE_OFF = "\u{1F4F4}";
     // ##### Emoji subgroup: GENDER #####
