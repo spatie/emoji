@@ -29,7 +29,7 @@ class Emoji
 {% for subgroup, emojis in subgroups %}
     // ##### Emoji subgroup: {{ subgroup|upper }} #####
 {% for emoji in emojis %}
-    const {{ emoji.const }} = "{{ emoji.code }}";
+    public const {{ emoji.const }} = "{{ emoji.code }}";
 {% endfor %}
 {% endfor %}
 {% endfor %}
