@@ -4,7 +4,7 @@ uses(PHPUnit\Framework\TestCase::class)->in('.');
 
 // Functions
 
-function codeToCallableProvider(): array
+function emojiDataset(): array
 {
     return json_decode(file_get_contents(__DIR__ . '/emojis.json'), true);
 }

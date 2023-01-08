@@ -40,11 +40,11 @@ it('will return an emoji character when given a language code', function ($emoji
 
 it('can return an array of all emoji characters')
     ->expect(Emoji::all())->toBeArray()
-    ->toHaveCount(count(codeToCallableProvider()));;
+    ->toHaveCount(count(emojiDataset()));;
 
 test('all emojis list will contain every emoji defined as const', function ($name, $code, $cleanName, $const, $method) {
     expect(Emoji::all()[$const])->toEqual(unicodeHexToEmoji($code));
-})->with(codeToCallableProvider());
+})->with(emojiDataset());
 
 it("will throw an exception when try to get a flag for a string that doesn't have two characters", function ($invalidCountryCode) {
     Emoji::countryFlag($invalidCountryCode);
@@ -57,8 +57,8 @@ it("will throw an exception when try to get a flag for a string that doesn't hav
 
 it('can access emoji by constant', function ($name, $code, $cleanName, $const, $method) {
     expect(Emoji::{$method}())->toEqual(unicodeHexToEmoji($code));
-})->with(codeToCallableProvider());
+})->with(emojiDataset());
 
 it('can access emoji by method', function ($name, $code, $cleanName, $const, $method) {
     expect(constant(Emoji::class . '::' . $const))->toEqual(unicodeHexToEmoji($code));
-})->with(codeToCallableProvider());
+})->with(emojiDataset());
