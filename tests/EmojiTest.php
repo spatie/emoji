@@ -40,7 +40,8 @@ it('will return an emoji character when given a language code', function ($emoji
 
 it('can return an array of all emoji characters')
     ->expect(Emoji::all())->toBeArray()
-    ->toHaveCount(count(emojiDataset()));;
+    ->toHaveCount(count(emojiDataset()));
+    ;
 
 test('all emojis list will contain every emoji defined as const', function ($name, $code, $cleanName, $const, $method) {
     expect(Emoji::all()[$const])->toEqual(unicodeHexToEmoji($code));
