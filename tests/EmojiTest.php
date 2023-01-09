@@ -1,122 +1,65 @@
 <?php
 
-namespace Spatie\Emoji\Test;
-
-use PHPUnit\Framework\TestCase;
 use Spatie\Emoji\Emoji;
 use Spatie\Emoji\Exceptions\CouldNotDetermineFlag;
 use Spatie\Emoji\Exceptions\UnknownCharacter;
 
-class EmojiTest extends TestCase
-{
-    /** @test */
-    public function it_can_return_an_emoji_character_when_given_a_constant()
-    {
-        $this->assertSame('😀', Emoji::CHARACTER_GRINNING_FACE);
-        $this->assertSame('🥰', Emoji::CHARACTER_SMILING_FACE_WITH_HEARTS);
-        $this->assertSame('🔟', Emoji::CHARACTER_KEYCAP_10);
-    }
+it('can return an emoji character when given a constant')
+    ->expect(Emoji::CHARACTER_GRINNING_FACE)->toEqual('😀')
+    ->and(Emoji::CHARACTER_SMILING_FACE_WITH_HEARTS)->toEqual('🥰')
+    ->and(Emoji::CHARACTER_KEYCAP_10)->toEqual('🔟');
 
-    /** @test */
-    public function it_provides_a_convenience_method_to_return_emoji_characters()
-    {
-        $this->assertSame('😀', Emoji::grinningFace());
-        $this->assertSame('🥰', Emoji::smilingFaceWithHearts());
-        $this->assertSame('🔟', Emoji::keycap10());
-        $this->assertSame('🥇', Emoji::firstPlaceMedal());
-        $this->assertSame('🥈', Emoji::secondPlaceMedal());
-        $this->assertSame('🥉', Emoji::thirdPlaceMedal());
-    }
+it('provides a convenience method to return emoji characters', function ($emoji, $emojiMethod) {
+    expect($emojiMethod)->toEqual($emoji);
+})
+    ->with([
+        ['😀', Emoji::grinningFace()],
+        ['🥰', Emoji::smilingFaceWithHearts()],
+        ['🔟', Emoji::keycap10()],
+        ['🥇', Emoji::firstPlaceMedal()],
+        ['🥈', Emoji::secondPlaceMedal()],
+        ['🥉', Emoji::thirdPlaceMedal()],
+    ]);
 
-    /** @test */
-    public function it_can_return_the_skin_tone_component_emoji()
-    {
-        $this->assertSame('🏻', Emoji::lightSkinTone());
-    }
+it('can return the skin tone component emoji', function () {
+    expect(Emoji::lightSkinTone())->toEqual('🏻');
+});
 
-    /** @test */
-    public function it_will_throw_an_exception_when_getting_unknown_characters()
-    {
-        $this->expectException(UnknownCharacter::class);
+it('it will throw an exception when getting unknown characters', function () {
+    Emoji::thisCharacterDoesNotExist();
+})->throws(UnknownCharacter::class);
 
-        Emoji::thisCharacterDoesNotExist();
-    }
+it('will return an emoji character when given a language code', function ($emoji, $emojiMethod) {
+    expect($emoji)->toEqual($emojiMethod);
+})
+    ->with([
+        ['🇧🇪', Emoji::countryFlag('BE')],
+        ['🇧🇪', Emoji::countryFlag('be')],
+        ['🇦🇦', Emoji::countryFlag('AA')],
+    ]);
 
-    /** @test */
-    public function it_will_return_an_emoji_character_when_given_a_language_code()
-    {
-        $this->assertSame('🇧🇪', Emoji::countryFlag('BE'));
-        $this->assertSame('🇧🇪', Emoji::countryFlag('be'));
-        $this->assertSame('🇦🇦', Emoji::countryFlag('AA'));
-    }
+it('can return an array of all emoji characters')
+    ->expect(Emoji::all())->toBeArray()
+    ->toHaveCount(count(emojiDataset()));
+;
 
-    /** @test */
-    public function it_can_return_an_array_of_all_emoji_characters()
-    {
-        $this->assertIsArray(Emoji::all());
-        $this->assertCount(count($this->codeToCallableProvider()), Emoji::all());
-    }
+test('all emojis list will contain every emoji defined as const', function ($name, $code, $cleanName, $const, $method) {
+    expect(Emoji::all()[$const])->toEqual(unicodeHexToEmoji($code));
+})->with(emojiDataset());
 
-    /**
-     * @test
-     *
-     * @dataProvider codeToCallableProvider
-     */
-    public function all_emojis_list_will_contain_every_emoji_defined_as_const($name, $code, $cleanName, $const, $method)
-    {
-        $this->assertSame($this->unicodeHexToEmoji($code), Emoji::all()[$const]);
-    }
+it("will throw an exception when try to get a flag for a string that doesn't have two characters", function ($invalidCountryCode) {
+    Emoji::countryFlag($invalidCountryCode);
+})->with([
+    [''],
+    ['a'],
+    ['aaa'],
+])
+    ->throws(CouldNotDetermineFlag::class);
 
-    /**
-     * @test
-     *
-     * @dataProvider invalidCountryCodeProvider
-     */
-    public function it_will_throw_an_exception_when_try_to_get_a_flag_for_a_string_that_doesnt_have_two_characters(string $invalidCountryCode)
-    {
-        $this->expectException(CouldNotDetermineFlag::class);
+it('can access emoji by constant', function ($name, $code, $cleanName, $const, $method) {
+    expect(Emoji::{$method}())->toEqual(unicodeHexToEmoji($code));
+})->with(emojiDataset());
 
-        Emoji::countryFlag($invalidCountryCode);
-    }
-
-    /**
-     * @test
-     *
-     * @dataProvider codeToCallableProvider
-     */
-    public function can_access_emoji_by_constant($name, $code, $cleanName, $const, $method)
-    {
-        $this->assertEquals($this->unicodeHexToEmoji($code), Emoji::{$method}());
-    }
-
-    /**
-     * @test
-     *
-     * @dataProvider codeToCallableProvider
-     */
-    public function can_access_emoji_by_method($name, $code, $cleanName, $const, $method)
-    {
-        $this->assertEquals($this->unicodeHexToEmoji($code), constant(Emoji::class.'::'.$const));
-    }
-
-    public function invalidCountryCodeProvider()
-    {
-        return [
-            [''],
-            ['a'],
-            ['aaa'],
-        ];
-    }
-
-    public function codeToCallableProvider(): array
-    {
-        return json_decode(file_get_contents(__DIR__.'/emojis.json'), true);
-    }
-
-    private function unicodeHexToEmoji(string $code)
-    {
-        return mb_convert_encoding(hex2bin(implode('', array_map(function ($hex) {
-            return str_pad($hex, 8, '0', STR_PAD_LEFT);
-        }, explode(' ', trim(str_replace('}\u{', ' ', $code), '}\u{'))))), 'UTF-8', 'UTF-32');
-    }
-}
+it('can access emoji by method', function ($name, $code, $cleanName, $const, $method) {
+    expect(constant(Emoji::class . '::' . $const))->toEqual(unicodeHexToEmoji($code));
+})->with(emojiDataset());
