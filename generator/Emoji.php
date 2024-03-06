@@ -28,7 +28,7 @@ class Emoji implements JsonSerializable, ArrayAccess
         $this->setCode($code);
     }
 
-    protected function setCode(string $code)
+    protected function setCode(string $code): void
     {
         $this->code = '\u{'.implode('}\u{', explode(' ', $code)).'}';
     }

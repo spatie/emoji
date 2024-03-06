@@ -24,7 +24,7 @@ class Parser
         $this->body = $body;
     }
 
-    public function parse()
+    public function parse(): void
     {
         $lines = explode("\n", $this->body);
 
@@ -43,7 +43,7 @@ class Parser
         return $this->groups;
     }
 
-    protected function parseLine(string $line)
+    protected function parseLine(string $line): void
     {
         if (strlen($line) === 0) {
             return;
@@ -80,7 +80,7 @@ class Parser
         }
     }
 
-    protected function addEmoji(string $code, string $name)
+    protected function addEmoji(string $code, string $name): void
     {
         $emoji = new Emoji($name, $code);
 
