@@ -10,7 +10,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  *
  * @link https://unicode.org/Public/emoji/15.1/emoji-test.txt
  * @version v15.1
- * loaded at: 2024-03-06 18:03:09
+ * loaded at: 2024-03-06 19:01:49
  *
  * ##### Emoji group: SMILEYS & EMOTION #####
  * ##### Emoji subgroup: FACE-SMILING #####
@@ -3874,7 +3874,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flagsForFlagTurkmenistan()
  * @method static string flagsForFlagTunisia()
  * @method static string flagsForFlagTonga()
- * @method static string flagsForFlagTRkiye()
+ * @method static string flagsForFlagTurkiye()
  * @method static string flagsForFlagTrinidadAndTobago()
  * @method static string flagsForFlagTuvalu()
  * @method static string flagsForFlagTaiwan()
@@ -7770,7 +7770,7 @@ class Emoji
     public const CHARACTER_FLAGS_FOR_FLAG_TURKMENISTAN = "\u{1F1F9}\u{1F1F2}";
     public const CHARACTER_FLAGS_FOR_FLAG_TUNISIA = "\u{1F1F9}\u{1F1F3}";
     public const CHARACTER_FLAGS_FOR_FLAG_TONGA = "\u{1F1F9}\u{1F1F4}";
-    public const CHARACTER_FLAGS_FOR_FLAG_T_RKIYE = "\u{1F1F9}\u{1F1F7}";
+    public const CHARACTER_FLAGS_FOR_FLAG_TURKIYE = "\u{1F1F9}\u{1F1F7}";
     public const CHARACTER_FLAGS_FOR_FLAG_TRINIDAD_AND_TOBAGO = "\u{1F1F9}\u{1F1F9}";
     public const CHARACTER_FLAGS_FOR_FLAG_TUVALU = "\u{1F1F9}\u{1F1FB}";
     public const CHARACTER_FLAGS_FOR_FLAG_TAIWAN = "\u{1F1F9}\u{1F1FC}";
