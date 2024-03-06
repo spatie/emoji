@@ -28,7 +28,7 @@ class Emoji implements JsonSerializable, ArrayAccess
         $this->setCode($code);
     }
 
-    protected function setCode(string $code)
+    protected function setCode(string $code): void
     {
         $this->code = '\u{'.implode('}\u{', explode(' ', $code)).'}';
     }
@@ -57,7 +57,7 @@ class Emoji implements JsonSerializable, ArrayAccess
             'Š'=>'S', 'š'=>'s', 'Đ'=>'Dj', 'đ'=>'dj', 'Ž'=>'Z', 'ž'=>'z', 'Č'=>'C', 'č'=>'c', 'Ć'=>'C', 'ć'=>'c', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E', 'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U', 'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c', 'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o', 'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y', 'Ŕ'=>'R', 'ŕ'=>'r',
         ]);
 
-        $name = preg_replace('/E[0-9]+\.[0-9] /', null, $name);
+        $name = preg_replace('/E[0-9]+\.[0-9] /', '', $name);
 
         $this->name = $name;
         $this->cleanName = mb_strtolower(preg_replace("/\s+/", ' ', preg_replace("/[^\w]+/", ' ', $this->name)));
@@ -101,27 +101,27 @@ class Emoji implements JsonSerializable, ArrayAccess
         ];
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
         return $this->toArray();
     }
 
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return in_array($offset, array_keys($this->toArray()));
     }
 
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->toArray()[$offset];
     }
 
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         // no public set allowed
     }
 
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         // no public unset allowed
     }

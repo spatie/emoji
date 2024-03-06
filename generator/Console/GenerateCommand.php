@@ -3,6 +3,7 @@
 namespace Spatie\Emoji\Generator\Console;
 
 use GuzzleHttp\Client;
+use Psr\Http\Message\StreamInterface;
 use ReflectionClass;
 use Spatie\Emoji\Emoji;
 use Spatie\Emoji\Generator\Parser;
@@ -32,14 +33,14 @@ class GenerateCommand extends Command
     /** @var array[] */
     protected $groups;
 
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setName('generate')
             ->setDescription('Generate the package code from the emoji docs');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $this->now = time();
         $output->writeln('Generating package code...');
@@ -80,14 +81,14 @@ class GenerateCommand extends Command
         return $matches[1] ?? [];
     }
 
-    protected function emojiToUnicodeHex(string $emoji)
+    protected function emojiToUnicodeHex(string $emoji): string
     {
         return '\u{'.implode('}\u{', array_map(function ($hex) {
             return mb_strtoupper(ltrim($hex, '0'));
         }, str_split(bin2hex(mb_convert_encoding($emoji, 'UTF-32', 'UTF-8')), 8))).'}';
     }
 
-    protected function retrieveRemoteFile(string $url)
+    protected function retrieveRemoteFile(string $url): StreamInterface
     {
         $client = new Client();
         $response = $client->get($url);
@@ -99,7 +100,7 @@ class GenerateCommand extends Command
         return $response->getBody();
     }
 
-    protected function parseResponse(string $body)
+    protected function parseResponse(string $body): void
     {
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'_response.txt', $body);
         $parser = new Parser($body);
@@ -112,7 +113,7 @@ class GenerateCommand extends Command
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'_groups.json', json_encode($this->groups));
     }
 
-    protected function deprecatedConstants()
+    protected function deprecatedConstants(): void
     {
         $currentConstants = $this->getCurrentConstants();
         $deprecatedConstants = array_values(array_diff($currentConstants, array_column($this->emojisArray, 'const')));
@@ -136,7 +137,7 @@ class GenerateCommand extends Command
         }
     }
 
-    protected function deprecatedMethods()
+    protected function deprecatedMethods(): void
     {
         $currentMethods = $this->getCurrentMethods();
         $deprecatedMethods = array_values(array_diff($currentMethods, array_column($this->emojisArray, 'method')));
@@ -159,7 +160,7 @@ class GenerateCommand extends Command
         }
     }
 
-    protected function writeClass(string $url)
+    protected function writeClass(string $url): void
     {
         $loader = new FilesystemLoader(__DIR__.'/../templates');
         $twig = new Environment($loader, [
