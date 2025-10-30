@@ -22,7 +22,7 @@
     "require-dev": {
         "ext-iconv": "*",
         "ext-json": "*",
-        "symfony/console": "^6.2",
+        "symfony/console": "^6.2 || ^7.0 || ^8.0",
         "twig/twig": "^2.7",
         "guzzlehttp/guzzle": "^7.0",
         "pestphp/pest": "^1.22"
