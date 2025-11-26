@@ -6,7 +6,9 @@ uses(PHPUnit\Framework\TestCase::class)->in('.');
 
 function emojiDataset(): array
 {
-    return json_decode(file_get_contents(__DIR__ . '/emojis.json'), true);
+    $emojis = json_decode(file_get_contents(__DIR__ . '/emojis.json'), true);
+
+    return array_map(fn ($emoji) => [$emoji], $emojis);
 }
 
 function unicodeHexToEmoji(string $code)

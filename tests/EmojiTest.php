@@ -43,8 +43,8 @@ it('can return an array of all emoji characters')
     ->toHaveCount(count(emojiDataset()));
 ;
 
-test('all emojis list will contain every emoji defined as const', function ($name, $code, $cleanName, $const, $method) {
-    expect(Emoji::all()[$const])->toEqual(unicodeHexToEmoji($code));
+test('all emojis list will contain every emoji defined as const', function ($emoji) {
+    expect(Emoji::all()[$emoji['const']])->toEqual(unicodeHexToEmoji($emoji['code']));
 })->with(emojiDataset());
 
 it("will throw an exception when try to get a flag for a string that doesn't have two characters", function ($invalidCountryCode) {
@@ -56,10 +56,10 @@ it("will throw an exception when try to get a flag for a string that doesn't hav
 ])
     ->throws(CouldNotDetermineFlag::class);
 
-it('can access emoji by constant', function ($name, $code, $cleanName, $const, $method) {
-    expect(Emoji::{$method}())->toEqual(unicodeHexToEmoji($code));
+it('can access emoji by constant', function ($emoji) {
+    expect(Emoji::{$emoji['method']}())->toEqual(unicodeHexToEmoji($emoji['code']));
 })->with(emojiDataset());
 
-it('can access emoji by method', function ($name, $code, $cleanName, $const, $method) {
-    expect(constant(Emoji::class . '::' . $const))->toEqual(unicodeHexToEmoji($code));
+it('can access emoji by method', function ($emoji) {
+    expect(constant(Emoji::class . '::' . $emoji['const']))->toEqual(unicodeHexToEmoji($emoji['code']));
 })->with(emojiDataset());
