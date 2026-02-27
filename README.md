@@ -4,6 +4,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 ![Tests](https://github.com/spatie/emoji/workflows/Tests/badge.svg)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/emoji.svg?style=flat-square)](https://packagist.org/packages/spatie/emoji)
+[![libs.tech recommends](https://libs.tech/project/51245349/badge.svg)](https://libs.tech/project/51245349/emoji)
 
 In PHP, you can display emoji characters just by typing them:
 
