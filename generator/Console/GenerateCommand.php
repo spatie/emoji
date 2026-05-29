@@ -16,7 +16,8 @@ use Twig\Loader\FilesystemLoader;
 class GenerateCommand extends Command
 {
     /** @var string */
-    protected const EMOJI_VERSION = '15.1';
+    protected const EMOJI_VERSION = 'latest';
+    protected string $version;
 
     /** @var int */
     protected $now;
@@ -108,6 +109,7 @@ class GenerateCommand extends Command
         $this->emojis = $parser->getEmojis();
         $this->emojisArray = json_decode(json_encode($this->emojis), true);
         $this->groups = $parser->getGroups();
+        $this->version = $parser->getVersion();
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'_emojis.json', json_encode($this->emojis));
         file_put_contents(__DIR__.'/../../tests/emojis.json', json_encode($this->emojis));
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'_groups.json', json_encode($this->groups));
@@ -170,7 +172,7 @@ class GenerateCommand extends Command
         $class = $twig->load('Emoji.twig')->render([
             'url' => $url,
             'loaded_at' => $this->now,
-            'version' => 'v'.self::EMOJI_VERSION,
+            'version' => 'v' . $this->version,
             'groups' => $this->groups,
         ]);
         file_put_contents(__DIR__.'/../temp/'.date('Y_m_d-H_i_s', $this->now).'.php', $class);
