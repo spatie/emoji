@@ -11,11 +11,11 @@ class Application extends ConsoleApplication
         parent::__construct('Spatie\Emoji package generator', '1.0.0');
 
         $command = new GenerateCommand();
-        $this->add($command);
+        $this->addCommand($command);
         $this->setDefaultCommand($command->getName());
     }
 
-    public function getLongVersion()
+    public function getLongVersion() : string
     {
         return parent::getLongVersion().' by <comment>Spatie</comment>';
     }
