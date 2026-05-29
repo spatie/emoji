@@ -19,6 +19,9 @@ class Parser
     /** @var array */
     protected $groups = [];
 
+    /** @var string */
+    protected $version;
+
     public function __construct(string $body)
     {
         $this->body = $body;
@@ -43,6 +46,11 @@ class Parser
         return $this->groups;
     }
 
+    public function getVersion(): string
+    {
+        return $this->version;
+    }
+
     protected function parseLine(string $line): void
     {
         if (strlen($line) === 0) {
@@ -57,6 +65,12 @@ class Parser
 
         if (strpos($line, '# subgroup:') === 0) {
             $this->subgroup = trim(str_replace('# subgroup:', '', $line));
+
+            return;
+        }
+
+        if (strpos($line, '# Version:') === 0) {
+            $this->version = $this->subgroup = trim(str_replace('# Version:', '', $line));
 
             return;
         }
