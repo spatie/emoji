@@ -17,7 +17,9 @@ class GenerateCommand extends Command
 {
     /** @var string */
     protected const EMOJI_VERSION = 'latest';
-    protected string $version;
+
+    /** @var string */
+    protected $version;
 
     /** @var int */
     protected $now;
