@@ -70,7 +70,7 @@ class Parser
         }
 
         if (strpos($line, '# Version:') === 0) {
-            $this->version = $this->subgroup = trim(str_replace('# Version:', '', $line));
+            $this->version = trim(str_replace('# Version:', '', $line));
 
             return;
         }
