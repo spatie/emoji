@@ -9,8 +9,8 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * Emoji class.
  *
  * @link https://unicode.org/Public/emoji/latest/emoji-test.txt
- * @version v17.0
- * loaded at: 2026-05-29 19:28:55
+ * @version v18.0
+ * loaded at: 2026-09-17 20:15:14
  *
  * ##### Emoji group: SMILEYS & EMOTION #####
  * ##### Emoji subgroup: FACE-SMILING #####
@@ -25,6 +25,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string slightlySmilingFace()
  * @method static string upsideDownFace()
  * @method static string meltingFace()
+ * @method static string crackingFace()
  * @method static string winkingFace()
  * @method static string smilingFaceWithSmilingEyes()
  * @method static string smilingFaceWithHalo()
@@ -379,6 +380,18 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string thumbsDownMediumSkinTone()
  * @method static string thumbsDownMediumDarkSkinTone()
  * @method static string thumbsDownDarkSkinTone()
+ * @method static string leftwardsThumbSign()
+ * @method static string leftwardsThumbSignLightSkinTone()
+ * @method static string leftwardsThumbSignMediumLightSkinTone()
+ * @method static string leftwardsThumbSignMediumSkinTone()
+ * @method static string leftwardsThumbSignMediumDarkSkinTone()
+ * @method static string leftwardsThumbSignDarkSkinTone()
+ * @method static string rightwardsThumbSign()
+ * @method static string rightwardsThumbSignLightSkinTone()
+ * @method static string rightwardsThumbSignMediumLightSkinTone()
+ * @method static string rightwardsThumbSignMediumSkinTone()
+ * @method static string rightwardsThumbSignMediumDarkSkinTone()
+ * @method static string rightwardsThumbSignDarkSkinTone()
  * @method static string raisedFist()
  * @method static string raisedFistLightSkinTone()
  * @method static string raisedFistMediumLightSkinTone()
@@ -2771,6 +2784,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * ##### Emoji subgroup: ANIMAL-BUG #####
  * @method static string snail()
  * @method static string butterfly()
+ * @method static string monarchButterfly()
  * @method static string bug()
  * @method static string ant()
  * @method static string honeybee()
@@ -2847,6 +2861,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string hotPepper()
  * @method static string bellPepper()
  * @method static string cucumber()
+ * @method static string pickle()
  * @method static string leafyGreen()
  * @method static string broccoli()
  * @method static string garlic()
@@ -3080,6 +3095,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string stopSign()
  * @method static string construction()
  * ##### Emoji subgroup: TRANSPORT-WATER #####
+ * @method static string lighthouse()
  * @method static string anchor()
  * @method static string ringBuoy()
  * @method static string sailboat()
@@ -3183,6 +3199,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string snowman()
  * @method static string snowmanWithoutSnow()
  * @method static string comet()
+ * @method static string meteor()
  * @method static string fire()
  * @method static string droplet()
  * @method static string waterWave()
@@ -3451,6 +3468,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string paintbrush()
  * @method static string crayon()
  * @method static string memo()
+ * @method static string eraser()
  * ##### Emoji subgroup: OFFICE #####
  * @method static string briefcase()
  * @method static string fileFolder()
@@ -3483,6 +3501,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string key()
  * @method static string oldKey()
  * ##### Emoji subgroup: TOOL #####
+ * @method static string netWithHandle()
  * @method static string hammer()
  * @method static string axe()
  * @method static string pick()
@@ -3913,7 +3932,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flagsForFlagGuineaBissau()
  * @method static string flagsForFlagGuyana()
  * @method static string flagsForFlagHongKongSarChina()
- * @method static string flagsForFlagHeardAndMcdonaldIslands()
+ * @method static string flagsForFlagHeardIslandAndMcdonaldIslands()
  * @method static string flagsForFlagHonduras()
  * @method static string flagsForFlagCroatia()
  * @method static string flagsForFlagHaiti()
@@ -4017,7 +4036,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flagsForFlagSudan()
  * @method static string flagsForFlagSweden()
  * @method static string flagsForFlagSingapore()
- * @method static string flagsForFlagStHelena()
+ * @method static string flagsForFlagStHelenaAscensionAndTristanDaCunha()
  * @method static string flagsForFlagSlovenia()
  * @method static string flagsForFlagSvalbardAndJanMayen()
  * @method static string flagsForFlagSlovakia()
@@ -4035,7 +4054,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flagsForFlagTristanDaCunha()
  * @method static string flagsForFlagTurksAndCaicosIslands()
  * @method static string flagsForFlagChad()
- * @method static string flagsForFlagFrenchSouthernTerritories()
+ * @method static string flagsForFlagFrenchSouthernAndAntarcticLands()
  * @method static string flagsForFlagTogo()
  * @method static string flagsForFlagThailand()
  * @method static string flagsForFlagTajikistan()
@@ -4091,6 +4110,7 @@ class Emoji
     public const CHARACTER_SLIGHTLY_SMILING_FACE = "\u{1F642}";
     public const CHARACTER_UPSIDE_DOWN_FACE = "\u{1F643}";
     public const CHARACTER_MELTING_FACE = "\u{1FAE0}";
+    public const CHARACTER_CRACKING_FACE = "\u{1FAEB}";
     public const CHARACTER_WINKING_FACE = "\u{1F609}";
     public const CHARACTER_SMILING_FACE_WITH_SMILING_EYES = "\u{1F60A}";
     public const CHARACTER_SMILING_FACE_WITH_HALO = "\u{1F607}";
@@ -4445,6 +4465,18 @@ class Emoji
     public const CHARACTER_THUMBS_DOWN_MEDIUM_SKIN_TONE = "\u{1F44E}\u{1F3FD}";
     public const CHARACTER_THUMBS_DOWN_MEDIUM_DARK_SKIN_TONE = "\u{1F44E}\u{1F3FE}";
     public const CHARACTER_THUMBS_DOWN_DARK_SKIN_TONE = "\u{1F44E}\u{1F3FF}";
+    public const CHARACTER_LEFTWARDS_THUMB_SIGN = "\u{1FAF9}";
+    public const CHARACTER_LEFTWARDS_THUMB_SIGN_LIGHT_SKIN_TONE = "\u{1FAF9}\u{1F3FB}";
+    public const CHARACTER_LEFTWARDS_THUMB_SIGN_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAF9}\u{1F3FC}";
+    public const CHARACTER_LEFTWARDS_THUMB_SIGN_MEDIUM_SKIN_TONE = "\u{1FAF9}\u{1F3FD}";
+    public const CHARACTER_LEFTWARDS_THUMB_SIGN_MEDIUM_DARK_SKIN_TONE = "\u{1FAF9}\u{1F3FE}";
+    public const CHARACTER_LEFTWARDS_THUMB_SIGN_DARK_SKIN_TONE = "\u{1FAF9}\u{1F3FF}";
+    public const CHARACTER_RIGHTWARDS_THUMB_SIGN = "\u{1FAFA}";
+    public const CHARACTER_RIGHTWARDS_THUMB_SIGN_LIGHT_SKIN_TONE = "\u{1FAFA}\u{1F3FB}";
+    public const CHARACTER_RIGHTWARDS_THUMB_SIGN_MEDIUM_LIGHT_SKIN_TONE = "\u{1FAFA}\u{1F3FC}";
+    public const CHARACTER_RIGHTWARDS_THUMB_SIGN_MEDIUM_SKIN_TONE = "\u{1FAFA}\u{1F3FD}";
+    public const CHARACTER_RIGHTWARDS_THUMB_SIGN_MEDIUM_DARK_SKIN_TONE = "\u{1FAFA}\u{1F3FE}";
+    public const CHARACTER_RIGHTWARDS_THUMB_SIGN_DARK_SKIN_TONE = "\u{1FAFA}\u{1F3FF}";
     public const CHARACTER_RAISED_FIST = "\u{270A}";
     public const CHARACTER_RAISED_FIST_LIGHT_SKIN_TONE = "\u{270A}\u{1F3FB}";
     public const CHARACTER_RAISED_FIST_MEDIUM_LIGHT_SKIN_TONE = "\u{270A}\u{1F3FC}";
@@ -6837,6 +6869,7 @@ class Emoji
     // ##### Emoji subgroup: ANIMAL-BUG #####
     public const CHARACTER_SNAIL = "\u{1F40C}";
     public const CHARACTER_BUTTERFLY = "\u{1F98B}";
+    public const CHARACTER_MONARCH_BUTTERFLY = "\u{1FACC}";
     public const CHARACTER_BUG = "\u{1F41B}";
     public const CHARACTER_ANT = "\u{1F41C}";
     public const CHARACTER_HONEYBEE = "\u{1F41D}";
@@ -6913,6 +6946,7 @@ class Emoji
     public const CHARACTER_HOT_PEPPER = "\u{1F336}\u{FE0F}";
     public const CHARACTER_BELL_PEPPER = "\u{1FAD1}";
     public const CHARACTER_CUCUMBER = "\u{1F952}";
+    public const CHARACTER_PICKLE = "\u{1FADD}";
     public const CHARACTER_LEAFY_GREEN = "\u{1F96C}";
     public const CHARACTER_BROCCOLI = "\u{1F966}";
     public const CHARACTER_GARLIC = "\u{1F9C4}";
@@ -7146,6 +7180,7 @@ class Emoji
     public const CHARACTER_STOP_SIGN = "\u{1F6D1}";
     public const CHARACTER_CONSTRUCTION = "\u{1F6A7}";
     // ##### Emoji subgroup: TRANSPORT-WATER #####
+    public const CHARACTER_LIGHTHOUSE = "\u{1F6D9}";
     public const CHARACTER_ANCHOR = "\u{2693}";
     public const CHARACTER_RING_BUOY = "\u{1F6DF}";
     public const CHARACTER_SAILBOAT = "\u{26F5}";
@@ -7249,6 +7284,7 @@ class Emoji
     public const CHARACTER_SNOWMAN = "\u{2603}\u{FE0F}";
     public const CHARACTER_SNOWMAN_WITHOUT_SNOW = "\u{26C4}";
     public const CHARACTER_COMET = "\u{2604}\u{FE0F}";
+    public const CHARACTER_METEOR = "\u{1FA8B}";
     public const CHARACTER_FIRE = "\u{1F525}";
     public const CHARACTER_DROPLET = "\u{1F4A7}";
     public const CHARACTER_WATER_WAVE = "\u{1F30A}";
@@ -7517,6 +7553,7 @@ class Emoji
     public const CHARACTER_PAINTBRUSH = "\u{1F58C}\u{FE0F}";
     public const CHARACTER_CRAYON = "\u{1F58D}\u{FE0F}";
     public const CHARACTER_MEMO = "\u{1F4DD}";
+    public const CHARACTER_ERASER = "\u{1FA8C}";
     // ##### Emoji subgroup: OFFICE #####
     public const CHARACTER_BRIEFCASE = "\u{1F4BC}";
     public const CHARACTER_FILE_FOLDER = "\u{1F4C1}";
@@ -7549,6 +7586,7 @@ class Emoji
     public const CHARACTER_KEY = "\u{1F511}";
     public const CHARACTER_OLD_KEY = "\u{1F5DD}\u{FE0F}";
     // ##### Emoji subgroup: TOOL #####
+    public const CHARACTER_NET_WITH_HANDLE = "\u{1FA8D}";
     public const CHARACTER_HAMMER = "\u{1F528}";
     public const CHARACTER_AXE = "\u{1FA93}";
     public const CHARACTER_PICK = "\u{26CF}\u{FE0F}";
@@ -7979,7 +8017,7 @@ class Emoji
     public const CHARACTER_FLAGS_FOR_FLAG_GUINEA_BISSAU = "\u{1F1EC}\u{1F1FC}";
     public const CHARACTER_FLAGS_FOR_FLAG_GUYANA = "\u{1F1EC}\u{1F1FE}";
     public const CHARACTER_FLAGS_FOR_FLAG_HONG_KONG_SAR_CHINA = "\u{1F1ED}\u{1F1F0}";
-    public const CHARACTER_FLAGS_FOR_FLAG_HEARD_AND_MCDONALD_ISLANDS = "\u{1F1ED}\u{1F1F2}";
+    public const CHARACTER_FLAGS_FOR_FLAG_HEARD_ISLAND_AND_MCDONALD_ISLANDS = "\u{1F1ED}\u{1F1F2}";
     public const CHARACTER_FLAGS_FOR_FLAG_HONDURAS = "\u{1F1ED}\u{1F1F3}";
     public const CHARACTER_FLAGS_FOR_FLAG_CROATIA = "\u{1F1ED}\u{1F1F7}";
     public const CHARACTER_FLAGS_FOR_FLAG_HAITI = "\u{1F1ED}\u{1F1F9}";
@@ -8083,7 +8121,7 @@ class Emoji
     public const CHARACTER_FLAGS_FOR_FLAG_SUDAN = "\u{1F1F8}\u{1F1E9}";
     public const CHARACTER_FLAGS_FOR_FLAG_SWEDEN = "\u{1F1F8}\u{1F1EA}";
     public const CHARACTER_FLAGS_FOR_FLAG_SINGAPORE = "\u{1F1F8}\u{1F1EC}";
-    public const CHARACTER_FLAGS_FOR_FLAG_ST_HELENA = "\u{1F1F8}\u{1F1ED}";
+    public const CHARACTER_FLAGS_FOR_FLAG_ST_HELENA_ASCENSION_AND_TRISTAN_DA_CUNHA = "\u{1F1F8}\u{1F1ED}";
     public const CHARACTER_FLAGS_FOR_FLAG_SLOVENIA = "\u{1F1F8}\u{1F1EE}";
     public const CHARACTER_FLAGS_FOR_FLAG_SVALBARD_AND_JAN_MAYEN = "\u{1F1F8}\u{1F1EF}";
     public const CHARACTER_FLAGS_FOR_FLAG_SLOVAKIA = "\u{1F1F8}\u{1F1F0}";
@@ -8101,7 +8139,7 @@ class Emoji
     public const CHARACTER_FLAGS_FOR_FLAG_TRISTAN_DA_CUNHA = "\u{1F1F9}\u{1F1E6}";
     public const CHARACTER_FLAGS_FOR_FLAG_TURKS_AND_CAICOS_ISLANDS = "\u{1F1F9}\u{1F1E8}";
     public const CHARACTER_FLAGS_FOR_FLAG_CHAD = "\u{1F1F9}\u{1F1E9}";
-    public const CHARACTER_FLAGS_FOR_FLAG_FRENCH_SOUTHERN_TERRITORIES = "\u{1F1F9}\u{1F1EB}";
+    public const CHARACTER_FLAGS_FOR_FLAG_FRENCH_SOUTHERN_AND_ANTARCTIC_LANDS = "\u{1F1F9}\u{1F1EB}";
     public const CHARACTER_FLAGS_FOR_FLAG_TOGO = "\u{1F1F9}\u{1F1EC}";
     public const CHARACTER_FLAGS_FOR_FLAG_THAILAND = "\u{1F1F9}\u{1F1ED}";
     public const CHARACTER_FLAGS_FOR_FLAG_TAJIKISTAN = "\u{1F1F9}\u{1F1EF}";
