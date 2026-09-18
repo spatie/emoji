@@ -2,20 +2,19 @@
 
 All notable changes to `emoji` will be documented in this file
 
-## 5.0.0 - 2026-09-18
+## 4.2.0 - 2026-09-18
 
 - Update to Unicode 18.0 (#68)
 
-New major release as three flags were renamed upstream. Rename these methods and constants in your code:
+Adds 19 new emoji, among them cracking face, leftwards and rightwards thumb sign, monarch butterfly, pickle, lighthouse, meteor, eraser and net with handle.
+
+Unicode also renamed three flags. Their old names keep working as deprecated aliases, so nothing breaks, but prefer the new names in fresh code:
 
 - `flagsForFlagFrenchSouthernTerritories()` becomes `flagsForFlagFrenchSouthernAndAntarcticLands()`
 - `flagsForFlagHeardAndMcdonaldIslands()` becomes `flagsForFlagHeardIslandAndMcdonaldIslands()`
 - `flagsForFlagStHelena()` becomes `flagsForFlagStHelenaAscensionAndTristanDaCunha()`
-- `CHARACTER_FLAGS_FOR_FLAG_FRENCH_SOUTHERN_TERRITORIES` becomes `CHARACTER_FLAGS_FOR_FLAG_FRENCH_SOUTHERN_AND_ANTARCTIC_LANDS`
-- `CHARACTER_FLAGS_FOR_FLAG_HEARD_AND_MCDONALD_ISLANDS` becomes `CHARACTER_FLAGS_FOR_FLAG_HEARD_ISLAND_AND_MCDONALD_ISLANDS`
-- `CHARACTER_FLAGS_FOR_FLAG_ST_HELENA` becomes `CHARACTER_FLAGS_FOR_FLAG_ST_HELENA_ASCENSION_AND_TRISTAN_DA_CUNHA`
 
-The emoji characters themselves did not change, only their names.
+The matching `CHARACTER_*` constants were renamed the same way. Only the new names show up in `Emoji::all()`.
 
 ## 3.0.0 - 2021-09-27
 
