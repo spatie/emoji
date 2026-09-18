@@ -2,6 +2,7 @@
 
 namespace Spatie\Emoji;
 
+use ReflectionClass;
 use Spatie\Emoji\Exceptions\CouldNotDetermineFlag;
 use Spatie\Emoji\Exceptions\UnknownCharacter;
 
@@ -10,7 +11,7 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  *
  * @link https://unicode.org/Public/emoji/latest/emoji-test.txt
  * @version v18.0
- * loaded at: 2026-09-17 20:15:14
+ * loaded at: 2026-09-18 06:44:01
  *
  * ##### Emoji group: SMILEYS & EMOTION #####
  * ##### Emoji subgroup: FACE-SMILING #####
@@ -4094,6 +4095,10 @@ use Spatie\Emoji\Exceptions\UnknownCharacter;
  * @method static string flagsForFlagEngland()
  * @method static string flagsForFlagScotland()
  * @method static string flagsForFlagWales()
+ * ##### Renamed by Unicode, kept for backwards compatibility #####
+ * @method static string flagsForFlagFrenchSouthernTerritories()
+ * @method static string flagsForFlagHeardAndMcdonaldIslands()
+ * @method static string flagsForFlagStHelena()
  */
 class Emoji
 {
@@ -8180,6 +8185,23 @@ class Emoji
     public const CHARACTER_FLAGS_FOR_FLAG_SCOTLAND = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}";
     public const CHARACTER_FLAGS_FOR_FLAG_WALES = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0077}\u{E006C}\u{E0073}\u{E007F}";
 
+    // ##### Renamed by Unicode, kept for backwards compatibility #####
+    /** @deprecated Use CHARACTER_FLAGS_FOR_FLAG_FRENCH_SOUTHERN_AND_ANTARCTIC_LANDS instead. */
+    public const CHARACTER_FLAGS_FOR_FLAG_FRENCH_SOUTHERN_TERRITORIES = self::CHARACTER_FLAGS_FOR_FLAG_FRENCH_SOUTHERN_AND_ANTARCTIC_LANDS;
+
+    /** @deprecated Use CHARACTER_FLAGS_FOR_FLAG_HEARD_ISLAND_AND_MCDONALD_ISLANDS instead. */
+    public const CHARACTER_FLAGS_FOR_FLAG_HEARD_AND_MCDONALD_ISLANDS = self::CHARACTER_FLAGS_FOR_FLAG_HEARD_ISLAND_AND_MCDONALD_ISLANDS;
+
+    /** @deprecated Use CHARACTER_FLAGS_FOR_FLAG_ST_HELENA_ASCENSION_AND_TRISTAN_DA_CUNHA instead. */
+    public const CHARACTER_FLAGS_FOR_FLAG_ST_HELENA = self::CHARACTER_FLAGS_FOR_FLAG_ST_HELENA_ASCENSION_AND_TRISTAN_DA_CUNHA;
+
+    /** @var array<int, string> */
+    private static array $renamedConstants = [
+        'CHARACTER_FLAGS_FOR_FLAG_FRENCH_SOUTHERN_TERRITORIES',
+        'CHARACTER_FLAGS_FOR_FLAG_HEARD_AND_MCDONALD_ISLANDS',
+        'CHARACTER_FLAGS_FOR_FLAG_ST_HELENA',
+    ];
+
     public static function getCharacter(string $characterName): string
     {
         $constantName = static::convertCharacterNameToConstantName($characterName);
@@ -8204,9 +8226,9 @@ class Emoji
 
     public static function all(): array
     {
-        $reflectionClass = new \ReflectionClass(self::class);
+        $reflectionClass = new ReflectionClass(self::class);
 
-        return $reflectionClass->getConstants();
+        return array_diff_key($reflectionClass->getConstants(), array_flip(self::$renamedConstants));
     }
 
     public static function __callStatic(string $methodName, array $parameters): string
