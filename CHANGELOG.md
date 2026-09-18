@@ -2,6 +2,21 @@
 
 All notable changes to `emoji` will be documented in this file
 
+## 5.0.0 - 2026-09-18
+
+- Update to Unicode 18.0 (#68)
+
+New major release as three flags were renamed upstream. Rename these methods and constants in your code:
+
+- `flagsForFlagFrenchSouthernTerritories()` becomes `flagsForFlagFrenchSouthernAndAntarcticLands()`
+- `flagsForFlagHeardAndMcdonaldIslands()` becomes `flagsForFlagHeardIslandAndMcdonaldIslands()`
+- `flagsForFlagStHelena()` becomes `flagsForFlagStHelenaAscensionAndTristanDaCunha()`
+- `CHARACTER_FLAGS_FOR_FLAG_FRENCH_SOUTHERN_TERRITORIES` becomes `CHARACTER_FLAGS_FOR_FLAG_FRENCH_SOUTHERN_AND_ANTARCTIC_LANDS`
+- `CHARACTER_FLAGS_FOR_FLAG_HEARD_AND_MCDONALD_ISLANDS` becomes `CHARACTER_FLAGS_FOR_FLAG_HEARD_ISLAND_AND_MCDONALD_ISLANDS`
+- `CHARACTER_FLAGS_FOR_FLAG_ST_HELENA` becomes `CHARACTER_FLAGS_FOR_FLAG_ST_HELENA_ASCENSION_AND_TRISTAN_DA_CUNHA`
+
+The emoji characters themselves did not change, only their names.
+
 ## 3.0.0 - 2021-09-27
 
 - Update to use Emoji 14 (#53)
